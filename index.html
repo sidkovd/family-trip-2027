@@ -153,6 +153,7 @@ section.block{padding:44px 0 6px}
 
 /* ---------- itinerary ---------- */
 .bases{display:grid;grid-template-columns:9fr 3fr;gap:10px;margin-bottom:14px}
+.bases.b4{grid-template-columns:3fr 3fr 2fr 4fr}.bases.b3{grid-template-columns:3fr 4fr 5fr}
 .base{border-radius:var(--r-sm);padding:16px;background:var(--jp-soft);color:var(--ink)}
 .base.b2{background:var(--surface-2)}
 .base h4{font-size:16px;font-weight:700;margin-bottom:4px}
@@ -315,7 +316,7 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
   .hero{padding-top:18px}
   .hero-card{padding:24px 18px;border-radius:22px}
   .grid-2,.days,.facts{grid-template-columns:minmax(0,1fr)}
-  .bases{grid-template-columns:minmax(0,1fr)}
+  .bases,.bases.b4,.bases.b3{grid-template-columns:minmax(0,1fr)}
   .check{grid-template-columns:24px 1fr;gap:4px 10px}
   .check .when{grid-column:2}
   .check .what{grid-column:2}
@@ -380,7 +381,7 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
   <div class="hero-card">
     <div class="eyebrow">Семейный проект · весна 2027 · исследование от 4 ноября 2026</div>
     <h1>Едем в <em>Японию</em>.</h1>
-    <p class="lead"><b>Осака, 27 марта — 8 апреля 2027.</b> Super Nintendo World для старших, сакура, сумо и самурайские замки для взрослых, спокойный темп для двухлетнего. Все 12 ночей — в Кансае, без Токио. Италия — запасной план, Кейптаун переносим на сезон китов.</p>
+    <p class="lead"><b>Осака → Токио, 27 марта — 8 апреля 2027.</b> Два дня в Universal, музей Гарри Поттера в Токио, Киото и олени Нары, сумо, перекрёсток Сибуя и шопинг. Две версии — с онсэном в Хаконэ и без. Италия — запасной план, Кейптаун переносим на сезон китов.</p>
     <div class="chips">
       <span class="chip count" id="countdown" hidden></span>
       <span class="chip">2 взрослых + дети 10, 8 и 2 года</span>
@@ -390,9 +391,9 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
       <span class="chip">Вылет из Москвы (из Сочи — через Москву)</span>
     </div>
     <div class="stats">
-      <div class="stat"><b>≈2,76 млн ₽</b><span>«Максимальный комфорт» на пятерых; с шопингом ≈3,0 млн</span></div>
-      <div class="stat"><b>12 ночей</b><span>2 базы: отель у Universal 4 ночи + Намба 8 ночей</span></div>
-      <div class="stat"><b>30–31 марта</b><span>Universal в начале поездки, Express 7 на оба дня</span></div>
+      <div class="stat"><b>≈2,8–3,0 млн ₽</b><span>максимальный комфорт без шопинга; с шопингом ≈3,1–3,2 млн</span></div>
+      <div class="stat"><b>12 ночей</b><span>Universal → Намба → (Хаконэ) → Токио</span></div>
+      <div class="stat"><b>29–30 марта</b><span>Universal в начале, Express 7 на оба дня; 5.04 — музей Гарри Поттера</span></div>
       <div class="stat"><b>Бизнес туда</b><span>ночной перелёт лёжа; обратно — дневной рейс</span></div>
     </div>
   </div>
@@ -411,7 +412,7 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
     <div class="verdicts">
       <article class="vcard jp">
         <div class="vtop">
-          <div><h3>Япония</h3><div class="sub">Осака + Киото, Нара, Химэдзи на день</div></div>
+          <div><h3>Япония</h3><div class="sub">Осака, Киото, Нара, Токио</div></div>
           <span class="badge">Рекомендуется</span>
         </div>
         <div><div class="score"><b>93</b><span>из 120</span></div><div class="scorebar"><i style="width:77.5%"></i></div></div>
@@ -477,14 +478,16 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
       <li><label class="check urgent"><input type="checkbox" data-id="c1"><span class="when">Сейчас, до 15.11.2026</span><span class="what">Выбрать направление. Проверить срок действия загранпаспортов всех пятерых — у двухлетнего паспорт обязателен.</span><span class="tags"><span class="tag">все</span></span></label></li>
       <li><label class="check urgent"><input type="checkbox" data-id="c2"><span class="when">Сейчас, до 15.11.2026</span><span class="what">Открыть две зарубежные карты разных банков (например, mBank или Bakai Bank удалённо). Для ЮАР — кредитную карту на имя водителя или прокат с залогом наличными.</span><span class="tags"><span class="tag">все</span></span></label></li>
       <li><label class="check urgent"><input type="checkbox" data-id="c3"><span class="when">Ноябрь — первая половина декабря 2026</span><span class="what">Записаться и подать документы на шенгенскую визу: VMS в Москве или AlmavivA в Краснодаре / Ростове, лично, со страховкой от €30&nbsp;000.</span><span class="tags"><span class="tag it">Италия</span></span></label></li>
-      <li><label class="check"><input type="checkbox" data-id="c4"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Купить авиабилеты: Москва — Осака 26.03 бизнесом и Осака — Москва 08.04, единым бронированием, младшей — своё место; отдельно Сочи — Москва 25.03 и Москва — Сочи 09.04. Забронировать отели с бесплатной отменой: семейных номеров в Японии мало.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c4"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Купить авиабилеты через «Сложный маршрут»: Москва → Осака 26.03 бизнесом, Токио (Ханэда) → Москва 08.04 в экономе, единым бронированием, младшей — своё место; отдельно Сочи — Москва 25.03 и Москва — Сочи 09.04. Забронировать отели с бесплатной отменой: семейных номеров в Японии мало.</span><span class="tags"><span class="tag">все</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c5"><span class="when">Сразу после покупки билетов</span><span class="what">Купить страховку с опцией отмены поездки (не позже чем за 15 дней до вылета). Для Италии — с покрытием отказа или задержки визы.</span><span class="tags"><span class="tag">все</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c6"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Оформить международное водительское удостоверение; сделать нотариальные переводы свидетельств о рождении на английский.</span><span class="tags"><span class="tag ct">ЮАР</span><span class="tag it">Италия</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c7"><span class="when">Середина — конец декабря 2026</span><span class="what">Первый прогноз сакуры от Japan Meteorological Corporation. При необходимости сдвинуть даты на 2–3 дня, пока брони бесплатно отменяются.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c8"><span class="when">До 31.12.2026</span><span class="what">Выйдут льготы и процедура сбора за вход в Венецию на 2027 год; Marine Dynamics обновит тарифы; проверить, введены ли ограничения на воду в Кейптауне.</span><span class="tags"><span class="tag it">Италия</span><span class="tag ct">ЮАР</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c9"><span class="when">Начало января 2027</span><span class="what">Прогноз сакуры Weathernews. Ожидается календарь Gardaland 2027 — проверять до февраля.</span><span class="tags"><span class="tag jp">Япония</span><span class="tag it">Италия</span></span></label></li>
       <li><label class="check urgent"><input type="checkbox" data-id="c10"><span class="when">Конец января 2027</span><span class="what"><b>Открытие продаж USJ на наши даты:</b> купить Studio Pass 2-Day и Express Pass с гарантированным входом в Super Nintendo World и аттракционами Гарри Поттера в день открытия. Установить приложение USJ, привязать билеты всех пятерых, заранее измерить рост детей. Прогноз сакуры tenki.jp.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
-      <li><label class="check"><input type="checkbox" data-id="c18"><span class="when">Январь — февраль 2027</span><span class="what">Забронировать частные трансферы (аэропорт → отель у Universal, Universal → Намба, Намба → аэропорт) с детскими креслами и машину с водителем на день в Киото; договориться с отелем о няне на 1–2 вечера.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="c19"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Версия с Хаконэ: забронировать рёкан с онсэном в номере (客室露天風呂) на 02–04.04 — такие номера разбирают первыми. Отелю заранее написать про татуировку.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="c20"><span class="when">Следить с января 2027</span><span class="what">Билеты в музей Гарри Поттера (Warner Bros. Studio Tour Tokyo, wbstudiotour.jp) на 05.04 — купить в день открытия продаж, вход по времени; цены изменились с 1.07.2026.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c18"><span class="when">Январь — февраль 2027</span><span class="what">Забронировать частные трансферы с детскими креслами (аэропорт → Universal, Universal → Намба, в Токио — до отеля и в Ханэду; с Хаконэ — Одавара → рёкан → Токио) и водителя на день Киото + Нара; договориться с отелем о няне на 1–2 вечера.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c17"><span class="when">Начало февраля 2027</span><span class="what">Билеты на последний день весеннего турнира сумо 28.03 (Edion Arena, Осака). Сначала сверить даты на сайте Японской ассоциации сумо; на финал билеты разбирают быстро.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c11"><span class="when">Январь — февраль 2027</span><span class="what">Подать документы на японскую визу в визовый центр JVAC в Москве (минимум 4 рабочих дня, лучше за несколько недель до поездки). Нужны свидетельства о браке и о рождении детей.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
       <li><label class="check"><input type="checkbox" data-id="c12"><span class="when">Январь 2027</span><span class="what">Забронировать кемпинг или апартаменты на Гарде, пока действуют скидки за раннее бронирование.</span><span class="tags"><span class="tag it">Италия</span></span></label></li>
@@ -502,41 +505,76 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
     <div class="sec-head">
       <div>
         <div class="kicker">Наш маршрут · максимальный комфорт</div>
-        <h2>Япония без Токио: Universal в начале, потом Кансай</h2>
-        <p>25.03 — Сочи → Москва, ночь у родных. 26.03 вечером — <b>бизнес-классом</b> Москва → Осака (ночной перелёт лёжа). 08.04 — Осака → Москва дневным рейсом, ночь у родных, 09.04 — домой в Сочи. В Японии: частные трансферы, машина с водителем на дальние дни, Express 7 на оба дня Universal, няня на вечера. Один большой день — потом лёгкий.</p>
+        <h2>Осака → Токио: две версии — с онсэном в Хаконэ и без</h2>
+        <p>25.03 — Сочи → Москва, ночь у родных. 26.03 вечером — <b>бизнес-классом</b> Москва → Осака (Кансай). 08.04 — Токио (Ханэда) → Москва дневным рейсом в экономе, ночь у родных, 09.04 — домой. Билет «в Осаку, из Токио» — через «Сложный маршрут». Везде частные трансферы и водитель, чемоданы между городами едут отдельно, одно большое дело в день, с 13 до 15 — сон малыша.</p>
       </div>
     </div>
-    <div class="bases">
-      <div class="base"><div class="nights">4 ночи · 27.03 — 31.03</div><h4>Отель у Universal</h4><p>Лучший семейный номер на пятерых: Corner Family Room в Hotel Kintetsu Universal City или номер на пятерых в The Park Front Hotel (наличие проверить). Днём можно вернуться уложить малыша.</p></div>
-      <div class="base b2"><div class="nights">8 ночей · 31.03 — 08.04</div><h4>Осака, Намба</h4><p>Два смежных номера или большой номер в отеле прямо над вокзалом Намба (например, Swissôtel Nankai Osaka — проверить) либо премиальные апартаменты с двумя спальнями. Rapi:t в аэропорт — из-под отеля.</p></div>
+    <div class="tabs" role="tablist" aria-label="Версии маршрута">
+      <button role="tab" id="tab-vA" aria-controls="panel-vA" aria-selected="true" type="button">С онсэном в Хаконэ</button>
+      <button role="tab" id="tab-vB" aria-controls="panel-vB" aria-selected="false" tabindex="-1" type="button">Без Хаконэ</button>
     </div>
-    <div class="days">
-      <div class="day"><div class="day-h"><span class="day-n">День 1 · сб 27.03</span><h4>Прилёт, трансфер, CityWalk</h4></div><p>Прилёт в Кансай около 13:00 после ночи в бизнес-классе. Частный минивэн с детскими креслами — прямо к отелю у Universal. Вечером торт в номере и ужин в Universal CityWalk.</p><div class="meta"><span class="m">~1 ч трансфер</span><span class="m">≈25 тыс. ₽</span><span class="m ok">✓ малышу: да</span><span class="m book">трансфер и номер — заранее</span></div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 2 · вс 28.03</span><h4>Финал сумо и ужин с вагю</h4></div><p>Утром выспаться. С ~15:00 — последний день весеннего турнира сумо на арене Edion в Намбе, хорошие места. После — ужин теппанъяки с вагю, повар жарит прямо перед вами. 15:00 в Японии — 9 утра по Москве, джетлаг не мешает.</p><div class="meta"><span class="m">~30 мин на такси</span><span class="m">≈60 тыс. ₽ с билетами и ужином</span><span class="m part">~ малышу: прийти на последние 2 часа</span><span class="m book">сумо — продажа ~февраль</span></div><div class="cut">Даты турнира (по JapanTravel — 13–28.03.2027) сверить на сайте Японской ассоциации сумо.</div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 3 · пн 29.03</span><h4>Аквариум Kaiyukan</h4></div><p>От Universal — кораблик Captain Line через залив или такси. Пологий спиральный спуск — идеально с коляской. Вечер в отеле.</p><div class="meta"><span class="m">~15–30 мин</span><span class="m">≈25 тыс. ₽</span><span class="m ok">✓ малышу: идеально</span><span class="m book">онлайн-билет на дату</span></div></div>
-      <div class="day big"><div class="day-h"><span class="day-n">День 4 · вт 30.03</span><h4>Universal, день 1 — Nintendo и Гарри Поттер</h4></div><p>Express 7 с гарантированным входом в Super Nintendo World: Mario Kart, Mine-Cart Madness, Yoshi, затем Гарри Поттер — Хогсмид, Forbidden Journey, Hippogriff. Прийти к ~10:00 и остаться до вечера. Малыш — в Wonderland и на дневном сне в номере.</p><div class="meta"><span class="m">пешком</span><span class="m">≈90 тыс. ₽</span><span class="m part">~ малышу: Wonderland, Yoshi от 92 см</span><span class="m book">2-Day + Express 7 на оба дня</span></div><div class="cut">Идут японские весенние каникулы — без Express очереди по 1,5–3 часа. Forbidden Journey, по гайдам, от 122 см.</div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 5 · ср 31.03</span><h4>Universal, день 2 — и переезд в Намбу</h4></div><p>С Express 7 — всё, что не успели, и повторы любимого. После обеда частный минивэн с багажом в Намбу, заселение.</p><div class="meta"><span class="m">~30 мин</span><span class="m">≈80 тыс. ₽</span><span class="m part">~ малышу: частично</span><span class="m book">минивэн — заранее</span></div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 6 · чт 01.04</span><h4>Отдых и шопинг</h4></div><p>Площадки и стирка с утра. Взрослые по очереди: Синсайбаси, Daimaru, Америка-мура, ножи на Догуясудзи. Вечером — Дотонбори.</p><div class="meta"><span class="m">пешком</span><span class="m">≈20 тыс. ₽ + покупки</span><span class="m ok">✓ малышу: да</span></div></div>
-      <div class="day big"><div class="day-h"><span class="day-n">День 7 · пт 02.04</span><h4>Киото с водителем: самураи и ниндзя</h4></div><p>Машина с водителем на весь день: от двери до Toei Kyoto Studio Park в Удзумасе (улицы эпохи Эдо, шоу ниндзя, урок фехтования), по пути — сакура в Киото, малыш спит в машине. По желанию — Kyoto Railway Museum.</p><div class="meta"><span class="m">~1 ч на машине</span><span class="m">≈75 тыс. ₽ с водителем</span><span class="m part">~ малышу: частично, шоу громкие</span><span class="m book">машина с водителем — заранее</span></div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 8 · сб 03.04</span><h4>Nintendo, аниме и шопинг</h4></div><p>Старшим — Nintendo Osaka и Pokémon Center в Умэде, Den Den Town; взрослым — универмаги Умэды. Вечером — няня, родители вдвоём в Синсэкае или Ура-Намбе.</p><div class="meta"><span class="m">15–20 мин на такси</span><span class="m">≈30 тыс. ₽ + покупки</span><span class="m ok">✓ малышу: да</span><span class="m book">няня — через отель</span></div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 9 · вс 04.04</span><h4>Замок Осаки в пик сакуры</h4></div><p>По норме полное цветение в Осаке — около 4 апреля. Парк и музей замка, пикник под сакурой.</p><div class="meta"><span class="m">15 мин на такси</span><span class="m">≈20 тыс. ₽</span><span class="m ok">✓ малышу: да</span></div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 10 · пн 05.04</span><h4>Нара: олени и Большой Будда</h4></div><p>Будний день — людей меньше. Олени в парке, храм Тодайдзи, сакура. Туда и обратно — такси-минивэн или машина с водителем.</p><div class="meta"><span class="m">~45 мин на машине</span><span class="m">≈45 тыс. ₽</span><span class="m ok">✓ малышу: да</span></div><div class="cut">Сократить: только парк.</div></div>
-      <div class="day big"><div class="day-h"><span class="day-n">День 11 · вт 06.04</span><h4>Замок Химэдзи</h4></div><p>Главный подлинный самурайский замок Японии (ЮНЕСКО), вокруг сакура. Синкансэн от Син-Осаки ~30 мин, вагон Green Car. Коляску оставляют у входа, внутри крутые лестницы.</p><div class="meta"><span class="m">45–60 мин</span><span class="m">≈35 тыс. ₽</span><span class="m part">~ малышу: частично</span></div><div class="cut">Сократить: только парк и обход замка снаружи.</div></div>
-      <div class="day"><div class="day-h"><span class="day-n">День 12 · ср 07.04</span><h4>День для младшей: Anpanman в Кобе</h4></div><p>Детский музей Anpanman в Кобе (~45 мин) — ровно для двухлетки. Вечером — прощальный ужин, сборы.</p><div class="meta"><span class="m">~45 мин</span><span class="m">≈35 тыс. ₽</span><span class="m ok">✓ малышу: идеально</span><span class="m book">билеты в музей — проверить</span></div></div>
-      <div class="day depart"><div class="day-h"><span class="day-n">Чт 08.04</span><h4>Вылет домой</h4></div><p>Частный трансфер или Rapi:t прямо из-под отеля в Кансай. Заложить время на возврат налога tax-free на таможне до регистрации.</p></div>
-      <div class="day depart"><div class="day-h"><span class="day-n">Если что-то пошло не так</span><h4>Запасные варианты</h4></div><p>Дождь — Kaiyukan, музей замка Осаки, Kyoto Railway Museum, Den Den Town, универмаги. Устали — первым убираем Химэдзи. Нет билетов на сумо — день у отеля и CityWalk. Взрослым с запасом сил — утренний Фусими Инари в Киото с водителем.</p></div>
+
+    <!-- Version A -->
+    <div class="tabpanel" role="tabpanel" id="panel-vA" aria-labelledby="tab-vA">
+      <div class="bases b4">
+        <div class="base"><div class="nights">3 ночи · 27–30.03</div><h4>У Universal</h4><p>Лучший семейный номер на пятерых.</p></div>
+        <div class="base b2"><div class="nights">3 ночи · 30.03–02.04</div><h4>Осака, Намба</h4><p>Отель над вокзалом или премиальные апартаменты.</p></div>
+        <div class="base"><div class="nights">2 ночи · 02–04.04</div><h4>Хаконэ</h4><p>Рёкан с онсэном в номере.</p></div>
+        <div class="base b2"><div class="nights">4 ночи · 04–08.04</div><h4>Токио</h4><p>Сибуя или Синдзюку, 2 смежных номера.</p></div>
+      </div>
+      <div class="days">
+        <div class="day"><div class="day-h"><span class="day-n">1 · сб 27.03</span><h4>Прилёт и отель у Universal</h4></div><p>Ночь в бизнес-классе, прилёт около 13:00, частный минивэн с детскими креслами к отелю. Вечером торт в номере.</p><div class="meta"><span class="m ok">лёгкий</span><span class="m book">трансфер, номер</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">2 · вс 28.03</span><h4>Финал сумо</h4></div><p>Утром выспаться. С ~15:00 — последний день турнира в Намбе, затем ранний ужин с вагю рядом с ареной.</p><div class="meta"><span class="m part">средний</span><span class="m book">сумо — продажа ~февраль</span></div></div>
+        <div class="day big"><div class="day-h"><span class="day-n">3 · пн 29.03</span><h4>Universal, день 1</h4></div><p>Express 7: Super Nintendo World (Mario Kart, Donkey Kong, Yoshi) и Гарри Поттер. Днём малыш спит в номере.</p><div class="meta"><span class="m hard">большой</span><span class="m book">2-Day + Express 7</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">4 · вт 30.03</span><h4>Universal до обеда → Намба</h4></div><p>Повторы любимого, Миньоны. После обеда — минивэн в Намбу.</p><div class="meta"><span class="m part">средний</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">5 · ср 31.03</span><h4>Отдых в Осаке</h4></div><p>Куромон, Дотонбори, шопинг по очереди; замок Осаки — по желанию.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day big"><div class="day-h"><span class="day-n">6 · чт 01.04</span><h4>Киото + Нара с водителем</h4></div><p>Утром Фусими Инари, днём олени и храм Тодайдзи в Наре — по пути. Вечером чемоданы — в отель в Токио.</p><div class="meta"><span class="m hard">большой</span><span class="m book">водитель на день</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">7 · пт 02.04</span><h4>Синкансэн → Хаконэ</h4></div><p>Hikari в Green Car до Одавары (~2–2 ч 40 мин), машина до рёкана (~40 мин). Онсэн в номере, ужин кайсэки.</p><div class="meta"><span class="m part">средний</span><span class="m book">рёкан, синкансэн</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">8 · сб 03.04</span><h4>Отдых в Хаконэ</h4></div><p>Онсэн, пиратский корабль на озере Аси, если погода; при ясном небе — вид на Фудзи.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">9 · вс 04.04</span><h4>Машина в Токио</h4></div><p>~1,5–2 ч, заселение. Вечером ненадолго — перекрёсток Сибуя. По желанию папа со старшими — Daikoku.</p><div class="meta"><span class="m ok">лёгкий</span><span class="m book">трансфер</span></div></div>
+        <div class="day big"><div class="day-h"><span class="day-n">10 · пн 05.04</span><h4>Музей Гарри Поттера</h4></div><p>Warner Bros. Studio Tour Tokyo — около 4 часов, вход по времени.</p><div class="meta"><span class="m hard">большой</span><span class="m book">билеты — как откроется продажа</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">11 · вт 06.04</span><h4>Шопинг в Токио</h4></div><p>Сибуя, Харадзюку, Nintendo Tokyo, Pokémon Center. Вечером няня, взрослые — Гиндза или Акихабара.</p><div class="meta"><span class="m part">средний</span><span class="m book">няня — через отель</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">12 · ср 07.04</span><h4>День для младшей</h4></div><p>Музей Anpanman в Иокогаме, вечером прощальный ужин.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day depart"><div class="day-h"><span class="day-n">Чт 08.04</span><h4>Вылет из Ханэды</h4></div><p>~30 мин от центра. Время на возврат tax-free до регистрации.</p></div>
+      </div>
+    </div>
+
+    <!-- Version B -->
+    <div class="tabpanel" role="tabpanel" id="panel-vB" aria-labelledby="tab-vB" hidden>
+      <div class="bases b3">
+        <div class="base"><div class="nights">3 ночи · 27–30.03</div><h4>У Universal</h4><p>Лучший семейный номер на пятерых.</p></div>
+        <div class="base b2"><div class="nights">4 ночи · 30.03–03.04</div><h4>Осака, Намба</h4><p>Отель над вокзалом или премиальные апартаменты.</p></div>
+        <div class="base"><div class="nights">5 ночей · 03–08.04</div><h4>Токио</h4><p>Сибуя или Синдзюку, 2 смежных номера.</p></div>
+      </div>
+      <div class="days">
+        <div class="day"><div class="day-h"><span class="day-n">1 · сб 27.03</span><h4>Прилёт и отель у Universal</h4></div><p>Ночь в бизнес-классе, прилёт около 13:00, частный минивэн к отелю. Вечером торт в номере.</p><div class="meta"><span class="m ok">лёгкий</span><span class="m book">трансфер, номер</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">2 · вс 28.03</span><h4>Финал сумо</h4></div><p>С ~15:00 — последний день турнира в Намбе, ранний ужин с вагю рядом с ареной.</p><div class="meta"><span class="m part">средний</span><span class="m book">сумо — продажа ~февраль</span></div></div>
+        <div class="day big"><div class="day-h"><span class="day-n">3 · пн 29.03</span><h4>Universal, день 1</h4></div><p>Express 7: Super Nintendo World и Гарри Поттер. Днём малыш спит в номере.</p><div class="meta"><span class="m hard">большой</span><span class="m book">2-Day + Express 7</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">4 · вт 30.03</span><h4>Universal до обеда → Намба</h4></div><p>Повторы любимого, Миньоны. После обеда — минивэн в Намбу.</p><div class="meta"><span class="m part">средний</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">5 · ср 31.03</span><h4>Отдых в Осаке</h4></div><p>Куромон, Дотонбори, шопинг по очереди.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day big"><div class="day-h"><span class="day-n">6 · чт 01.04</span><h4>Киото + Нара с водителем</h4></div><p>Утром Фусими Инари, днём олени и храм Тодайдзи.</p><div class="meta"><span class="m hard">большой</span><span class="m book">водитель на день</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">7 · пт 02.04</span><h4>Лёгкий день в Осаке</h4></div><p>Аквариум Kaiyukan или замок Осаки в сакуре. Вечером чемоданы — в отель в Токио.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">8 · сб 03.04</span><h4>Синкансэн в Токио</h4></div><p>Nozomi в Green Car, ~2 ч 15–30 мин; минивэн до отеля. Вечером ненадолго — перекрёсток Сибуя.</p><div class="meta"><span class="m part">средний</span><span class="m book">синкансэн, трансфер</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">9 · вс 04.04</span><h4>Отдых в Токио</h4></div><p>Парк и площадки. Вечером по желанию папа со старшими — Daikoku (туры по воскресеньям).</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day big"><div class="day-h"><span class="day-n">10 · пн 05.04</span><h4>Музей Гарри Поттера</h4></div><p>Warner Bros. Studio Tour Tokyo — около 4 часов, вход по времени.</p><div class="meta"><span class="m hard">большой</span><span class="m book">билеты — как откроется продажа</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">11 · вт 06.04</span><h4>Шопинг в Токио</h4></div><p>Сибуя, Харадзюку, Nintendo Tokyo, Pokémon Center. Вечером няня, взрослые — Гиндза или Акихабара.</p><div class="meta"><span class="m part">средний</span><span class="m book">няня — через отель</span></div></div>
+        <div class="day"><div class="day-h"><span class="day-n">12 · ср 07.04</span><h4>День для младшей</h4></div><p>Музей Anpanman в Иокогаме, вечером прощальный ужин.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+        <div class="day depart"><div class="day-h"><span class="day-n">Чт 08.04</span><h4>Вылет из Ханэды</h4></div><p>~30 мин от центра. Время на возврат tax-free до регистрации.</p></div>
+      </div>
+    </div>
+
+    <div class="grid-2 mt">
+      <div class="note info"><b>Чем версии отличаются.</b> С Хаконэ: 4 базы и 3 переезда, но настоящий день ничегонеделания в рёкане с онсэном и Фудзи; +~140 тыс. ₽. Без Хаконэ: 3 базы и 2 переезда, лишний спокойный день в Осаке и в Токио, без онсэна. Онсэн в любом случае — только частный: с татуировками в общие часто не пускают.</div>
+      <div class="note info"><b>Младшая на перелётах.</b> Туда ей меньше 2 лет, обратно — уже 2, место обязательно. Для комфорта — своё место в обе стороны: в бизнесе у неё будет своя кровать. Если система не пропускает, оформлять через авиакомпанию или двумя билетами в одну сторону.</div>
     </div>
 
     <h3 class="subh">Что взрослым</h3>
     <div class="grid-3">
-      <div class="fact"><h4>Самурайское</h4><ul><li><b>Сумо:</b> весенний турнир в Осаке, по JapanTravel — 13–28.03.2027, финал 28.03. Сверить на сайте ассоциации сумо, билеты — с ~февраля.</li><li><b>Toei Kyoto Studio Park</b> — открылся после реконструкции 28.03.2026, вход у перекупщиков от ~¥2&nbsp;800, шоу за доплату.</li><li><b>Химэдзи</b> — подлинный замок, полдня.</li><li><b>Замок Осаки</b> — музей с доспехами, внутри лифт.</li><li><b>Музей самураев и ниндзя</b> в Киото — доспехи, меч, сюрикены.</li></ul></div>
-      <div class="fact"><h4>Еда и вечера</h4><ul><li>Теппанъяки с вагю, говядина Кобе.</li><li>Дотонбори, Ура-Намба, переулок Ходзэндзи Ёкотё.</li><li>Синсэкай — кусикацу; рынок Куромон — с утра.</li><li>Сакэ: Фусими (Киото) и Нада (Кобе).</li><li>Umeda Sky и Abeno Harukas вечером; онсэн Арима (~1 ч).</li></ul><p class="mt"><b>Няня на 1–2 вечера</b> — чтобы выйти вдвоём. Спросить в отеле заранее, есть ли англоязычные няни (не проверено).</p></div>
-      <div class="fact"><h4>Шопинг</h4><ul><li>Синсайбаси и Daimaru, Америка-мура.</li><li>Умэда: Hankyu, Hanshin, Lucua, Grand Front, Yodobashi.</li><li>Den Den Town — аниме и игры; Nintendo Osaka, Pokémon Center.</li><li>Догуясудзи — ножи и посуда; Don Quijote.</li><li>Rinku Premium Outlets у аэропорта.</li></ul><div class="note warn mt"><b>Tax-free с 1.11.2026 по-новому:</b> налог 10% платите в магазине, возврат — на таможне в аэропорту до регистрации. Храните чеки, не используйте косметику и еду из покупок.</div></div>
-    </div>
-
-    <div class="grid-2 mt">
-      <div class="note info"><b>Почему без Токио.</b> Гарри Поттер — внутри Universal в Осаке, Диснейленд дети уже видели, сакуры хватит в Киото и Осаке, а дешёвый прилёт в Токио съедают синкансэн и пересылка багажа. Поэтому все 12 ночей — в Кансае.</div>
-      <div class="note info"><b>Младшая на перелётах.</b> Туда ей меньше 2 лет, обратно — уже 2, и место обязательно. Для комфорта — своё место в обе стороны: в бизнесе у неё будет своя кровать. Если система не пропускает, оформлять через авиакомпанию или двумя билетами в одну сторону.</div>
+      <div class="fact"><h4>Японское</h4><ul><li><b>Сумо:</b> весенний турнир в Осаке, по JapanTravel — 13–28.03.2027, финал 28.03. Сверить на сайте ассоциации сумо, билеты — с ~февраля.</li><li>Фусими Инари, Тодайдзи и олени Нары, замок Осаки.</li><li>Если останутся силы — вместо дня отдыха: Удзумаса (самураи и ниндзя) или замок Химэдзи.</li></ul></div>
+      <div class="fact"><h4>«Форсаж» и машины</h4><ul><li><b>Перекрёсток Сибуя</b> — тот самый из «Тройного форсажа», бесплатно.</li><li><b>Daikoku PA</b> — парковка тюнинга в Иокогаме. Туры с забором из отеля — ~$88–370 с человека; URUSAI работает по воскресеньям 17:00–23:30. Полиция может закрыть без предупреждения, детей — уточнить у оператора.</li></ul></div>
+      <div class="fact"><h4>Онсэн и татуировки</h4><p>В общие онсэны с тату часто не пускают. Решение — <b>онсэн в номере</b> (客室露天風呂, «private open-air bath») или <b>арендуемая семейная купальня</b> (貸切風呂). Крупные спа вроде Spa World не планировать.</p></div>
+      <div class="fact"><h4>Еда и вечера</h4><ul><li>Теппанъяки с вагю, кайсэки в рёкане.</li><li>Дотонбори, Синсэкай, Куромон в Осаке.</li><li><b>Няня на 1–2 вечера</b> — спросить в отеле заранее (не проверено).</li></ul></div>
+      <div class="fact"><h4>Шопинг</h4><ul><li>Осака: Синсайбаси, Америка-мура, Умэда, Den Den Town, ножи на Догуясудзи.</li><li>Токио: Сибуя, Харадзюку, Гиндза, Акихабара; Nintendo Tokyo, Pokémon Center.</li></ul><div class="note warn mt"><b>Tax-free с 1.11.2026:</b> налог 10% платите в магазине, возврат — на таможне в аэропорту до регистрации. Храните чеки.</div></div>
     </div>
   </div>
 </section>
@@ -547,36 +585,36 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
     <div class="sec-head">
       <div>
         <div class="kicker">Наш бюджет</div>
-        <h2>Максимальный комфорт ≈2,76 млн ₽, с шопингом ≈3,0 млн</h2>
-        <p>Это выше исходного ориентира 1–2 млн — сознательно: приоритет — комфорт, а не экономия. Ниже — что сколько стоит и от чего отказаться, если захочется дешевле. Перелёты — по снимку Авиасейлс 04.11.2026 на 22.03 (в одну сторону × 2; обратный рейс не проверен), остальное — оценки по ценам 2026 года, курс ~61 ₽ за ¥100.</p>
+        <h2>Максимальный комфорт: ≈2,8–3,0 млн ₽, с шопингом ≈3,1–3,2 млн</h2>
+        <p>Выше исходного ориентира 1–2 млн — сознательно: приоритет — комфорт. Перелёт туда — снимок Авиасейлс 04.11.2026 на 22.03 (бизнес до Осаки ~757 тыс. на пятерых); обратно из Токио — по снимку эконома до Токио (~230 тыс.), реальный обратный рейс не проверен. Остальное — оценки по ценам 2026 года, курс ~61 ₽ за ¥100.</p>
       </div>
     </div>
     <div class="tablewrap">
-      <table class="est ours" style="min-width:760px">
-        <thead><tr><th>№</th><th>Статья, тыс. ₽</th><th class="num">Комфорт</th><th class="num">Макс. комфорт</th><th class="num">Всё бизнесом</th><th>Что входит в «Макс. комфорт»</th></tr></thead>
+      <table class="est ours2" style="min-width:760px">
+        <thead><tr><th>№</th><th>Статья, тыс. ₽</th><th class="num">С Хаконэ</th><th class="num">Без Хаконэ</th><th>Что входит</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>Перелёт Москва — Осака — Москва</td><td class="num">530</td><td class="num">1&nbsp;022</td><td class="num">1&nbsp;514</td><td>Бизнес туда (China Eastern, 13 ч, 2 ч в Шанхае, ~757 тыс. на пятерых), эконом обратно (~265 тыс.); у младшей своё место</td></tr>
-          <tr><td>2</td><td>Сочи — Москва — Сочи, такси до Шереметьево</td><td class="num">65</td><td class="num">70</td><td class="num">70</td><td>Ночи у родных — без гостиницы; места с доп. пространством</td></tr>
-          <tr><td>3</td><td>Багаж, места, сборы</td><td class="num">25</td><td class="num">15</td><td class="num">10</td><td>В бизнесе багаж и места включены</td></tr>
-          <tr><td>4</td><td>Жильё, 12 ночей</td><td class="num">425</td><td class="num">650</td><td class="num">650</td><td>Лучший семейный номер у Universal (~¥90 тыс./ночь) + отель над вокзалом Намба или премиальные апартаменты (~¥85 тыс./ночь)</td></tr>
-          <tr><td>5</td><td>Еда</td><td class="num">175</td><td class="num">300</td><td class="num">300</td><td>~¥40 тыс. в день, теппанъяки с вагю, хорошие рестораны</td></tr>
-          <tr><td>6</td><td>Транспорт в Японии</td><td class="num">70</td><td class="num">155</td><td class="num">155</td><td>Частные трансферы аэропорт ↔ отели и между отелями, машина с водителем в Киото, такси-минивэн в Нару, Green Car до Химэдзи</td></tr>
-          <tr><td>7</td><td>Universal</td><td class="num">85</td><td class="num">165</td><td class="num">165</td><td>2-Day + Express 7 с SNW и Гарри Поттером на оба дня для четверых</td></tr>
-          <tr><td>8</td><td>Сумо, Удзумаса, Химэдзи, аквариум, Anpanman</td><td class="num">45</td><td class="num">65</td><td class="num">65</td><td>Хорошие места на сумо (цены 2027 не проверены)</td></tr>
-          <tr><td>9</td><td>Няня на 2 вечера</td><td class="num">—</td><td class="num">25</td><td class="num">25</td><td>Оценка; наличие англоязычных нянь уточнить в отеле</td></tr>
-          <tr><td>10</td><td>Страховки и визы</td><td class="num">67</td><td class="num">90</td><td class="num">110</td><td>Медицина + отмена поездки на бо́льшую стоимость билетов</td></tr>
-          <tr><td>11</td><td>Резерв</td><td class="num">150</td><td class="num">200</td><td class="num">250</td><td>Рост цен 2027, курс, eSIM, мелочи</td></tr>
-          <tr class="total"><td></td><td>Итого без шопинга</td><td class="num">≈1&nbsp;637</td><td class="num">≈2&nbsp;757</td><td class="num">≈3&nbsp;314</td><td></td></tr>
-          <tr><td>12</td><td>Шопинг</td><td class="num">250</td><td class="num">250</td><td class="num">250</td><td>≈¥410 тыс.: одежда, игрушки, Nintendo и Pokémon, ножи, косметика. Tax-free вернёт ~10% с подходящих покупок</td></tr>
-          <tr class="total"><td></td><td>Итого с шопингом</td><td class="num">≈1&nbsp;887</td><td class="num">≈3&nbsp;007</td><td class="num">≈3&nbsp;564</td><td></td></tr>
-          <tr class="range"><td></td><td>Погрешность</td><td class="num">±15–20%</td><td class="num">±15%</td><td class="num">±15%</td><td></td></tr>
+          <tr><td>1</td><td>Перелёт Москва → Осака, Токио → Москва</td><td class="num">987</td><td class="num">987</td><td>Бизнес туда (China Eastern, 13 ч, 2 ч в Шанхае), эконом обратно; у младшей своё место</td></tr>
+          <tr><td>2</td><td>Сочи — Москва — Сочи, такси</td><td class="num">70</td><td class="num">70</td><td>Ночи у родных — без гостиницы</td></tr>
+          <tr><td>3</td><td>Багаж, места, сборы</td><td class="num">15</td><td class="num">15</td><td></td></tr>
+          <tr><td>4</td><td>Жильё, 12 ночей</td><td class="num">827</td><td class="num">692</td><td>Universal ~¥90 тыс./ночь, Намба ~¥85 тыс., Токио ~¥100 тыс.; рёкан в Хаконэ с онсэном и ужином ~¥200 тыс./ночь</td></tr>
+          <tr><td>5</td><td>Еда</td><td class="num">270</td><td class="num">300</td><td>~¥40 тыс. в день; в рёкане ужин и завтрак уже включены</td></tr>
+          <tr><td>6</td><td>Транспорт в Японии</td><td class="num">258</td><td class="num">221</td><td>Частные трансферы, водитель на Киото и Нару, Green Car, такси-минивэны, пересылка чемоданов; с Хаконэ — машина Хаконэ → Токио</td></tr>
+          <tr><td>7</td><td>Universal</td><td class="num">165</td><td class="num">165</td><td>2-Day + Express 7 на оба дня для четверых</td></tr>
+          <tr><td>8</td><td>Сумо, музей Гарри Поттера, Anpanman, храмы</td><td class="num">60</td><td class="num">65</td><td>Хорошие места на сумо (цены 2027 не проверены); Daikoku не включён</td></tr>
+          <tr><td>9</td><td>Няня на 2 вечера</td><td class="num">25</td><td class="num">25</td><td>Оценка</td></tr>
+          <tr><td>10</td><td>Страховки и визы</td><td class="num">90</td><td class="num">90</td><td>Медицина + отмена поездки</td></tr>
+          <tr><td>11</td><td>Резерв</td><td class="num">200</td><td class="num">200</td><td>Рост цен 2027, курс, eSIM, мелочи</td></tr>
+          <tr class="total"><td></td><td>Итого без шопинга</td><td class="num">≈2&nbsp;967</td><td class="num">≈2&nbsp;830</td><td></td></tr>
+          <tr><td>12</td><td>Шопинг</td><td class="num">250</td><td class="num">250</td><td>≈¥410 тыс.; tax-free вернёт ~10% с подходящих покупок</td></tr>
+          <tr class="total"><td></td><td>Итого с шопингом</td><td class="num">≈3&nbsp;217</td><td class="num">≈3&nbsp;080</td><td></td></tr>
+          <tr class="range"><td></td><td>Погрешность</td><td class="num">±15%</td><td class="num">±15%</td><td></td></tr>
         </tbody>
       </table>
     </div>
     <div class="grid-3 mt">
-      <div class="fact"><h4>Больше всего комфорта за рубль</h4><ol style="margin:0;padding-left:1.2em;font-size:14.5px;color:var(--ink-2)"><li><b>Частные трансферы</b> — ~+35 тыс.: никаких поездов с тремя детьми и чемоданами.</li><li><b>Express 7 на оба дня</b> — ~+80 тыс.: в каникулы это часы без очередей.</li><li><b>Машина с водителем в Киото</b> — ~+50 тыс.: малыш спит в машине.</li><li><b>Няня на вечер</b> — ~+25 тыс.: ужин вдвоём.</li><li><b>Бизнес туда</b> — ~+490 тыс.: ночь лёжа, меньше джетлага. Самое дорогое улучшение.</li></ol></div>
-      <div class="fact"><h4>Если захочется дешевле</h4><ul><li>Эконом туда вместо бизнеса: −~490 тыс. → ~2,27 млн без шопинга.</li><li>Попроще отели: −~150–220 тыс.</li><li>Младшая туда на руках: −~135 тыс. в бизнесе, −~45 тыс. в экономе.</li><li>Express 4 на один день: −~80 тыс., но с очередями.</li></ul></div>
-      <div class="fact"><h4>Если «Всё бизнесом»</h4><p>Бизнес и обратно — ещё ~+490 тыс. Обратный рейс дневной, лететь на запад легче, поэтому выигрыш в комфорте меньше, чем туда. Бизнес из Осаки: China Eastern ~750 тыс. на пятерых (13–15 ч), China Southern ~675 тыс., но с пересадкой 20 ч ночью — не годится.</p></div>
+      <div class="fact"><h4>Больше всего комфорта за рубль</h4><ol style="margin:0;padding-left:1.2em;font-size:14.5px;color:var(--ink-2)"><li><b>Частные трансферы и пересылка чемоданов</b> — никаких поездов с детьми и багажом.</li><li><b>Express 7 на оба дня</b> — в каникулы это часы без очередей.</li><li><b>Водитель на Киото и Нару</b> — малыш спит в машине.</li><li><b>Няня на вечер</b> — ужин вдвоём.</li><li><b>Бизнес туда</b> — ~+490 тыс.: ночь лёжа, меньше джетлага.</li></ol></div>
+      <div class="fact"><h4>Если захочется дешевле</h4><ul><li>Эконом туда вместо бизнеса: −~490 тыс.</li><li>Хаконэ 1 ночь вместо 2: −~70 тыс.</li><li>Попроще отели: −~150–250 тыс.</li><li>Младшая туда на руках: −~135 тыс. в бизнесе.</li><li>Express 4 на один день: −~80 тыс., но с очередями.</li></ul></div>
+      <div class="fact"><h4>Если и обратно бизнесом</h4><p>По снимку бизнес до Токио — ~672 тыс. на пятерых (China Southern, 13 ч, 2 ч в Пекине); обратно примерно так же — ещё ~+440 тыс. Обратный рейс дневной, лететь на запад легче, поэтому выигрыш меньше, чем туда.</p></div>
     </div>
   </div>
 </section>
@@ -779,9 +817,9 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
             <tr><td><b>Токио</b></td><td>24.03 / 31.03</td><td>— / 22.03</td><td>~29.03 / —</td><td>24.03 / 30.03</td><td>19.03 / 28.03</td></tr>
           </tbody></table></div><p class="small muted mt">*неясно, факт или прогноз. Цветы держатся около недели после полного цветения. Прогнозы на 2027: JMC — середина–конец декабря, Weathernews — начало января, tenki.jp — конец января.</p></div>
         <div class="fact"><h4>Жильё на пятерых — главная дыра в данных</h4><p>Японские номера рассчитаны на 2–4 человек. Реальные варианты: двухкомнатные <b>MIMARU</b> в Намбе и Синсайбаси (54–61 м²), Corner Family Room в Hotel Kintetsu Universal City, номера на 5 в Liber Hotel, Family Room в Hotel Universal Port. Цен вида «5 гостей, конец марта» не найдено. Оценка за ночь: ¥25–40 тыс. / ¥40–70 тыс. / ¥80–150 тыс.+. Плюс налог за человека за ночь: Осака ¥200–500, Киото до ¥10&nbsp;000 — ещё довод не ночевать в Киото.</p></div>
-        <div class="fact"><h4>Транспорт: только поезда</h4><ul><li>Осака → Киото: JR ~30 мин ¥580, Hankyu ~43 мин ¥410, Keihan ~50 мин ¥490. День в Киото на семью ≈¥3&nbsp;500.</li><li>JR Pass (¥53&nbsp;000 с 01.10.2026) не окупается.</li><li>Обычное такси берёт четверых — нужен van через приложение GO.</li><li>Химэдзи: синкансэн от Син-Осаки ~30 мин или JR Special Rapid ~1 ч. Нара: Kintetsu от Намбы ~40 мин.</li></ul></div>
+        <div class="fact"><h4>Транспорт: только поезда</h4><ul><li>Осака → Киото: JR ~30 мин ¥580, Hankyu ~43 мин ¥410, Keihan ~50 мин ¥490. День в Киото на семью ≈¥3&nbsp;500.</li><li>JR Pass (¥53&nbsp;000 с 01.10.2026) не окупается.</li><li>Обычное такси берёт четверых — нужен van через приложение GO.</li><li>Осака → Токио: синкансэн Nozomi ~2 ч 15–30 мин; до Одавары (Хаконэ) — только Hikari, ~2–2 ч 40 мин.</li></ul></div>
         <div class="fact"><h4>Погода, коляска и толпы</h4><p>Конец марта: ~14 °C днём, 4–7 °C ночью; апрель — ~20/12 °C, но 12–13 дождливых дней — держим 1–2 «крытых» дня. С коляской Япония удобна, кроме Киото: узкие тротуары, переполненные автобусы, лестницы у храмов. Связка — лёгкая коляска + эргорюкзак, вместо автобусов метро. Март 2026 — рекорд по турпотоку (3,62 млн), налог на выезд — ¥3&nbsp;000 с человека.</p></div>
-        <div class="fact"><h4>Дни вне USJ</h4><p>Kaiyukan — ¥8&nbsp;200–10&nbsp;600 на семью, подходит всем трём. Kyoto Railway Museum — ¥1&nbsp;500 взрослый, для 8- и 10-летнего. LEGOLAND Discovery — ¥2&nbsp;900–3&nbsp;300, до 2 лет бесплатно, но 10-летнему там скучно. Олени в Наре — бесплатно и для всех. Сумо, Удзумаса и Химэдзи — в блоке «Что взрослым» в маршруте.</p></div>
+        <div class="fact"><h4>Дни вне USJ</h4><p>Kaiyukan — ¥8&nbsp;200–10&nbsp;600 на семью, подходит всем трём. Kyoto Railway Museum — ¥1&nbsp;500 взрослый, для 8- и 10-летнего. LEGOLAND Discovery — ¥2&nbsp;900–3&nbsp;300, до 2 лет бесплатно, но 10-летнему там скучно. Олени в Наре — бесплатно и для всех. Сумо, музей Гарри Поттера и Сибуя — в маршруте.</p></div>
       </div>
     </div>
 
@@ -1070,13 +1108,16 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
   boxes.forEach(function(b){b.checked=!!state[b.dataset.id];b.addEventListener("change",function(){state[b.dataset.id]=b.checked;store.set(key,JSON.stringify(state));upd()})});
   upd();
 
-  /* ---- tabs ---- */
-  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
-  function openTab(id,focus){tabs.forEach(function(t){var on=t.id==="tab-"+id;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute("aria-controls")).hidden=!on;if(on&&focus)t.focus()})}
-  tabs.forEach(function(t,i){
-    t.addEventListener("click",function(){openTab(t.id.slice(4))});
-    t.addEventListener("keydown",function(e){var d=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(!d)return;e.preventDefault();var n=tabs[(i+d+tabs.length)%tabs.length];openTab(n.id.slice(4),true)});
+  /* ---- tabs (scoped per tablist) ---- */
+  [].slice.call(document.querySelectorAll('[role="tablist"]')).forEach(function(list){
+    var ts=[].slice.call(list.querySelectorAll('[role="tab"]'));
+    function open(t,focus){ts.forEach(function(x){var on=x===t;x.setAttribute("aria-selected",on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute("aria-controls")).hidden=!on;if(on&&focus)x.focus()})}
+    ts.forEach(function(t,i){
+      t.addEventListener("click",function(){open(t)});
+      t.addEventListener("keydown",function(e){var d=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(!d)return;e.preventDefault();open(ts[(i+d+ts.length)%ts.length],true)});
+    });
   });
+  function openTab(id){var t=document.getElementById("tab-"+id);if(t)t.click()}
   document.querySelectorAll("[data-open-tab]").forEach(function(b){b.addEventListener("click",function(){openTab(b.dataset.openTab);document.getElementById("details").scrollIntoView({behavior:"smooth"})})});
 
   /* ---- budget ---- */
