@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Семейная поездка 2027</title>
+<meta name="description" content="Куда ехать семье из пяти человек весной 2027: Япония, Кейптаун или Италия. Вердикт, маршрут, сметы, риски и сроки по итогам исследования от 4 ноября 2026.">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23eb6834'/%3E%3Cpath d='M18 40h28M22 24h20M26 24v16M38 24v16' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f4ef;--surface:#fffdf9;--surface-2:#f0ede6;--surface-3:#e9e5dc;
+  --ink:#1d1f1c;--ink-2:#4b5049;--muted:#73786f;--line:#e2ded4;--line-2:#d2cdc1;
+  --jp:#eb6834;--ct:#2a78d6;--it:#1baf7a;
+  --jp-soft:#fcece4;--ct-soft:#e7f0fb;--it-soft:#e3f5ee;
+  --jp-ink:#a8401a;--ct-ink:#1d5aa3;--it-ink:#11744f;
+  --good-bg:#e4f1e2;--good-ink:#2f6a2a;--warn-bg:#fbefd5;--warn-ink:#80570b;--bad-bg:#f9e2df;--bad-ink:#9a2f26;
+  --hl:#fff4c7;--focus:#2a78d6;
+  --shadow:0 1px 2px rgb(29 31 28 / .05),0 10px 30px rgb(29 31 28 / .06);
+  --r:18px;--r-sm:12px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#131412;--surface:#1b1c1a;--surface-2:#232421;--surface-3:#2c2d29;
+    --ink:#f0efec;--ink-2:#c3c2b7;--muted:#97968c;--line:#31322d;--line-2:#3f403a;
+    --jp:#d95926;--ct:#3987e5;--it:#199e70;
+    --jp-soft:#33221a;--ct-soft:#1a2636;--it-soft:#162b23;
+    --jp-ink:#f09a74;--ct-ink:#8fbaf0;--it-ink:#6fd1aa;
+    --good-bg:#1f2e1d;--good-ink:#9fd598;--warn-bg:#33290f;--warn-ink:#f0cf7d;--bad-bg:#3a1d1a;--bad-ink:#f2a49b;
+    --hl:#3a3315;--focus:#8fbaf0;
+    --shadow:0 1px 2px rgb(0 0 0 / .3),0 10px 30px rgb(0 0 0 / .25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#131412;--surface:#1b1c1a;--surface-2:#232421;--surface-3:#2c2d29;
+  --ink:#f0efec;--ink-2:#c3c2b7;--muted:#97968c;--line:#31322d;--line-2:#3f403a;
+  --jp:#d95926;--ct:#3987e5;--it:#199e70;
+  --jp-soft:#33221a;--ct-soft:#1a2636;--it-soft:#162b23;
+  --jp-ink:#f09a74;--ct-ink:#8fbaf0;--it-ink:#6fd1aa;
+  --good-bg:#1f2e1d;--good-ink:#9fd598;--warn-bg:#33290f;--warn-ink:#f0cf7d;--bad-bg:#3a1d1a;--bad-ink:#f2a49b;
+  --hl:#3a3315;--focus:#8fbaf0;
+  --shadow:0 1px 2px rgb(0 0 0 / .3),0 10px 30px rgb(0 0 0 / .25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--ct-ink);text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:6px}
+h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
+p{margin:0 0 .8em}
+p:last-child{margin-bottom:0}
+ul{margin:0;padding-left:1.15em}
+li{margin:.2em 0}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.nowrap{white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:10px;height:56px}
+.brand{font-weight:800;font-size:15px;letter-spacing:-.01em;white-space:nowrap;color:var(--ink);text-decoration:none}
+.brand span{color:var(--jp)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;font-size:13.5px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:7px 10px;border-radius:99px}
+.nav a:hover{background:var(--surface-2);color:var(--ink)}
+.theme-btn{flex:none;width:36px;height:36px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.theme-btn svg{width:18px;height:18px}
+
+/* ---------- hero ---------- */
+.hero{padding:34px 0 8px}
+.hero-card{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:36px;box-shadow:var(--shadow)}
+.hero-card::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,var(--jp) 0 60%,var(--it) 60% 80%,var(--ct) 80%)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:800;letter-spacing:-.045em;margin:12px 0 10px}
+.hero h1 em{font-style:normal;color:var(--jp)}
+.lead{font-size:clamp(17px,2vw,20px);line-height:1.5;color:var(--ink-2);max-width:780px}
+.lead b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;padding:6px 12px;border-radius:99px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line)}
+.chip.count{background:var(--jp-soft);color:var(--jp-ink);border-color:transparent;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px}
+.stat{background:var(--surface-2);border-radius:var(--r-sm);padding:14px 16px}
+.stat b{display:block;font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.stat span{display:block;font-size:13px;color:var(--ink-2);margin-top:4px;line-height:1.35}
+
+/* ---------- sections ---------- */
+section.block{padding:44px 0 6px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;letter-spacing:-.035em}
+.sec-head p{color:var(--ink-2);margin:6px 0 0;max-width:720px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.note{border-radius:var(--r-sm);padding:14px 16px;font-size:14.5px;line-height:1.55}
+.note.warn{background:var(--warn-bg);color:var(--warn-ink)}
+.note.good{background:var(--good-bg);color:var(--good-ink)}
+.note.info{background:var(--surface-2);color:var(--ink-2)}
+.note.bad{background:var(--bad-bg);color:var(--bad-ink)}
+.note b{color:inherit}
+.mt{margin-top:14px}
+.mt-l{margin-top:22px}
+
+/* ---------- verdict cards ---------- */
+.verdicts{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:14px}
+.vcard{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.vcard::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:0 4px 4px 0;background:var(--c)}
+.vcard.jp{--c:var(--jp);--soft:var(--jp-soft);--cink:var(--jp-ink);border-color:color-mix(in srgb,var(--jp) 45%,var(--line))}
+.vcard.ct{--c:var(--ct);--soft:var(--ct-soft);--cink:var(--ct-ink)}
+.vcard.it{--c:var(--it);--soft:var(--it-soft);--cink:var(--it-ink)}
+.vtop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.vcard h3{font-size:26px;font-weight:800;letter-spacing:-.03em}
+.vcard .sub{font-size:13px;color:var(--muted);margin-top:2px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:5px 10px;border-radius:99px;background:var(--soft);color:var(--cink);white-space:nowrap}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.score{display:flex;align-items:baseline;gap:6px}
+.score b{font-size:34px;font-weight:800;letter-spacing:-.04em}
+.score span{font-size:13px;color:var(--muted)}
+.scorebar{height:6px;border-radius:6px;background:var(--surface-3);overflow:hidden}
+.scorebar i{display:block;height:100%;background:var(--c);border-radius:0 4px 4px 0}
+.vlist{display:grid;gap:8px;margin:0;padding:0;list-style:none;font-size:14px}
+.vlist li{display:grid;grid-template-columns:96px 1fr;gap:10px;padding-top:8px;border-top:1px solid var(--line);margin:0}
+.vlist dt,.vlist .k{color:var(--muted);font-size:12.5px;font-weight:600;padding-top:1px}
+.vcard .more{margin-top:auto;font-size:14px;font-weight:600;color:var(--cink);background:none;border:0;padding:6px 0 0;cursor:pointer;text-align:left;font-family:inherit}
+.vcard .more:hover{text-decoration:underline}
+
+/* ---------- checklist ---------- */
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.checklist li{margin:0}
+.check{display:grid;grid-template-columns:26px 150px 1fr auto;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;cursor:pointer}
+.check.urgent{border-color:color-mix(in srgb,var(--jp) 50%,var(--line));background:linear-gradient(90deg,var(--jp-soft),var(--surface) 55%)}
+.check input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ink);cursor:pointer}
+.check .when{font-size:13px;font-weight:700;color:var(--ink-2);line-height:1.35;padding-top:2px}
+.check .what{font-size:14.5px;line-height:1.5}
+.check .tags{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.tag{font-size:11.5px;font-weight:700;padding:3px 8px;border-radius:99px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.tag.jp{background:var(--jp-soft);color:var(--jp-ink)}
+.tag.ct{background:var(--ct-soft);color:var(--ct-ink)}
+.tag.it{background:var(--it-soft);color:var(--it-ink)}
+.check:has(input:checked){opacity:.55}
+.check:has(input:checked) .what{text-decoration:line-through;text-decoration-color:var(--muted)}
+.progress{font-size:13px;color:var(--muted)}
+
+/* ---------- itinerary ---------- */
+.bases{display:grid;grid-template-columns:9fr 3fr;gap:10px;margin-bottom:14px}
+.base{border-radius:var(--r-sm);padding:16px;background:var(--jp-soft);color:var(--ink)}
+.base.b2{background:var(--surface-2)}
+.base h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.base .nights{font-size:13px;font-weight:700;color:var(--jp-ink);text-transform:uppercase;letter-spacing:.08em}
+.base.b2 .nights{color:var(--ink-2)}
+.base p{font-size:14px;color:var(--ink-2);margin:4px 0 0}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 16px;display:grid;gap:8px}
+.day.big{border-color:color-mix(in srgb,var(--jp) 55%,var(--line));box-shadow:inset 4px 0 0 var(--jp)}
+.day-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.day-n{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.day-h h4{font-size:16.5px;font-weight:700;letter-spacing:-.01em}
+.day p{font-size:14px;color:var(--ink-2);margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.m{font-size:12px;font-weight:600;padding:3px 8px;border-radius:8px;background:var(--surface-2);color:var(--ink-2);line-height:1.4}
+.m.ok{background:var(--good-bg);color:var(--good-ink)}
+.m.part{background:var(--warn-bg);color:var(--warn-ink)}
+.m.hard{background:var(--bad-bg);color:var(--bad-ink)}
+.m.book{background:var(--ct-soft);color:var(--ct-ink)}
+.day .cut{font-size:13px;color:var(--muted)}
+.day.depart{background:var(--surface-2);border-style:dashed}
+
+/* ---------- budget chart ---------- */
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:99px;padding:3px;gap:2px}
+.seg button{font:inherit;font-size:14px;font-weight:600;border:0;background:transparent;color:var(--ink-2);padding:7px 14px;border-radius:99px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chart{--lw:132px;position:relative;margin-top:18px}
+.plot{position:relative;padding-top:28px}
+.overlay{position:absolute;left:var(--lw);right:8px;top:0;bottom:26px;pointer-events:none}
+.gl{position:absolute;top:24px;bottom:0;width:0;border-left:1px solid var(--line)}
+.ref{position:absolute;top:0;bottom:0;width:0;border-left:2px dashed var(--ink-2);opacity:.75}
+.ref.solid{border-left-style:solid}
+.ref span{position:absolute;top:0;right:6px;font-size:12px;font-weight:700;color:var(--ink-2);white-space:nowrap;background:var(--surface);padding:0 4px;border-radius:4px}
+.ref.r2 span{right:auto;left:6px}
+.brow{display:grid;grid-template-columns:var(--lw) 1fr;align-items:center;min-height:62px;cursor:default;border-radius:10px;position:relative}
+.brow:hover,.brow:focus-visible{background:var(--surface-2)}
+.blabel{padding:0 12px 0 8px;line-height:1.25}
+.blabel b{display:flex;align-items:center;gap:7px;font-size:15px}
+.blabel b::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c);flex:none}
+.blabel span{display:block;font-size:13px;color:var(--ink-2);margin-top:3px;font-variant-numeric:tabular-nums}
+.btrack{position:relative;height:22px;margin-right:8px}
+.bfill{position:absolute;left:0;top:0;bottom:0;background:var(--c);border-radius:0 4px 4px 0;transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.brange{position:absolute;top:50%;height:0;border-top:2px solid var(--ink);transition:left .45s cubic-bezier(.2,.7,.2,1),width .45s cubic-bezier(.2,.7,.2,1)}
+.brange::before,.brange::after{content:"";position:absolute;top:-7px;width:0;height:12px;border-left:2px solid var(--ink)}
+.brange::before{left:0}.brange::after{right:0}
+.brow.jp{--c:var(--jp)}.brow.ct{--c:var(--ct)}.brow.it{--c:var(--it)}
+.axis{display:grid;grid-template-columns:var(--lw) 1fr;height:26px}
+.axis .ax{position:relative;margin-right:8px}
+.ax span{position:absolute;top:6px;transform:translateX(-50%);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink-2);margin-top:10px}
+.legend i{display:inline-block;vertical-align:middle;margin-right:6px}
+.lg-bar{width:16px;height:10px;border-radius:0 3px 3px 0;background:var(--ink-2)}
+.lg-range{width:18px;height:10px;border-left:2px solid var(--ink);border-right:2px solid var(--ink);background:linear-gradient(var(--ink),var(--ink)) center/100% 2px no-repeat}
+.lg-ref{width:0;height:12px;border-left:2px dashed var(--ink-2)}
+.tip{position:absolute;z-index:5;pointer-events:none;background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;font-size:13px;box-shadow:var(--shadow);min-width:210px;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
+.tip.on{opacity:1;transform:none}
+.tip h5{margin:0 0 6px;font-size:14px;display:flex;align-items:center;gap:7px}
+.tip h5::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c)}
+.tip dl{display:grid;grid-template-columns:auto auto;gap:3px 14px;margin:0}
+.tip dt{color:var(--muted)}
+.tip dd{margin:0;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{font-weight:800;background:var(--surface-2)}
+tr.range td{color:var(--muted);font-size:13px}
+.est{min-width:720px}
+.est td:nth-child(2){font-weight:600}
+.est td:last-child{color:var(--ink-2);font-size:13px;min-width:260px}
+[data-scn="eco"] .est :is(td,th):nth-child(4),
+[data-scn="com"] .est :is(td,th):nth-child(5),
+[data-scn="prem"] .est :is(td,th):nth-child(6){background:var(--hl)}
+.sumtable{min-width:600px}
+.sumtable td:first-child b{display:inline-flex;align-items:center;gap:7px}
+.sumtable td:first-child b::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c)}
+.sumtable tr.jp{--c:var(--jp)}.sumtable tr.ct{--c:var(--ct)}.sumtable tr.it{--c:var(--it)}
+details.acc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);margin-top:10px}
+details.acc>summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700;display:flex;align-items:center;gap:10px}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::before{content:"";width:8px;height:8px;border-right:2px solid var(--ink-2);border-bottom:2px solid var(--ink-2);transform:rotate(-45deg);transition:transform .15s;flex:none;margin-right:2px}
+details.acc[open]>summary::before{transform:rotate(45deg)}
+details.acc>summary .dot{width:10px;height:10px;border-radius:3px;flex:none}
+details.acc>summary .sumr{margin-left:auto;font-weight:600;color:var(--ink-2);font-size:14px;font-variant-numeric:tabular-nums}
+details.acc .acc-body{padding:0 16px 16px}
+details.acc .tablewrap{border-radius:10px}
+.rel{font-size:13px;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px}
+.rel b{font-weight:800;color:var(--ink)}
+
+/* ---------- scores ---------- */
+.scores{min-width:760px}
+.scores td.sc{text-align:center;font-variant-numeric:tabular-nums;width:86px}
+.pill{display:inline-grid;place-items:center;min-width:34px;height:28px;padding:0 8px;border-radius:8px;font-weight:700;background:var(--surface-2)}
+.pill.top{background:var(--ink);color:var(--bg)}
+.scores th.sc{text-align:center}
+.scores th.sc i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px;vertical-align:middle}
+.scores td:last-child{color:var(--ink-2);font-size:13.5px}
+.scores tr.total td{font-size:16px}
+
+/* ---------- tabs ---------- */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button{font:inherit;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.tabs button i{width:10px;height:10px;border-radius:3px}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabpanel[hidden]{display:none}
+.tabpanel>.intro{font-size:17px;color:var(--ink-2);max-width:820px;margin-bottom:16px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fact{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:16px 18px}
+.fact h4{font-size:16.5px;font-weight:700;margin-bottom:8px}
+.fact p,.fact li{font-size:14.5px;color:var(--ink-2)}
+.fact b{color:var(--ink)}
+.fact.wide{grid-column:1/-1}
+.fact .tablewrap{margin-top:10px;border-radius:10px}
+.fact table{font-size:13.5px}
+.subh{font-size:20px;font-weight:800;letter-spacing:-.02em;margin:26px 0 12px}
+.itable{min-width:820px}
+.itable td:first-child{white-space:nowrap;font-weight:700}
+.itable td:nth-child(2){min-width:220px}
+
+/* ---------- risks ---------- */
+.risks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.risks li{margin:0;padding-top:10px;border-top:1px solid var(--line)}
+.risks li:first-child{border-top:0;padding-top:0}
+.risks .r{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.risks .r b{font-size:14.5px;line-height:1.4}
+.risks p{font-size:13.5px;color:var(--ink-2);margin:4px 0 0}
+.sev{flex:none;font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px;white-space:nowrap}
+.sev.crit{background:var(--bad-bg);color:var(--bad-ink)}
+.sev.high{background:var(--warn-bg);color:var(--warn-ink)}
+.sev.mid{background:var(--surface-2);color:var(--ink-2)}
+.sev.low{background:var(--good-bg);color:var(--good-ink)}
+.rcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;border-top:4px solid var(--c)}
+.rcard.jp{--c:var(--jp)}.rcard.ct{--c:var(--ct)}.rcard.it{--c:var(--it)}
+.rcard h3{font-size:19px;font-weight:800;margin-bottom:12px}
+
+/* ---------- sources ---------- */
+.src{columns:3 260px;column-gap:24px;font-size:13.5px}
+.src h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;break-after:avoid}
+.src ul{list-style:none;padding:0;margin:0 0 18px;break-inside:avoid-column}
+.src li{margin:0 0 6px;line-height:1.4}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14.5px;padding:11px 16px;border-radius:99px;text-decoration:none;border:1px solid var(--line-2);color:var(--ink);background:var(--surface)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+footer{padding:40px 0 56px;color:var(--muted);font-size:13px}
+footer .wrap{border-top:1px solid var(--line);padding-top:20px}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .verdicts{grid-template-columns:minmax(0,1fr)}
+  .grid-3{grid-template-columns:minmax(0,1fr)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .hero{padding-top:18px}
+  .hero-card{padding:24px 18px;border-radius:22px}
+  .grid-2,.days,.facts{grid-template-columns:minmax(0,1fr)}
+  .bases{grid-template-columns:minmax(0,1fr)}
+  .check{grid-template-columns:24px 1fr;gap:4px 10px}
+  .check .when{grid-column:2}
+  .check .what{grid-column:2}
+  .check .tags{grid-column:2;justify-content:flex-start}
+  .chart{--lw:104px}
+  .blabel{padding-left:4px;padding-right:8px}
+  .blabel b{font-size:14px}
+  .ref span{font-size:11px}
+  .brand{display:none}
+  .vlist li{grid-template-columns:84px 1fr}
+  .scores{min-width:0}
+  .scores,.scores thead,.scores tbody{display:block}
+  .scores tr{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,62px);align-items:center;border-bottom:1px solid var(--line)}
+  .scores tbody tr:last-child{border-bottom:0}
+  .scores th,.scores td{border-bottom:0}
+  .scores thead th:last-child{display:none}
+  .scores thead tr{background:var(--surface-2)}
+  .scores th.sc{font-size:10px;letter-spacing:.02em;padding:10px 2px;white-space:normal}
+  .scores th.sc i{display:block;margin:0 auto 4px}
+  .scores td.sc{width:auto;padding:10px 2px}
+  .scores td:first-child{font-weight:600}
+  .scores td:last-child{grid-column:1/-1;padding-top:0;font-size:13px}
+  .scores tr.total td:last-child{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{
+  .topbar,.theme-btn,.seg,.tabs{display:none}
+  .tabpanel[hidden]{display:block}
+  body{background:#fff}
+  .vcard,.panel,.fact,.day,.rcard,.hero-card{box-shadow:none}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Весна&nbsp;<span>2027</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#decision">Решение</a>
+      <a href="#todo">Что сделать</a>
+      <a href="#plan">Маршрут</a>
+      <a href="#budget">Бюджет</a>
+      <a href="#compare">Сравнение</a>
+      <a href="#details">Направления</a>
+      <a href="#risks">Риски</a>
+      <a href="#flights">Перелёты</a>
+      <a href="#docs">Визы и деньги</a>
+      <a href="#sources">Источники</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Переключить тему">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<div class="wrap hero">
+  <div class="hero-card">
+    <div class="eyebrow">Семейный проект · весна 2027 · исследование от 4 ноября 2026</div>
+    <h1>Едем в <em>Японию</em>.</h1>
+    <p class="lead"><b>Осака, 27 марта — 8 апреля 2027.</b> Super Nintendo World для старших, сакура для всех и спокойный темп для двухлетнего. Италия — запасной план, Кейптаун переносим на сезон китов.</p>
+    <div class="chips">
+      <span class="chip count" id="countdown" hidden></span>
+      <span class="chip">2 взрослых + дети 10, 8 и 2 года</span>
+      <span class="chip">14 дней с перелётами</span>
+      <span class="chip">Бюджет-ориентир 1–2 млн ₽</span>
+      <span class="chip">Не больше двух баз</span>
+      <span class="chip">Вылет из Москвы (из Сочи — через Москву)</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>≈1,44 млн ₽</b><span>смета «Комфорт» на пятерых, диапазон 1,2–1,8 млн</span></div>
+      <div class="stat"><b>12 ночей</b><span>2 базы: Намба 9 ночей + отель у Universal 3 ночи</span></div>
+      <div class="stat"><b>6–7 апреля</b><span>два дня в Universal Studios Japan, Express на первый</span></div>
+      <div class="stat"><b>~95%</b><span>шанс уложиться в 2 млн ₽ (в 1,5 млн — около 55%)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DECISION ============ -->
+<section class="block" id="decision">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Решение за одну минуту</div>
+        <h2>Япония выигрывает, и это не натяжка</h2>
+        <p>Оценивали 12 критериев по шкале 1–10. Варианты не уравнивали: Япония впереди на 12 баллов, Италия и Кейптаун почти вровень, но по разным причинам.</p>
+      </div>
+    </div>
+    <div class="verdicts">
+      <article class="vcard jp">
+        <div class="vtop">
+          <div><h3>Япония</h3><div class="sub">Осака + Киото и Нара на день</div></div>
+          <span class="badge">Рекомендуется</span>
+        </div>
+        <div><div class="score"><b>94</b><span>из 120</span></div><div class="scorebar"><i style="width:78.3%"></i></div></div>
+        <ul class="vlist">
+          <li><span class="k">«Комфорт»</span><span><b>≈1,44 млн ₽</b> (1,2–1,8)</span></li>
+          <li><span class="k">Дорога</span><span>13–16 ч через Пекин или Шанхай, +6 ч к Москве</span></li>
+          <li><span class="k">Виза</span><span>нужна, бесплатная: 970 ₽ сбора с человека, от 4 рабочих дней</span></li>
+          <li><span class="k">Главный плюс</span><span>Super Nintendo World (Mario Kart, Donkey Kong) + сакура</span></li>
+          <li><span class="k">Главный риск</span><span>джетлаг у двухлетнего, пиковые цены, динамические билеты USJ</span></li>
+        </ul>
+        <button class="more" type="button" data-open-tab="jp">Подробно о Японии →</button>
+      </article>
+      <article class="vcard it">
+        <div class="vtop">
+          <div><h3>Италия</h3><div class="sub">Гарда, Gardaland, Верона, Венеция</div></div>
+          <span class="badge">Запасной план</span>
+        </div>
+        <div><div class="score"><b>82</b><span>из 120</span></div><div class="scorebar"><i style="width:68.3%"></i></div></div>
+        <ul class="vlist">
+          <li><span class="k">«Комфорт»</span><span><b>≈1,32 млн ₽</b> (1,1–1,6)</span></li>
+          <li><span class="k">Дорога</span><span>9–11 ч с одной пересадкой, −1 ч</span></li>
+          <li><span class="k">Виза</span><span>шенгенская, ждут до 80–100 дней — <b>подавать до середины декабря</b></span></li>
+          <li><span class="k">Главный плюс</span><span>самый лёгкий перелёт, одна база, нет джетлага</span></li>
+          <li><span class="k">Главный риск</span><span>не успеть с визой; 16–18 °C и дожди; календарь Gardaland 2027 не опубликован</span></li>
+        </ul>
+        <button class="more" type="button" data-open-tab="it">Подробно об Италии →</button>
+      </article>
+      <article class="vcard ct">
+        <div class="vtop">
+          <div><h3>Кейптаун</h3><div class="sub">Пингвины, мыс, Столовая гора</div></div>
+          <span class="badge">Не в этот раз</span>
+        </div>
+        <div><div class="score"><b>80</b><span>из 120</span></div><div class="scorebar"><i style="width:66.7%"></i></div></div>
+        <ul class="vlist">
+          <li><span class="k">«Комфорт»</span><span><b>≈1,67 млн ₽</b> (1,35–2,1)</span></li>
+          <li><span class="k">Дорога</span><span>17–20 ч, чаще через хабы Персидского залива, −1 ч</span></li>
+          <li><span class="k">Виза</span><span>не нужна, но свидетельства о рождении — с нотариальным переводом</span></li>
+          <li><span class="k">Главный плюс</span><span>лучшая погода (22–23 °C), две колонии пингвинов, мыс Доброй Надежды</span></li>
+          <li><span class="k">Главный риск</span><span>в апреле нет китов; залог за машину только по зарубежной кредитке; дорога N2 у аэропорта</span></li>
+        </ul>
+        <button class="more" type="button" data-open-tab="ct">Подробно о Кейптауне →</button>
+      </article>
+    </div>
+    <div class="grid-2 mt">
+      <div class="note info"><b>Когда выбирать Италию.</b> Только если 13–16 часов перелёта и сдвиг на 6 часов с двухлетним для семьи неприемлемы. И даже тогда — только если документы на шенгенскую визу будут поданы до середины декабря 2026 года.</div>
+      <div class="note warn"><b>Кейптаун без китов.</b> В Hermanus южные гладкие киты бывают с июня по начало декабря, пик — август–октябрь. В апреле их нет. Если киты — часть мечты, ЮАР стоит перенести на середину августа — октябрь.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TODO ============ -->
+<section class="block" id="todo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Сроки</div>
+        <h2>Что сделать и когда</h2>
+        <p>Отмечайте выполненное — галочки сохраняются в этом браузере. Пункты с меткой направления нужны только при его выборе.</p>
+      </div>
+      <div class="progress" id="progress" aria-live="polite"></div>
+    </div>
+    <ul class="checklist" id="checklist">
+      <li><label class="check urgent"><input type="checkbox" data-id="c1"><span class="when">Сейчас, до 15.11.2026</span><span class="what">Выбрать направление. Проверить срок действия загранпаспортов всех пятерых — у двухлетнего паспорт обязателен.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="c2"><span class="when">Сейчас, до 15.11.2026</span><span class="what">Открыть две зарубежные карты разных банков (например, mBank или Bakai Bank удалённо). Для ЮАР — кредитную карту на имя водителя или прокат с залогом наличными.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="c3"><span class="when">Ноябрь — первая половина декабря 2026</span><span class="what">Записаться и подать документы на шенгенскую визу: VMS в Москве или AlmavivA в Краснодаре / Ростове, лично, со страховкой от €30&nbsp;000.</span><span class="tags"><span class="tag it">Италия</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c4"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Купить авиабилеты единым бронированием. Забронировать жильё с бесплатной отменой: семейных номеров в Японии мало, на Пасху в Италии и ЮАР всё дорожает.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c5"><span class="when">Сразу после покупки билетов</span><span class="what">Купить страховку с опцией отмены поездки (не позже чем за 15 дней до вылета). Для Италии — с покрытием отказа или задержки визы.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c6"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Оформить международное водительское удостоверение; сделать нотариальные переводы свидетельств о рождении на английский.</span><span class="tags"><span class="tag ct">ЮАР</span><span class="tag it">Италия</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c7"><span class="when">Середина — конец декабря 2026</span><span class="what">Первый прогноз сакуры от Japan Meteorological Corporation. При необходимости сдвинуть даты на 2–3 дня, пока брони бесплатно отменяются.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c8"><span class="when">До 31.12.2026</span><span class="what">Выйдут льготы и процедура сбора за вход в Венецию на 2027 год; Marine Dynamics обновит тарифы; проверить, введены ли ограничения на воду в Кейптауне.</span><span class="tags"><span class="tag it">Италия</span><span class="tag ct">ЮАР</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c9"><span class="when">Начало января 2027</span><span class="what">Прогноз сакуры Weathernews. Ожидается календарь Gardaland 2027 — проверять до февраля.</span><span class="tags"><span class="tag jp">Япония</span><span class="tag it">Италия</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="c10"><span class="when">Конец января 2027</span><span class="what"><b>Открытие продаж USJ на наши даты:</b> купить Studio Pass 2-Day и Express Pass с гарантированным входом в Super Nintendo World в день открытия. Установить приложение USJ, привязать билеты всех пятерых. Прогноз сакуры tenki.jp.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c11"><span class="when">Январь — февраль 2027</span><span class="what">Подать документы на японскую визу в визовый центр JVAC в Москве (минимум 4 рабочих дня, лучше за несколько недель до поездки). Нужны свидетельства о браке и о рождении детей.</span><span class="tags"><span class="tag jp">Япония</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c12"><span class="when">Январь 2027</span><span class="what">Забронировать кемпинг или апартаменты на Гарде, пока действуют скидки за раннее бронирование.</span><span class="tags"><span class="tag it">Италия</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c13"><span class="when">Март 2027</span><span class="what">Проверить даты открытия Movieland и Monte Baldo, весеннее расписание паромов; купить поезда в Венецию на будний день.</span><span class="tags"><span class="tag it">Италия</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c14"><span class="when">Март 2027</span><span class="what">Заполнить Visit Japan Web (и таможенную декларацию, если везёте больше ¥1&nbsp;000&nbsp;000 наличными). Для ЮАР — онлайн-декларацию SATMS.</span><span class="tags"><span class="tag jp">Япония</span><span class="tag ct">ЮАР</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c15"><span class="when">За 1–2 недели до вылета</span><span class="what">Проверить статус воздушного пространства над Заливом и стыковки; купить онлайн билеты на Столовую гору и в Kirstenbosch.</span><span class="tags"><span class="tag ct">ЮАР</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="c16"><span class="when">До покупки невозвратного</span><span class="what">Проверить на Госуслугах отсутствие ограничений на выезд у обоих взрослых (в исследовании не изучалось).</span><span class="tags"><span class="tag">все</span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PLAN ============ -->
+<section class="block" id="plan">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Рекомендуемый маршрут</div>
+        <h2>Япония: 12 дней, один большой день — потом лёгкий</h2>
+        <p>Вылет из Москвы вечером 26 марта (Air China через Пекин или China Eastern через Шанхай, единым билетом), обратно 8 апреля. Из Сочи — прилететь в Москву накануне отдельным билетом с ночёвкой. Universal стоит в конце, когда пройдёт джетлаг и закончатся японские каникулы.</p>
+      </div>
+    </div>
+    <div class="bases">
+      <div class="base"><div class="nights">9 ночей · 27.03 — 05.04</div><h4>Осака, Намба или Синсайбаси</h4><p>Апарт-отель с двумя спальнями, кухней и стиральной машиной (MIMARU или аналог). Отсюда — Киото дважды, Нара, аквариум, сакура в Осаке и дни отдыха.</p></div>
+      <div class="base b2"><div class="nights">3 ночи · 05.04 — 08.04</div><h4>Отель у Universal</h4><p>Семейный номер на пятерых: Kintetsu Corner Family Room, Liber или Universal Port. Днём можно вернуться уложить малыша.</p></div>
+    </div>
+    <div class="days">
+      <div class="day"><div class="day-h"><span class="day-n">День 1 · сб 27.03</span><h4>Прилёт и заселение</h4></div><p>Прилёт в Кансай, трансфер, апартаменты в Намбе, ужин рядом. Никаких планов — главное сон.</p><div class="meta"><span class="m">перелёт 13–16 ч + трансфер</span><span class="m">≈15 тыс. ₽</span><span class="m ok">✓ малышу: да</span><span class="m book">бронь: апартаменты</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 2 · вс 28.03</span><h4>Адаптация у замка Осаки</h4></div><p>Парк у замка (сакура, если зацвела), детская площадка, возвращение к дневному сну.</p><div class="meta"><span class="m">20–30 мин на метро</span><span class="m">≈15 тыс. ₽</span><span class="m ok">✓ малышу: да</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 3 · пн 29.03</span><h4>Аквариум Kaiyukan</h4></div><p>Пологий спиральный спуск — идеально с коляской. Потом набережная Тэмподзан, вечер дома.</p><div class="meta"><span class="m">~30 мин</span><span class="m">≈22 тыс. ₽</span><span class="m ok">✓ малышу: идеально</span><span class="m book">онлайн-билет на дату</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 4 · вт 30.03</span><h4>Киото, день 1: поезда и сакура</h4></div><p>Kyoto Railway Museum — хит для 8- и 10-летнего, затем прогулка под сакурой.</p><div class="meta"><span class="m">50–60 мин (JR или Keihan)</span><span class="m">≈20 тыс. ₽</span><span class="m ok">✓ малышу: с коляской</span></div><div class="cut">Сократить: только музей.</div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 5 · ср 31.03</span><h4>Свободный день</h4></div><p>Намба, прачечная, детские площадки.</p><div class="meta"><span class="m">≈15 тыс. ₽</span><span class="m ok">✓ малышу: да</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 6 · чт 01.04</span><h4>Нара: олени</h4></div><p>Олени в парке бесплатны и нравятся всем возрастам. Храмы — по силам.</p><div class="meta"><span class="m">Kintetsu от Намбы</span><span class="m">≈18 тыс. ₽</span><span class="m ok">✓ малышу: да</span></div><div class="cut">Сократить: только парк, без храмов.</div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 7 · пт 02.04</span><h4>Киото, день 2: Fushimi Inari</h4></div><p>Рано утром — нижняя часть Fushimi Inari, затем Гион. Лестницы: малыш в эргорюкзаке.</p><div class="meta"><span class="m">50–60 мин</span><span class="m">≈20 тыс. ₽</span><span class="m part">~ малышу: частично</span></div><div class="cut">Сократить: только Fushimi Inari, вернуться к обеду.</div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 8 · сб 03.04</span><h4>Отдых</h4></div><p>В выходные в Киото толпы. По желанию — LEGOLAND Discovery для младших.</p><div class="meta"><span class="m">≈18 тыс. ₽</span><span class="m ok">✓ малышу: да</span><span class="m book">LEGOLAND — онлайн на время</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 9 · вс 04.04</span><h4>Сакура в Осаке, сборы</h4></div><p>По норме полное цветение в Осаке — около 4 апреля. Лёгкий день.</p><div class="meta"><span class="m">20–30 мин</span><span class="m">≈15 тыс. ₽</span><span class="m ok">✓ малышу: да</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">День 10 · пн 05.04</span><h4>Переезд к Universal</h4></div><p>Такси-van (обычное такси берёт только четверых), вечером — Universal CityWalk.</p><div class="meta"><span class="m">≤1 ч</span><span class="m">≈17 тыс. ₽</span><span class="m ok">✓ малышу: да</span><span class="m book">семейный номер у USJ</span></div></div>
+      <div class="day big"><div class="day-h"><span class="day-n">День 11 · вт 06.04</span><h4>Universal, день 1 — с Express</h4></div><p>Mario Kart, Mine-Cart Madness, Yoshi в первые часы. Малыш — в Universal Wonderland, родители катаются по очереди (Child Switch). Днём сон в номере.</p><div class="meta"><span class="m">пешком</span><span class="m">≈78 тыс. ₽</span><span class="m part">~ малышу: Wonderland, Yoshi от 92 см</span><span class="m book">2-Day + Express — в день открытия продаж</span></div></div>
+      <div class="day big"><div class="day-h"><span class="day-n">День 12 · ср 07.04</span><h4>Universal, день 2 — без Express</h4></div><p>Гарри Поттер, Миньоны, повторные катания. Уйти пораньше, сборы.</p><div class="meta"><span class="m">пешком</span><span class="m">≈35 тыс. ₽</span><span class="m part">~ малышу: частично</span><span class="m book">входит в 2-Day</span></div><div class="cut">Сократить: ограничиться полднём.</div></div>
+      <div class="day depart"><div class="day-h"><span class="day-n">Чт 08.04</span><h4>Вылет домой</h4></div><p>Трансфер в Кансай, перелёт в Москву.</p></div>
+      <div class="day depart"><div class="day-h"><span class="day-n">Если что-то пошло не так</span><h4>Запасные варианты</h4></div><p>Дождь — Kaiyukan, NIFREL, LEGOLAND Discovery, Railway Museum, ТЦ с детскими этажами. Устали — первым убираем второй Киото, потом Нару. Ранняя сакура (как в 2023-м) — Киото сдвигаем на 29–31 марта. Дату Express поменять нельзя: второй день USJ страхует первый.</p></div>
+    </div>
+    <div class="grid-2 mt">
+      <div class="note info"><b>Токио — только при open-jaw без доплаты.</b> Переезд Осака — Токио стоит ≈¥55–60 тыс. и полдня пути, а при возврате к вылету — вдвое больше. Вариант: Токио 4 ночи (27–31.03, ранняя сакура, Disney) + Осака 8 ночей. Смета уходит к «Повышенному» — выбирать, только если Disney важнее спокойного темпа.</div>
+      <div class="note good"><b>Сакура почти гарантирована.</b> По нормам 1991–2020 полное цветение в Осаке и Киото — около 4 апреля, в Токио — около 31 марта. В 2023–2026 годах полное цветение в Кансае было между 24 марта и 6 апреля. Окно 27.03–08.04 его ловит; середина апреля — уже после пика.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUDGET ============ -->
+<section class="block" id="budget" data-scn="com">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Финансы</div>
+        <h2>Сколько стоит поездка на пятерых</h2>
+        <p>Все суммы — в рублях, с перелётами, жильём на 12 ночей, едой, транспортом, билетами, страховками и резервом ~10%. Подтверждённых цен на 2027 год почти нет: это оценки по ценам 2026 года с погрешностью ±20–30%.</p>
+      </div>
+      <div class="seg" role="group" aria-label="Сценарий бюджета">
+        <button type="button" data-scn="eco" aria-pressed="false">Эконом</button>
+        <button type="button" data-scn="com" aria-pressed="true">Комфорт</button>
+        <button type="button" data-scn="prem" aria-pressed="false">Повышенный</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="small muted" id="chartTitle">Итог сценария «Комфорт», млн ₽ · полоса — оценка, усы — диапазон погрешности</div>
+      <div class="chart" id="chart">
+        <div class="plot">
+          <div class="overlay" id="overlay"></div>
+          <div class="brow jp" tabindex="0" data-d="jp"><div class="blabel"><b>Япония</b><span data-v></span></div><div class="btrack"><div class="bfill"></div><div class="brange"></div></div></div>
+          <div class="brow it" tabindex="0" data-d="it"><div class="blabel"><b>Италия</b><span data-v></span></div><div class="btrack"><div class="bfill"></div><div class="brange"></div></div></div>
+          <div class="brow ct" tabindex="0" data-d="ct"><div class="blabel"><b>Кейптаун</b><span data-v></span></div><div class="btrack"><div class="bfill"></div><div class="brange"></div></div></div>
+          <div class="axis" aria-hidden="true"><div></div><div id="axis" class="ax"></div></div>
+        </div>
+        <div class="tip" id="tip" role="status"></div>
+      </div>
+      <div class="legend"><span><i class="lg-bar"></i>оценка итога</span><span><i class="lg-range"></i>диапазон погрешности</span><span><i class="lg-ref"></i>1,5 млн — комфортная цель; 2 млн — верх бюджета</span></div>
+    </div>
+
+    <div class="tablewrap mt">
+      <table class="sumtable">
+        <caption class="sr-only">Итоги выбранного сценария</caption>
+        <thead><tr><th>Направление</th><th class="num">Итого</th><th class="num">Диапазон</th><th class="num">На человека</th><th class="num">День семьи</th><th class="num">Шанс ≤ 1,5 млн</th><th class="num">Шанс ≤ 2 млн</th></tr></thead>
+        <tbody id="sumBody"></tbody>
+      </table>
+    </div>
+    <p class="small muted mt">Стоимость дня — итог, делённый на 14 дней поездки. Шансы — экспертная оценка по диапазонам, не статистика.</p>
+
+    <div class="grid-2 mt-l">
+      <div class="note info"><b>Цена «полезного» дня.</b> Разница Япония — Италия в «Комфорте» всего ~0,12 млн ₽ (9%) — меньше погрешности смет. Но если вычесть дни на джетлаг и дорогу, день в Италии стоит ≈110 тыс. ₽ (12 полных дней), а в Японии и Кейптауне ≈150 тыс. ₽ (~9,5 и ~11 дней).</div>
+      <div class="note info"><b>Чувствительность к курсу.</b> По текущему курсу ЦБ без надбавки итоги на 8–9% ниже (Япония «Комфорт» ≈1,32 млн). При 100 ₽/$ «Комфорт» дорожает на 5–6%: Япония ≈1,52, Италия ≈1,41, Кейптаун ≈1,77 млн. Укрепление иены до 140–145 за $ — ещё +8–12% к иеновым статьям.</div>
+    </div>
+
+    <h3 class="subh">Курсы, по которым считали</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Валюта</th><th class="num">Курс ЦБ РФ</th><th class="num">Плановый</th><th class="num">Эффективный в смете</th></tr></thead>
+        <tbody>
+          <tr><td>USD</td><td class="num">81,67 ₽</td><td class="num">90 ₽</td><td class="num">≈95 ₽</td></tr>
+          <tr><td>EUR</td><td class="num">91,60 ₽</td><td class="num">101 ₽</td><td class="num">≈107 ₽</td></tr>
+          <tr><td>JPY, за ¥100</td><td class="num">51,76 ₽</td><td class="num">57 ₽</td><td class="num">≈61 ₽</td></tr>
+          <tr><td>ZAR, за R10</td><td class="num">48,40 ₽*</td><td class="num">54 ₽</td><td class="num">≈58 ₽</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted mt">Курс ЦБ установлен 03.11.2026 и действует 04–05.11.2026; *рэнд — на 02.11.2026, единственный источник. Плановый курс — запас ~10% к текущему (прогнозы на 2027: Минэкономразвития 87,4 ₽/$, макроопрос ЦБ 86,6, «Синара» 85). Эффективный — плюс 5–8% за оплату через зарубежные карты или покупку наличных. Авиабилеты, визы и страховки покупаются в рублях и не пересчитывались.</p>
+
+    <h3 class="subh">Детальные сметы по 10 статьям, тыс. ₽</h3>
+    <div class="rel"><span><b>П</b> — подтверждено на 2027 год</span><span><b>О26</b> — ориентир 2026 года</span><span><b>Оц</b> — оценка исследователей</span><span>Подсвечен выбранный сценарий</span></div>
+
+    <details class="acc" open>
+      <summary><span class="dot" style="background:var(--jp)"></span>Япония — Осака 12 ночей («Повышенный»: Осака 8 + Токио 4)<span class="sumr">887 / 1&nbsp;437 / 2&nbsp;403</span></summary>
+      <div class="acc-body"><div class="tablewrap"><table class="est">
+        <thead><tr><th>№</th><th>Статья</th><th>Валюта</th><th class="num">Эконом</th><th class="num">Комфорт</th><th class="num">Повышенный</th><th>Надёжность и допущения</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Авиабилеты, 5 мест туда-обратно</td><td>₽</td><td class="num">330</td><td class="num">450</td><td class="num">650</td><td>Оц на базе О26 (вне сезона — от 45–49 тыс. ₽ за взрослого); пик сакуры и японских каникул</td></tr>
+          <tr><td>2</td><td>Багаж и сборы</td><td>₽ / ¥</td><td class="num">10</td><td class="num">25</td><td class="num">60</td><td>Оц: багаж у китайских перевозчиков обычно в тарифе; налог на выезд ¥3&nbsp;000 — обычно в билете; в «Повышенном» — ночь-стоповер в Китае</td></tr>
+          <tr><td>3</td><td>Проживание, 12 ночей</td><td>¥</td><td class="num">245</td><td class="num">410</td><td class="num">750</td><td>Оц: ¥32&nbsp;500 / ¥55&nbsp;000 / ¥100&nbsp;000 за ночь на пятерых + налог Осаки ¥200–500 с человека за ночь; наблюдённых цен на 5 гостей нет</td></tr>
+          <tr><td>4</td><td>Питание</td><td>¥</td><td class="num">105</td><td class="num">175</td><td class="num">315</td><td>О26 в USJ (основное блюдо ¥2&nbsp;400); обычные дни — Оц низкой надёжности: ¥12&nbsp;500 / ¥23&nbsp;000 / ¥45&nbsp;000 в день</td></tr>
+          <tr><td>5</td><td>Местный транспорт</td><td>¥</td><td class="num">35</td><td class="num">60</td><td class="num">110</td><td>О26 (JR до Киото ¥580) + Оц; в «Повышенном» — синкансэн ≈¥44&nbsp;000 и пересылка багажа</td></tr>
+          <tr><td>6</td><td>Топливо, парковки, платные дороги</td><td>—</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>Машина не нужна</td></tr>
+          <tr><td>7</td><td>Основные достопримечательности</td><td>¥</td><td class="num">12</td><td class="num">18</td><td class="num">21</td><td>О26 (Kaiyukan, Railway Museum); храмы — Оц</td></tr>
+          <tr><td>8</td><td>Развлечения для детей</td><td>¥</td><td class="num">40</td><td class="num">82</td><td class="num">175</td><td>О26: USJ 2-Day ≈¥62&nbsp;000 на семью; в «Комфорте» + Express 4 на один день на 4 человек ≈¥70&nbsp;000; в «Повышенном» — Express 7 + 4, Tokyo Disney, teamLab</td></tr>
+          <tr><td>9</td><td>Страховки и визы</td><td>₽</td><td class="num">20</td><td class="num">67</td><td class="num">82</td><td>Визовый сбор 970 ₽ с человека; медицинский полис 12–25 тыс.; отмена поездки 20–40 тыс. (Оц)</td></tr>
+          <tr><td>10</td><td>Прочее и резерв (~10%)</td><td>₽</td><td class="num">90</td><td class="num">150</td><td class="num">240</td><td>eSIM, подгузники, сувениры, рост цен 2027 года</td></tr>
+          <tr class="total"><td></td><td>Итого</td><td></td><td class="num">≈887</td><td class="num">≈1&nbsp;437</td><td class="num">≈2&nbsp;403</td><td></td></tr>
+          <tr class="range"><td></td><td>Диапазон погрешности</td><td></td><td class="num">750–1&nbsp;150</td><td class="num">1&nbsp;200–1&nbsp;800</td><td class="num">1&nbsp;900–3&nbsp;000</td><td></td></tr>
+        </tbody>
+      </table></div></div>
+    </details>
+
+    <details class="acc">
+      <summary><span class="dot" style="background:var(--it)"></span>Италия — Пескьера 12 ночей, даты 2–14 апреля<span class="sumr">813 / 1&nbsp;319 / 1&nbsp;960</span></summary>
+      <div class="acc-body"><div class="tablewrap"><table class="est">
+        <thead><tr><th>№</th><th>Статья</th><th>Валюта</th><th class="num">Эконом</th><th class="num">Комфорт</th><th class="num">Повышенный</th><th>Надёжность и допущения</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Авиабилеты, 5 мест туда-обратно</td><td>₽</td><td class="num">200</td><td class="num">300</td><td class="num">420</td><td>Оц на базе О26 (Венеция — от 31,6 тыс. ₽ за взрослого); даты после Пасхи</td></tr>
+          <tr><td>2</td><td>Багаж и сборы</td><td>₽</td><td class="num">30</td><td class="num">20</td><td class="num">30</td><td>Оц: на тарифе Turkish EcoFly и у лоукостеров багаж в Европу не включён</td></tr>
+          <tr><td>3</td><td>Проживание, 12 ночей</td><td>€</td><td class="num">139</td><td class="num">219</td><td class="num">417</td><td>Оц: €1&nbsp;300 / €2&nbsp;050 / €3&nbsp;900 (мобильный дом / апартаменты / отель 4★) с туристическим налогом и уборкой</td></tr>
+          <tr><td>4</td><td>Питание</td><td>€</td><td class="num">152</td><td class="num">243</td><td class="num">375</td><td>Оц на базе О26: €105 / €175 / €270 в день плюс два дня в Gardaland</td></tr>
+          <tr><td>5</td><td>Транспорт и аренда машины</td><td>€</td><td class="num">91</td><td class="num">188</td><td class="num">230</td><td>«Эконом»: поезда, паромы, машина на 4 дня; «Комфорт» и выше: 7-местная машина на 12 дней с автокреслами и системой против забывания</td></tr>
+          <tr><td>6</td><td>Топливо, парковки, платные дороги</td><td>€</td><td class="num">13</td><td class="num">36</td><td class="num">43</td><td>О26: бензин €2,02 за литр; пробег, парковки и платные дороги — Оц</td></tr>
+          <tr><td>7</td><td>Основные достопримечательности</td><td>€</td><td class="num">26</td><td class="num">38</td><td class="num">70</td><td>О26: Sigurtà, Natura Viva, Сирмионе, Верона; Monte Baldo — €30</td></tr>
+          <tr><td>8</td><td>Развлечения для детей</td><td>€</td><td class="num">32</td><td class="num">63</td><td class="num">95</td><td>О26: Gardaland 2 дня + SEA LIFE ≈€236–295; в «Комфорте» + Movieland и Aquardens; в «Повышенном» + Express</td></tr>
+          <tr><td>9</td><td>Страховки и визы</td><td>₽ / €</td><td class="num">55</td><td class="num">92</td><td class="num">110</td><td>Консульский сбор €270 на семью + сервисный 2&nbsp;500–3&nbsp;850 ₽ с человека; полис от €30&nbsp;000; отмена поездки; поездка в визовый центр не учтена</td></tr>
+          <tr><td>10</td><td>Прочее и резерв</td><td>₽</td><td class="num">75</td><td class="num">120</td><td class="num">170</td><td></td></tr>
+          <tr class="total"><td></td><td>Итого</td><td></td><td class="num">≈813</td><td class="num">≈1&nbsp;319</td><td class="num">≈1&nbsp;960</td><td></td></tr>
+          <tr class="range"><td></td><td>Диапазон погрешности</td><td></td><td class="num">700–1&nbsp;000</td><td class="num">1&nbsp;100–1&nbsp;600</td><td class="num">1&nbsp;650–2&nbsp;400</td><td></td></tr>
+        </tbody>
+      </table></div></div>
+    </details>
+
+    <details class="acc">
+      <summary><span class="dot" style="background:var(--ct)"></span>Кейптаун — Си-Пойнт 9 ночей + Херманус 3, даты после 5 апреля<span class="sumr">1&nbsp;007 / 1&nbsp;673 / 2&nbsp;885</span></summary>
+      <div class="acc-body"><div class="tablewrap"><table class="est">
+        <thead><tr><th>№</th><th>Статья</th><th>Валюта</th><th class="num">Эконом</th><th class="num">Комфорт</th><th class="num">Повышенный</th><th>Надёжность и допущения</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Авиабилеты, 5 мест туда-обратно</td><td>₽</td><td class="num">400</td><td class="num">550</td><td class="num">800</td><td>Оц на базе О26 (от 62 тыс. ₽ за взрослого у Qatar, от 128 тыс. у Emirates; на январь 2027 — от 181 тыс.)</td></tr>
+          <tr><td>2</td><td>Багаж и сборы</td><td>₽</td><td class="num">10</td><td class="num">20</td><td class="num">40</td><td>Оц; у перевозчиков из стран Залива багаж обычно включён</td></tr>
+          <tr><td>3</td><td>Проживание, 12 ночей</td><td>R</td><td class="num">197</td><td class="num">336</td><td class="num">696</td><td>Оц по объявлениям О26: R34&nbsp;000 / R58&nbsp;000 / R120&nbsp;000 за 12 ночей; без пасхальной надбавки (+15–30%)</td></tr>
+          <tr><td>4</td><td>Питание</td><td>R</td><td class="num">104</td><td class="num">209</td><td class="num">383</td><td>Оц на базе О26: R1&nbsp;500 / R3&nbsp;000 / R5&nbsp;500 в день</td></tr>
+          <tr><td>5</td><td>Аренда машины (7 мест, 12 дней)</td><td>R / $</td><td class="num">93</td><td class="num">136</td><td class="num">203</td><td>О26 (Kayak, $47–107 в день) + нулевая франшиза и автокресла — Оц</td></tr>
+          <tr><td>6</td><td>Топливо, парковки, платные дороги</td><td>R</td><td class="num">32</td><td class="num">35</td><td class="num">41</td><td>О26: бензин R29,38 за литр, Chapman's Peak R68; пробег 1&nbsp;200–1&nbsp;600 км — Оц</td></tr>
+          <tr><td>7</td><td>Основные достопримечательности</td><td>R</td><td class="num">44</td><td class="num">44</td><td class="num">44</td><td>П: тарифы SANParks 2026/27; О26: канатка, Kirstenbosch, аквариум, круиз к тюленям</td></tr>
+          <tr><td>8</td><td>Развлечения и экскурсии</td><td>R</td><td class="num">12</td><td class="num">128</td><td class="num">348</td><td>О26: в «Комфорте» — круиз Marine Dynamics ≈R8&nbsp;900 и сафари в Aquila ≈R15&nbsp;000; в «Повышенном» — 2 ночи в резервате (Оц)</td></tr>
+          <tr><td>9</td><td>Страховки и визы</td><td>₽</td><td class="num">20</td><td class="num">55</td><td class="num">70</td><td>Виза не нужна; медицинский полис, отмена поездки, нотариальные переводы (Оц)</td></tr>
+          <tr><td>10</td><td>Прочее и резерв</td><td>₽</td><td class="num">95</td><td class="num">160</td><td class="num">260</td><td>SIM-карта, чаевые, парковщики, резерв</td></tr>
+          <tr class="total"><td></td><td>Итого</td><td></td><td class="num">≈1&nbsp;007</td><td class="num">≈1&nbsp;673</td><td class="num">≈2&nbsp;885</td><td></td></tr>
+          <tr class="range"><td></td><td>Диапазон погрешности</td><td></td><td class="num">850–1&nbsp;350</td><td class="num">1&nbsp;350–2&nbsp;100</td><td class="num">2&nbsp;300–3&nbsp;600</td><td></td></tr>
+        </tbody>
+      </table></div></div>
+    </details>
+
+    <h3 class="subh">Что может заметно подорожать</h3>
+    <div class="grid-3">
+      <div class="fact"><h4 style="color:var(--jp-ink)">Япония</h4><ul><li><b>Жильё:</b> семейных номеров мало; в марте 2026 средняя цена номера в Киото выросла на 18,6%.</li><li><b>USJ и Express:</b> цену даты можно поднять после старта продаж, Express распродаётся.</li><li><b>Авиабилеты</b> в пик сакуры: верхняя оценка — 0,9 млн ₽ на семью.</li></ul></div>
+      <div class="fact"><h4 style="color:var(--it-ink)">Италия</h4><ul><li><b>Пасхальная неделя:</b> жильё +20–40%, авиабилеты тоже.</li><li><b>Семиместные машины</b> редки; курс евро нестабилен.</li><li>Не учтены поездка в визовый центр (Краснодар или Ростов) и сбор за вход в Венецию, если попасть на выходные.</li></ul></div>
+      <div class="fact"><h4 style="color:var(--ct-ink)">Кейптаун</h4><ul><li><b>Авиабилеты:</b> на январь 2027 — от 181 тыс. ₽ за взрослого; сбои через Залив сокращают предложение.</li><li><b>Жильё</b> в каникулы и Пасху +15–30%.</li><li>Аренда у мелкого проката, если залог по кредитке невозможен; тарифы экскурсий 2027 не опубликованы; рекордные цены на топливо.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARE ============ -->
+<section class="block" id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Сравнительная оценка</div>
+        <h2>12 критериев, шкала 1–10</h2>
+        <p>Все критерии с равным весом, поэтому сумма — ориентир, а не приговор. Лучшая оценка в строке выделена.</p>
+      </div>
+    </div>
+    <div class="tablewrap">
+      <table class="scores">
+        <thead><tr><th>Критерий</th><th class="sc"><i style="background:var(--jp)"></i>Япония</th><th class="sc"><i style="background:var(--ct)"></i>Кейптаун</th><th class="sc"><i style="background:var(--it)"></i>Италия</th><th>Почему так</th></tr></thead>
+        <tbody>
+          <tr><td>Интерес для 10-летнего</td><td class="sc"><span class="pill top">10</span></td><td class="sc"><span class="pill">7</span></td><td class="sc"><span class="pill">7</span></td><td>SNW с Mario Kart и Donkey Kong — вершина для этого возраста; в Gardaland горки от 140 см — на грани роста; в ЮАР пингвины и сафари без «парковой» кульминации</td></tr>
+          <tr><td>Интерес для 8-летнего</td><td class="sc"><span class="pill top">10</span></td><td class="sc"><span class="pill">7</span></td><td class="sc"><span class="pill">6</span></td><td>При росте ~125–130 см проходит на всё в SNW; в Gardaland горки на 140 см закрыты, остаются Shaman и Mammut</td></tr>
+          <tr><td>Интерес для 2-летнего</td><td class="sc"><span class="pill">6</span></td><td class="sc"><span class="pill top">8</span></td><td class="sc"><span class="pill">6</span></td><td>ЮАР: пингвины на мостках, пляжи False Bay, Aquila без возрастного ценза; Япония: Wonderland, Kaiyukan, олени, но толпы; Италия: Peppa Pig Land мала, зато Natura Viva и паромы</td></tr>
+          <tr><td>Интерес для взрослых</td><td class="sc"><span class="pill top">9</span></td><td class="sc"><span class="pill top">9</span></td><td class="sc"><span class="pill">8</span></td><td>Киото и сакура против мыса Доброй Надежды и виноделен; в Италии Венеция и Верона, но это знакомая Европа</td></tr>
+          <tr><td>Уникальность</td><td class="sc"><span class="pill top">10</span></td><td class="sc"><span class="pill">9</span></td><td class="sc"><span class="pill">6</span></td><td>Сакура вместе с Nintendo-парком неповторима; пингвины и мыс уникальны; Гарда — приятная, но обычная Европа</td></tr>
+          <tr><td>Удобство логистики</td><td class="sc"><span class="pill top">8</span></td><td class="sc"><span class="pill">4</span></td><td class="sc"><span class="pill">6</span></td><td>Япония: поезда, без машины, простая виза, наличные в ходу; ЮАР: машина обязательна, нужна кредитка для залога; Италия: срочная виза и оплата только картой</td></tr>
+          <tr><td>Комфорт проживания</td><td class="sc"><span class="pill">6</span></td><td class="sc"><span class="pill top">8</span></td><td class="sc"><span class="pill">7</span></td><td>Японские номера рассчитаны на 2–4 человек; в ЮАР дома на 6 — от R2&nbsp;300; в Италии мобильные дома и апартаменты</td></tr>
+          <tr><td>Погода в наши даты</td><td class="sc"><span class="pill">6</span></td><td class="sc"><span class="pill top">9</span></td><td class="sc"><span class="pill">6</span></td><td>ЮАР 22–23 °C; Япония теплее Гарды (20 против 16–18 °C), но дождливых дней больше (12–13 против 8–11)</td></tr>
+          <tr><td>Предсказуемость бюджета</td><td class="sc"><span class="pill">6</span></td><td class="sc"><span class="pill">4</span></td><td class="sc"><span class="pill top">7</span></td><td>Динамические цены USJ и отелей; в ЮАР волатильные авиабилеты и нет тарифов 2027; в Италии бюджет понятен, неясен исход визы</td></tr>
+          <tr><td>Цена / впечатления</td><td class="sc"><span class="pill top">9</span></td><td class="sc"><span class="pill">6</span></td><td class="sc"><span class="pill">7</span></td><td>Япония дороже Италии всего на ~9%, а впечатлений несравнимо больше; Кейптаун дороже всех без главного козыря — китов</td></tr>
+          <tr><td>Удобство перелёта</td><td class="sc"><span class="pill">5</span></td><td class="sc"><span class="pill">3</span></td><td class="sc"><span class="pill top">9</span></td><td>13–16 ч и +6 ч; 17–20 ч и Залив; 9–11 ч и −1 ч</td></tr>
+          <tr><td>Общая привлекательность для нас</td><td class="sc"><span class="pill top">9</span></td><td class="sc"><span class="pill">6</span></td><td class="sc"><span class="pill">7</span></td><td>Наш запрос прямо называет USJ, SNW и сакуру — это японская поездка</td></tr>
+          <tr class="total"><td>Сумма (из 120)</td><td class="sc">94</td><td class="sc">80</td><td class="sc">82</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAILS ============ -->
+<section class="block" id="details">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Подробный разбор</div>
+        <h2>Каждое направление по существу</h2>
+      </div>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Направления">
+      <button role="tab" id="tab-jp" aria-controls="panel-jp" aria-selected="true" type="button"><i style="background:var(--jp)"></i>Япония</button>
+      <button role="tab" id="tab-it" aria-controls="panel-it" aria-selected="false" tabindex="-1" type="button"><i style="background:var(--it)"></i>Италия</button>
+      <button role="tab" id="tab-ct" aria-controls="panel-ct" aria-selected="false" tabindex="-1" type="button"><i style="background:var(--ct)"></i>Кейптаун</button>
+    </div>
+
+    <!-- Japan -->
+    <div class="tabpanel" role="tabpanel" id="panel-jp" aria-labelledby="tab-jp">
+      <p class="intro">Единственное направление, где по нашим датам совпадают главная детская мечта — Mario Kart и Donkey Kong — и главная «взрослая» картинка — сакура в Киото. Машина не нужна.</p>
+      <div class="facts">
+        <div class="fact"><h4>Билеты USJ: покупать в день открытия продаж</h4><p>С 1 сентября 2026 цену конкретной даты можно <b>поднять уже после старта продаж</b>; купленный билет не дорожает. В 2026 взрослый 1-Day стоил ¥8&nbsp;400–11&nbsp;900, детский (4–11 лет) — от ¥5&nbsp;500; 2-Day — ¥16&nbsp;300–20&nbsp;700 и ≈¥10&nbsp;500. Двухлетнему билет, судя по категориям, не нужен. На семью: ¥27&nbsp;800–39&nbsp;000 за день, в весенний пик за 2-Day — ¥62&nbsp;000–68&nbsp;000. Только онлайн, касс нет. Продажи на конец марта откроются примерно в январе 2027.</p></div>
+        <div class="fact"><h4>Express Pass: на один день из двух</h4><p>Express 4: от ~¥10&nbsp;800 в тихие дни, ¥14&nbsp;000–17&nbsp;000 в загруженные; Express 7 — до ¥21&nbsp;000+ (в одном из прошлых апрелей — ¥29&nbsp;000). Дату сменить нельзя, весной распродаются. <b>Не каждый Express гарантирует вход в Super Nintendo World</b> — выбирать вариант с гарантией. Без Express: Mario Kart в среднем 93 мин (пик — 270), Mine-Cart часто 150 мин; по Express — 20–25 мин. Express 4 на четверых ≈¥56&nbsp;000–80&nbsp;000.</p></div>
+        <div class="fact"><h4>Вход в Super Nintendo World</h4><p>С 5 января 2026 бесплатные талоны на вход выдаются <b>только в приложении USJ и только внутри парка</b>. Нужны приложение, привязанные билеты всех и мобильный интернет. Ранний вход для гостей отелей, по сторонним данным, отменён с осени 2024 — отель у парка даёт не фору, а возможность уложить малыша днём. Прийти за 45–60 минут до открытия и проехать Mario Kart в первые часы.</p></div>
+        <div class="fact"><h4>Рост: старшие проходят на всё</h4><ul><li>Mine-Cart Madness — от 107 см, до 122 см только со взрослым (официально).</li><li>Yoshi's Adventure — от 92 см. Mario Kart — гайды пишут 107 см (официально на USJ не подтверждено).</li><li>8-летний (~125–130 см) и 10-летний (~135–140 см) проходят на всё в SNW.</li><li>Двухлетнему — Universal Wonderland: Hello Kitty без ограничения роста, Snoopy от 92 см. Child Switch — родители катаются по очереди.</li><li>Коляска в парке — ¥1&nbsp;100 в день (1–48 месяцев).</li></ul></div>
+        <div class="fact wide"><h4>Сакура по годам: начало / полное цветение</h4><div class="tablewrap"><table>
+          <thead><tr><th>Город</th><th>Норма</th><th>2023</th><th>2024</th><th>2025</th><th>2026</th></tr></thead>
+          <tbody>
+            <tr><td><b>Осака</b></td><td>27.03 / 04.04</td><td>19.03 / 27.03</td><td>30.03 / 06.04</td><td>27.03 / 04.04</td><td>26.03 / нет данных</td></tr>
+            <tr><td><b>Киото</b></td><td>26.03 / 04.04</td><td>17.03 / 24.03</td><td>29.03 / 05.04</td><td>27.03 / 05.04</td><td>23.03 / 30.03*</td></tr>
+            <tr><td><b>Токио</b></td><td>24.03 / 31.03</td><td>— / 22.03</td><td>~29.03 / —</td><td>24.03 / 30.03</td><td>19.03 / 28.03</td></tr>
+          </tbody></table></div><p class="small muted mt">*неясно, факт или прогноз. Цветы держатся около недели после полного цветения. Прогнозы на 2027: JMC — середина–конец декабря, Weathernews — начало января, tenki.jp — конец января.</p></div>
+        <div class="fact"><h4>Жильё на пятерых — главная дыра в данных</h4><p>Японские номера рассчитаны на 2–4 человек. Реальные варианты: двухкомнатные <b>MIMARU</b> в Намбе и Синсайбаси (54–61 м²), Corner Family Room в Hotel Kintetsu Universal City, номера на 5 в Liber Hotel, Family Room в Hotel Universal Port. Цен вида «5 гостей, конец марта» не найдено. Оценка за ночь: ¥25–40 тыс. / ¥40–70 тыс. / ¥80–150 тыс.+. Плюс налог за человека за ночь: Осака ¥200–500, Киото до ¥10&nbsp;000 — ещё довод не ночевать в Киото.</p></div>
+        <div class="fact"><h4>Транспорт: только поезда</h4><ul><li>Осака → Киото: JR ~30 мин ¥580, Hankyu ~43 мин ¥410, Keihan ~50 мин ¥490. День в Киото на семью ≈¥3&nbsp;500.</li><li>JR Pass (¥53&nbsp;000 с 01.10.2026) не окупается.</li><li>Обычное такси берёт четверых — нужен van через приложение GO.</li><li>Синкансэн Токио — Осака ¥14&nbsp;720 за взрослого; переезд семьи с пересылкой чемоданов ≈¥55–60 тыс. и 5–6 часов.</li></ul></div>
+        <div class="fact"><h4>Погода, коляска и толпы</h4><p>Конец марта: ~14 °C днём, 4–7 °C ночью; апрель — ~20/12 °C, но 12–13 дождливых дней — держим 1–2 «крытых» дня. С коляской Япония удобна, кроме Киото: узкие тротуары, переполненные автобусы, лестницы у храмов. Связка — лёгкая коляска + эргорюкзак, вместо автобусов метро. Март 2026 — рекорд по турпотоку (3,62 млн), налог на выезд — ¥3&nbsp;000 с человека.</p></div>
+        <div class="fact"><h4>Дни вне USJ</h4><p>Kaiyukan — ¥8&nbsp;200–10&nbsp;600 на семью, подходит всем трём. Kyoto Railway Museum — ¥1&nbsp;500 взрослый, для 8- и 10-летнего. LEGOLAND Discovery — ¥2&nbsp;900–3&nbsp;300, до 2 лет бесплатно, но 10-летнему там скучно. Олени в Наре — бесплатно и для всех. В Токио (если open-jaw): Disney до ¥12&nbsp;400 за взрослого, teamLab Planets ¥3&nbsp;800–4&nbsp;000, Ghibli — лотерея Lawson 10-го числа.</p></div>
+      </div>
+    </div>
+
+    <!-- Italy -->
+    <div class="tabpanel" role="tabpanel" id="panel-it" aria-labelledby="tab-it" hidden>
+      <p class="intro">Самый простой вариант по дороге: короткий перелёт, вокзал в Пескьере с поездами в Верону и Венецию, бесплатный шаттл в Gardaland. Слабые места — апрельская погода, маленькая зона для двухлетнего, неопубликованный календарь парка и виза.</p>
+      <div class="facts">
+        <div class="fact wide"><h4>Gardaland 2027: календарь не опубликован</h4><p>Подтверждён только Magic Winter (5.12.2026 — 6.01.2027). В 2022–2026 парк всегда открывался в субботу <b>за 8 или 15 дней до Пасхи</b> и дальше работал ежедневно, 10:00–17/18:00.</p>
+          <div class="tablewrap"><table><thead><tr><th>Год</th><th>Пасха</th><th>Открытие</th><th class="num">Дней до Пасхи</th></tr></thead><tbody>
+            <tr><td>2022</td><td>17.04</td><td>сб 02.04</td><td class="num">15</td></tr>
+            <tr><td>2023</td><td>09.04</td><td>пробные 25–26.03, ежедневно с сб 01.04</td><td class="num">15 / 8</td></tr>
+            <tr><td>2024</td><td>31.03</td><td>сб 23.03</td><td class="num">8</td></tr>
+            <tr><td>2025</td><td>20.04</td><td>сб 05.04</td><td class="num">15</td></tr>
+            <tr><td>2026</td><td>05.04</td><td>сб 28.03</td><td class="num">8</td></tr>
+            <tr><td><b>2027</b></td><td><b>28.03</b></td><td><b>не опубликовано</b></td><td class="num">—</td></tr>
+          </tbody></table></div>
+          <p class="mt"><b>Прогноз, не факт:</b> вероятнее всего открытие в субботу 20 марта. Шанс, что парк открыт: 20–25 марта — 55–65%; 26–29 марта — 90–95%; любой день 30 марта — 18 апреля — 85–90%. Пик толп 26.03–03.04 (Пасха + каникулы в Баварии 22.03–02.04); лучшие дни — будни 6–16 апреля.</p></div>
+        <div class="fact"><h4>Билеты и рост</h4><p>2026: в кассе €59 взрослый / €54 льготный, онлайн на дату — от €44. Льготный — до 10 лет, так что <b>10-летний платит как взрослый</b>. Бесплатно — дети ниже 90 см (по старым данным — ниже 1 м). День на семью — €175–240 онлайн. Комбо «2 дня + SEA LIFE» — от €59 на человека. Парковка €6–10, шаттл от вокзала бесплатный, коляска €5.</p><ul><li>10-летний (от 140 см) — Raptor, Oblivion.</li><li>8-летний — Shaman (от 120 см), Mammut (от 110 или 130 см).</li><li>Двухлетний — в основном Peppa Pig Land: 3–4 аттракциона, хватает на утро.</li></ul></div>
+        <div class="fact"><h4>Что ещё откроется к Пасхе (по 2026 году)</h4><ul><li><b>Parco Natura Viva</b> — зоопарк + сафари на своей машине, с 28 февраля, до 3 лет бесплатно, комбо ≈€30.</li><li><b>Sigurtà</b> — тюльпаны с середины марта до начала мая, €18 / €10 (5–14 лет).</li><li><b>Movieland</b> — открылся 2 апреля, €35–36, ниже 100 см бесплатно.</li><li><b>Monte Baldo</b> — канатка открылась 4 апреля, €30.</li><li><b>Грот Катулла</b> в Сирмионе — €10, до 18 лет бесплатно, пн закрыт.</li><li><b>Aquardens</b> — детские термальные бассейны 36 °C; до Пасхи только выходные.</li><li>LEGOLAND Water Park — только с конца мая.</li></ul></div>
+        <div class="fact"><h4>Паромы</h4><p>В 2026 весеннее расписание Navigazione Laghi действовало <b>с 1 апреля</b> по 15 мая. Короткие переходы (Пескьера — Лацизе, Пескьера — Сирмионе) — €6 взрослый, до 3 лет бесплатно; с двумя взрослыми дневными билетами до двух детей 4–11 лет едут бесплатно. Если 2027 повторит схему, 26–31 марта ещё действует сокращённое зимнее расписание.</p></div>
+        <div class="fact"><h4>Венеция: сбор 2027 подтверждён</h4><p>72 дня со Страстной пятницы 26 марта по 15 августа, 08:30–16:30, до €10. В наше окно сбор: 26–29 марта, 2–4, 9–11, 16–18 апреля и ежедневно с 23 апреля. <b>Бесплатны вт–чт 30.03–01.04 и пн–чт 5–8 и 12–15 апреля.</b> В 2026 дети до 14 лет освобождались, но регистрировались; правила 2027 — до 31.12.2026.</p><p>Поезд из Пескьеры: Frecciarossa/Italo ~1 ч 28 мин, региональный ~1 ч 45 мин, ≈€14 взрослый. Вапоретто €9,50 / дневной €25, до 6 лет бесплатно. <b>400+ мостов со ступенями</b> — самый тяжёлый день для двухлетнего.</p></div>
+        <div class="fact"><h4>Машина, жильё, погода, еда</h4><ul><li><b>Машина</b> нужна для Natura Viva, Sigurtà, Monte Baldo, Aquardens. 7-местная — €103–187 в день. Для ребёнка до 4 лет обязательна <b>система против забывания</b>: штраф €83–333 и 5 баллов. Бензин €2,02/л. Залог — кредитка нероссийского банка.</li><li><b>Жильё:</b> Пескьера — вокзал и шаттл; Лацизе красивее, но без поезда. Мобильные дома в кемпингах — €68–89 за ночь, аренда в среднем €141. Пасхальная неделя на 20–40% дороже 5–16 апреля.</li><li><b>Погода:</b> апрель 16–18 °C днём, 8–9 °C ночью, 8–11 дождливых дней; конец марта холоднее на 3–4 °C. Купаться в озере нельзя.</li><li><b>Еда:</b> обед в траттории €15–25 на человека + coperto €1–2.</li></ul></div>
+      </div>
+      <h3 class="subh">Маршрут на случай Италии: 2–14 апреля, одна база в Пескьере</h3>
+      <div class="tablewrap"><table class="itable">
+        <thead><tr><th>День</th><th>Место и активности</th><th>В дороге</th><th class="num">≈ тыс. ₽</th><th>Малышу</th><th>Сократить</th><th>Бронь</th></tr></thead>
+        <tbody>
+          <tr><td>1 · пт 02.04</td><td>Прилёт в Верону, машина или трансфер, заселение</td><td>9–11 ч + 20–35 мин</td><td class="num">20</td><td><span class="m ok">да</span></td><td>—</td><td>жильё, машина</td></tr>
+          <tr><td>2 · сб 03.04</td><td>Пескьера: крепостные валы, набережная, площадка</td><td>пешком</td><td class="num">19</td><td><span class="m ok">да</span></td><td>—</td><td>нет</td></tr>
+          <tr><td>3 · вс 04.04</td><td>Sigurtà: тюльпаны, лабиринт, мини-поезд</td><td>на машине</td><td class="num">25</td><td><span class="m ok">да</span></td><td>полдня</td><td>онлайн</td></tr>
+          <tr><td>4 · пн 05.04</td><td>Gardaland, день 1, + SEA LIFE</td><td>шаттл или машина</td><td class="num">30</td><td><span class="m part">частично</span></td><td>уйти после обеда</td><td>комбо на 2 дня</td></tr>
+          <tr><td>5 · вт 06.04</td><td>Паром в Сирмионе: замок, грот Катулла, джелато</td><td>паром</td><td class="num">25</td><td><span class="m ok">да</span></td><td>только набережная</td><td>нет</td></tr>
+          <tr><td>6 · ср 07.04</td><td>Венеция в день без сбора</td><td>1 ч 28 мин — 1 ч 45 мин</td><td class="num">38</td><td><span class="m hard">тяжело</span></td><td>Гранд-канал на вапоретто + 1–2 района</td><td>поезд, регистрация</td></tr>
+          <tr><td>7 · чт 08.04</td><td>Отдых: Лацизе, набережная, площадка</td><td>на машине</td><td class="num">19</td><td><span class="m ok">да</span></td><td>—</td><td>нет</td></tr>
+          <tr><td>8 · пт 09.04</td><td>Gardaland, день 2</td><td>шаттл</td><td class="num">28</td><td><span class="m part">частично</span></td><td>полдня</td><td>в комбо</td></tr>
+          <tr><td>9 · сб 10.04</td><td>Верона на полдня: Арена, Piazza delle Erbe</td><td>поезд</td><td class="num">25</td><td><span class="m ok">да</span></td><td>только центр</td><td>нет</td></tr>
+          <tr><td>10 · вс 11.04</td><td>Monte Baldo (если работает) и Мальчезине</td><td>на машине</td><td class="num">32</td><td><span class="m ok">да</span></td><td>без канатки</td><td>канатка онлайн</td></tr>
+          <tr><td>11 · пн 12.04</td><td>Parco Natura Viva: пешая часть и сафари</td><td>на машине</td><td class="num">32</td><td><span class="m ok">да</span></td><td>только сафари</td><td>онлайн</td></tr>
+          <tr><td>12 · вт 13.04</td><td>Movieland для старших с одним родителем; Aquardens или отдых для малыша; сборы</td><td>на машине</td><td class="num">34</td><td><span class="m ok">Aquardens — да</span></td><td>день отдыха</td><td>проверить расписание</td></tr>
+          <tr><td>ср 14.04</td><td>Перелёт домой</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table></div>
+      <p class="small muted mt">Запасные варианты: в дождь — SEA LIFE, Aquardens, музеи Вероны; Gardaland и Венецию переставляем под прогноз. Устали — убираем Monte Baldo и Верону. Movieland или Monte Baldo не открылись — второй день в Сигурте или паром в Бардолино и Гарду.</p>
+    </div>
+
+    <!-- Cape Town -->
+    <div class="tabpanel" role="tabpanel" id="panel-ct" aria-labelledby="tab-ct" hidden>
+      <p class="intro">Лучший климат из трёх, две колонии пингвинов, мыс Доброй Надежды и Столовая гора. Но главного повода для Hermanus — китов — в эти даты нет, а самостоятельная поездка упирается в машину, залог по кредитке и аккуратный выбор маршрутов.</p>
+      <div class="facts">
+        <div class="fact wide"><h4>Киты в апреле: случайная встреча, а не программа</h4><p>Сезон южных гладких китов в Walker Bay — <b>с июня до начала декабря</b>, пик август–октябрь. Главный оператор Hermanus возит к китам только с июня по декабрь. Скопления горбачей у западного побережья — пик в ноябре. В апреле реальны только полосатик Брайда, который живёт в False Bay круглый год, и случайный горбач. Лучшая морская прогулка — «Marine Big 5» из Гансбаая (январь–май): пингвины и котики почти гарантированы, дельфины вероятны, кит Брайда возможен, но обещать его детям нельзя. R2&nbsp;340 взрослый, до 5 лет бесплатно, + R150 сбора (тарифы до 31.12.2026).</p></div>
+        <div class="fact"><h4>Без китов — всё равно сильно</h4><ul><li><b>Boulders</b> — R282 / R138 (тарифы SANParks на 1.11.2026–31.10.2027), 08:00–17:00, мостки для коляски.</li><li><b>Мыс Доброй Надежды</b> — R592 / R288; фуникулёр ≈R105 / R55, только в кассе.</li><li><b>Stony Point</b> — вторая колония, R45 / R30, без наличных.</li><li><b>Канатка на Столовую гору</b> — R475 онлайн, ребёнок R230, до 4 лет бесплатно. Ветер закрывает её 60–90 дней в году — держать 2–3 запасных утра.</li><li><b>Kirstenbosch</b> — R270, дети 6–17 лет R40, до 6 бесплатно, только онлайн.</li><li><b>Aquila</b> — единственное сафари без малярии, куда берут двухлетнего на выезд.</li></ul></div>
+        <div class="fact"><h4>Машина: кредитка на водителя — да/нет</h4><p>Без машины Кейптаун с тремя детьми почти не работает. 7 мест — $47–53 в день (Ertiga, Rumion) или $78–107 (Fortuner) до страховки; франшиза R5&nbsp;000–25&nbsp;000, нужна нулевая. <b>Avis не принимает дебетовые карты</b>; мелкие прокаты берут залог наличными или переводом, но их страховки надо читать особо. Российские права — только вместе с МВУ. Автокресло до 3 лет — по закону. Левостороннее движение, бензин R29,38/л.</p></div>
+        <div class="fact"><h4>Безопасность</h4><ul><li><b>Дорога из аэропорта.</b> В марте 2026 на N2 у аэропорта бросали камни в машины и угрожали оружием; британский МИД обновил предупреждение 31.03.2026. Не доверять «коротким путям» навигатора через тауншипы, возвращаться по N2 к Airport Approach Road (съезд 16).</li><li><b>Горные тропы.</b> Только за январь 2025 — 20 ограблений на Столовой горе. Наверх — только на канатке.</li><li>Машину забирать засветло, ценности — в багажник до выезда.</li><li>Свет без отключений с мая 2025; вода — водохранилища на 74,4%, ограничения возможны с декабря 2026.</li></ul></div>
+        <div class="fact"><h4>Базы, погода, каникулы</h4><p>Hermanus без китов — спокойная база максимум на 3 ночи. Для малыша сильнее связка <b>Атлантическая сторона + Саймонстаун или Нордхук</b> (до Boulders и мыса 10–30 минут, вода теплее) или 2 ночи в Aquila. Апрель: 22–23 °C днём, 12–14 °C ночью, 7–8 дней с дождём, вода 17–19 °C (купаться — в гидрокостюме). Школьные каникулы ЮАР — 20.03–05.04.2027 вместе с Пасхой: жильё +15–30%. Лучше прилёт 4–6 апреля.</p></div>
+      </div>
+      <h3 class="subh">Маршрут на случай Кейптауна: 5–17 апреля, Си-Пойнт 9 ночей + Херманус 3</h3>
+      <div class="tablewrap"><table class="itable">
+        <thead><tr><th>День</th><th>Место и активности</th><th>В дороге</th><th class="num">≈ тыс. ₽</th><th>Малышу</th><th>Сократить</th><th>Бронь</th></tr></thead>
+        <tbody>
+          <tr><td>1 · пн 05.04</td><td>Прилёт днём, машина засветло, N2 → M3/M5, Си-Пойнт</td><td>17–20 ч + трансфер</td><td class="num">20</td><td><span class="m ok">да</span></td><td>—</td><td>машина, жильё</td></tr>
+          <tr><td>2 · вт 06.04</td><td>V&amp;A Waterfront и аквариум Two Oceans</td><td>10–15 мин</td><td class="num">26</td><td><span class="m ok">идеально</span></td><td>—</td><td>аквариум онлайн</td></tr>
+          <tr><td>3 · ср 07.04</td><td>Столовая гора на канатке в первое ясное утро, променад</td><td>15–20 мин</td><td class="num">28</td><td><span class="m ok">да</span></td><td>только канатка</td><td>онлайн, день гибкий</td></tr>
+          <tr><td>4 · чт 08.04</td><td>Boulders с 08:00, Фиш-Хук, Калк-Бэй, плескаться в False Bay</td><td>45–60 мин</td><td class="num">26</td><td><span class="m ok">да</span></td><td>только Boulders</td><td>нет</td></tr>
+          <tr><td>5 · пт 09.04</td><td>Отдых: пляж Кэмпс-Бэй, площадка</td><td>15 мин</td><td class="num">20</td><td><span class="m ok">да</span></td><td>—</td><td>нет</td></tr>
+          <tr><td>6 · сб 10.04</td><td>Kirstenbosch: газоны, пикник</td><td>20–30 мин</td><td class="num">24</td><td><span class="m ok">да</span></td><td>—</td><td>онлайн</td></tr>
+          <tr><td>7 · вс 11.04</td><td>Мыс Доброй Надежды и Кейп-Пойнт, обратно через Chapman's Peak</td><td>~1,5 ч в одну сторону</td><td class="num">34</td><td><span class="m part">если спит в машине</span></td><td>два полудня</td><td>фуникулёр в кассе</td></tr>
+          <tr><td>8 · пн 12.04</td><td>Хаут-Бэй: круиз к тюленям 45 мин, отдых</td><td>25–30 мин</td><td class="num">22</td><td><span class="m ok">если море спокойное</span></td><td>только набережная</td><td>нет</td></tr>
+          <tr><td>9 · вт 13.04</td><td>Babylonstoren и Giraffe House — или сафари в Aquila</td><td>~1 ч / ~2 ч</td><td class="num">24 / 107</td><td><span class="m ok">да</span></td><td>одна точка</td><td>Aquila заранее</td></tr>
+          <tr><td>10 · ср 14.04</td><td>Переезд в Херманус по R44 через Stony Point</td><td>2+ ч</td><td class="num">21</td><td><span class="m ok">да</span></td><td>по N2 (~1 ч 30)</td><td>дом в Херманусе</td></tr>
+          <tr><td>11 · чт 15.04</td><td>Гансбаай: Marine Big 5</td><td>~40 км</td><td class="num">72</td><td><span class="m part">если позволяет море</span></td><td>отменить при волнении</td><td>лодка заранее</td></tr>
+          <tr><td>12 · пт 16.04</td><td>Херманус: прибрежная прогулка, пляж, отдых</td><td>пешком</td><td class="num">20</td><td><span class="m ok">да</span></td><td>—</td><td>нет</td></tr>
+          <tr><td>сб 17.04</td><td>Днём по N2 в аэропорт, сдача машины</td><td>~1 ч 30</td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table></div>
+      <p class="small muted mt">Запасные варианты: в дождь или ветер — аквариум, Waterfront, Exotic Animal World. Канатка закрыта — переносим на запасное утро. Устали — Херманус меняем на Саймонстаун. Море не пускает лодку — второй визит в Stony Point и пляж.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RISKS ============ -->
+<section class="block" id="risks">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Риски</div>
+        <h2>Что может пойти не так и что это снижает</h2>
+      </div>
+    </div>
+    <div class="grid-3">
+      <div class="rcard jp"><h3>Япония</h3><ul class="risks">
+        <li><div class="r"><b>Цена USJ растёт после старта продаж; Express распродаётся</b><span class="sev high">высокая</span></div><p>Покупать в день открытия продаж (ожидается январь 2027), выбирать будни.</p></li>
+        <li><div class="r"><b>Нет семейных номеров, пиковые цены</b><span class="sev high">высокая</span></div><p>Бронировать сейчас с бесплатной отменой, двухкомнатные апарт-отели.</p></li>
+        <li><div class="r"><b>Джетлаг +6 ч и 13–16 ч в пути</b><span class="sev high">высокая</span></div><p>Лёгкие первые три дня, USJ в конце, стоповер в Китае по безвизу.</p></li>
+        <li><div class="r"><b>Российский UnionPay не проходит</b><span class="sev high">высокая</span></div><p>Зарубежная карта + наличные доллары или евро.</p></li>
+        <li><div class="r"><b>Не удастся взять слот в SNW</b><span class="sev mid">средняя</span></div><p>Express с гарантированным входом; приложение, привязанные билеты, eSIM.</p></li>
+        <li><div class="r"><b>Сакура сдвинется, как в 2023</b><span class="sev mid">средняя</span></div><p>Брони с отменой, сдвиг по прогнозам декабря–января.</p></li>
+        <li><div class="r"><b>Ночная стыковка в Шанхае с выдачей багажа</b><span class="sev mid">средняя</span></div><p>Стыковки в пределах суток, единый билет.</p></li>
+        <li><div class="r"><b>Укрепление иены; 12–13 дождливых дней</b><span class="sev mid">средняя</span></div><p>Резерв +8–12% к иеновым статьям; два «крытых» дня в запасе.</p></li>
+      </ul></div>
+      <div class="rcard it"><h3>Италия</h3><ul class="risks">
+        <li><div class="r"><b>Не успеть получить шенгенскую визу (80–100 дней)</b><span class="sev crit">критическая</span></div><p>Подать в ноябре — первой половине декабря 2026; брони с отменой; полис с риском отказа или задержки визы.</p></li>
+        <li><div class="r"><b>Холод и дожди</b><span class="sev high">высокая</span></div><p>Гибкие дни; SEA LIFE, Aquardens, Верона.</p></li>
+        <li><div class="r"><b>Пасхальные цены и толпы 26.03–04.04</b><span class="sev high">высокая</span></div><p>Даты 2–14 апреля.</p></li>
+        <li><div class="r"><b>Карты банков СНГ в ЕС после 21-го пакета санкций</b><span class="sev mid">средняя</span></div><p>Две карты разных банков + наличные евро.</p></li>
+        <li><div class="r"><b>Штраф за отсутствие системы против забывания</b><span class="sev mid">средняя</span></div><p>Своё устройство или письменное подтверждение от прокатчика.</p></li>
+        <li><div class="r"><b>Нет багажа на тарифе Turkish EcoFly</b><span class="sev mid">средняя</span></div><p>Брать тариф с багажом.</p></li>
+        <li><div class="r"><b>Отказ в визе (~5%)</b><span class="sev low">низкая–средняя</span></div><p>Полный пакет документов, брони и выписки.</p></li>
+        <li><div class="r"><b>Gardaland закрыт в нужные дни</b><span class="sev low">низкая после 30.03</span></div><p>Даты после Пасхи; ждать календарь в январе–феврале.</p></li>
+      </ul></div>
+      <div class="rcard ct"><h3>Кейптаун</h3><ul class="risks">
+        <li><div class="r"><b>Нечем внести залог за машину</b><span class="sev crit">критическая</span></div><p>Зарубежная кредитка на водителя или местный прокат с залогом наличными; МВУ.</p></li>
+        <li><div class="r"><b>Нет китов</b><span class="sev crit">это факт</span></div><p>Не обещать китов детям; Гансбаай — бонус; если киты важны — август–октябрь.</p></li>
+        <li><div class="r"><b>Нападения на N2 и у аэропорта</b><span class="sev high">высокая</span></div><p>Машину брать днём; N2 → M3/M5; съезд Airport Approach Road; ценности в багажнике.</p></li>
+        <li><div class="r"><b>Ограбления на горных тропах</b><span class="sev high">высокая</span></div><p>Подниматься только на канатке.</p></li>
+        <li><div class="r"><b>Пасха и каникулы 20.03–05.04</b><span class="sev high">высокая для цены</span></div><p>Прилёт с 4–6 апреля.</p></li>
+        <li><div class="r"><b>Отмены рейсов через Залив</b><span class="sev mid">средняя–высокая</span></div><p>Turkish через Стамбул или Ethiopian со стыковкой меньше 12 ч; единый билет.</p></li>
+        <li><div class="r"><b>Жёлтая лихорадка при стыковке дольше 12 ч в Аддис-Абебе</b><span class="sev mid">средняя</span></div><p>Стыковки короче 12 часов.</p></li>
+        <li><div class="r"><b>Канатку закрывает ветер</b><span class="sev mid">средняя</span></div><p>2–3 запасных утра.</p></li>
+      </ul></div>
+    </div>
+    <div class="note warn mt"><b>Общие риски.</b> Рубль может ослабнуть до 95–100 ₽/$ — держим резерв 10% и покупаем валютные статьи заранее. Платёжная инфраструктура для россиян меняется за месяцы — две зарубежные карты разных банков и запас наличных. Работа ассистанса российских страховщиков за границей не проверена. До покупки невозвратных билетов — проверить отсутствие ограничений на выезд у обоих взрослых.</div>
+  </div>
+</section>
+
+<!-- ============ FLIGHTS ============ -->
+<section class="block" id="flights">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Перелёты</div>
+        <h2>9–11 часов до Италии, 13–16 до Японии, 17–20 до Кейптауна</h2>
+        <p>Прямых рейсов из России нет никуда. Тарифов на даты 2027 года увидеть не удалось — ниже снимки агрегаторов 2026 года и оценки. На семью считали так: тариф взрослого × 4,6–5,0, плюс пиковый множитель ×1,4–2,5 (детские скидки у перевозчиков небольшие).</p>
+      </div>
+    </div>
+    <div class="tablewrap">
+      <table style="min-width:860px">
+        <thead><tr><th></th><th><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--jp);margin-right:6px"></i>Япония</th><th><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--it);margin-right:6px"></i>Италия (Гарда)</th><th><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--ct);margin-right:6px"></i>Кейптаун</th></tr></thead>
+        <tbody>
+          <tr><td><b>Из Москвы</b></td><td>Air China через Пекин, China Eastern через Шанхай; запасной — Emirates через Дубай</td><td>Turkish или Pegasus через Стамбул, Air Serbia через Белград, FlyOne через Ереван; лучший аэропорт — Верона</td><td>Qatar через Доху, Emirates через Дубай, Turkish через Стамбул (~11 ч без посадок), Ethiopian через Аддис-Абебу, Etihad</td></tr>
+          <tr><td><b>Из Сочи</b></td><td>прямых в Китай нет: через Москву отдельным билетом с ночёвкой или flydubai + Emirates</td><td>Turkish TK296 в 04:00 (4 раза в неделю); «Азимут» — в Стамбул и Ереван</td><td>Etihad с 2 пересадками — от 79&nbsp;904 ₽; flydubai + Emirates; Turkish</td></tr>
+          <tr><td><b>Время в пути</b></td><td>~13–16 ч через Китай, ~17–20 ч через Дубай</td><td>~9–11 ч с одной пересадкой</td><td>~17–20 ч</td></tr>
+          <tr><td><b>Ориентир 2026, взрослый туда-обратно</b></td><td>от 45&nbsp;139 ₽ (Токио), от 49&nbsp;071 ₽ (Осака)</td><td>Венеция от 31&nbsp;620 ₽, Верона от 63&nbsp;237 ₽</td><td>от 62&nbsp;463 ₽ (Qatar), Emirates от 128&nbsp;162 ₽; на январь 2027 — от 181&nbsp;417 ₽</td></tr>
+          <tr><td><b>Оценка на пятерых: низко / типично / высоко</b></td><td>0,28–0,32 / 0,38–0,5 / 0,65–0,9 млн ₽</td><td>0,18–0,2 / 0,25–0,33 / ~0,45 млн ₽</td><td>0,35–0,4 / 0,5–0,65 / ~0,9 млн ₽</td></tr>
+          <tr><td><b>Багаж</b></td><td>обычно включён (Air China 2×23 кг, на части маршрутов 1×23)</td><td>Turkish EcoFly между Турцией и Европой — <b>без багажа</b></td><td>Emirates Special — 1×23 кг, остальные — 2×23</td></tr>
+          <tr><td><b>Разница с Москвой</b></td><td>+6 ч, 2–4 дня адаптации</td><td>−1 ч (с 28.03.2027)</td><td>−1 ч</td></tr>
+          <tr><td><b>Нагрузка на двухлетнего</b></td><td>высокая: ночной сегмент и джетлаг</td><td>самая низкая, есть дневные вылеты</td><td>самая высокая по длительности</td></tr>
+          <tr><td><b>«Полезных» дней из 12</b></td><td>~9–10</td><td>~12</td><td>~11</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid-2 mt">
+      <div class="note warn"><b>Персидский залив — главный внешний риск.</b> С 28.02.2026 удары по Ирану закрыли небо в регионе: Emirates приостанавливал рейсы, Аэрофлот вернулся в Дубай только 1 июня, Finnair снял Дубай до 27.03.2027. Для Японии это касается лишь запасного маршрута — основной идёт через Китай. Для Кейптауна три из пяти перевозчиков — из стран Залива.</div>
+      <div class="note info"><b>Как покупать.</b> Через российские агрегаторы в рублях (samokatus, OneTwoTrip, Kupibilet, Tutu.ru), единым билетом на весь маршрут. Китай продлил безвиз для россиян до 31.12.2027 (до 30 дней) — можно сделать ночёвку в Пекине или Шанхае и облегчить дорогу малышу. Двухлетнему нужно своё место. Turkish разрешает складную коляску до 115 см даже без багажа.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCS & MONEY ============ -->
+<section class="block" id="docs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Визы, карты, наличные, страховка</div>
+        <h2>Шенгенская виза — единственный горящий дедлайн</h2>
+      </div>
+    </div>
+    <div class="tablewrap">
+      <table style="min-width:820px">
+        <thead><tr><th></th><th>Япония</th><th>Италия (Шенген)</th><th>ЮАР</th></tr></thead>
+        <tbody>
+          <tr><td><b>Нужна ли виза</b></td><td>да</td><td>да, как правило однократная</td><td>нет, до 90 дней в течение 360</td></tr>
+          <tr><td><b>Куда подавать</b></td><td>визовый центр JVAC (VFS Global) в Москве с 12.02.2026</td><td>VMS (Москва) или AlmavivA (Краснодар, Ростов); через посредников с мая 2026 не принимают</td><td>—</td></tr>
+          <tr><td><b>Срок</b></td><td>от 4 рабочих дней; подавать в январе–феврале 2027</td><td>летом 2026 ждали 80–100 дней; <b>подавать до середины декабря 2026</b></td><td>—</td></tr>
+          <tr><td><b>Стоимость на семью</b></td><td>970 ₽ × 5 = 4&nbsp;850 ₽ (возможен ещё сервисный сбор 2&nbsp;500 ₽ — не подтверждено)</td><td>€90 × 2 + €45 × 2 = €270 + сервисный 2&nbsp;500–3&nbsp;850 ₽ с человека, итого ≈38–45 тыс. ₽</td><td>0 ₽ + нотариальные переводы свидетельств о рождении</td></tr>
+          <tr><td><b>Документы на детей</b></td><td>у каждого своё заявление; свидетельства о браке и о рождении</td><td>у каждого своё заявление; до 12 лет отпечатки не берут</td><td>свой загранпаспорт у каждого; свидетельство о рождении с переводом на английский</td></tr>
+          <tr><td><b>Влияние на выбор</b></td><td>минимальное</td><td><b>решающее</b>: риск не успеть к вылету</td><td>минимальное, но документы — тщательно</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid-3 mt">
+      <div class="fact"><h4>Оплата без российских карт</h4><p>Российские Visa и Mastercard не работают, «Мир» бесполезен, российский UnionPay в Японии не проходит примерно в 70% случаев, в ЕС — почти никогда. Проще всего — <b>киргизская карта</b> (mBank или Bakai Bank, удалённо). Пополнение 1–1,5%, конвертация и снятие 1–3% — итого <b>3–8% сверх курса ЦБ</b>. Booking.com требует нероссийскую карту. Заложить ≈6% от трат за границей.</p></div>
+      <div class="fact"><h4>Наличные</h4><ul><li>Из России — не больше $10&nbsp;000 наличной валюты на человека.</li><li>Япония — декларация, если больше ¥1&nbsp;000&nbsp;000 (≈517 тыс. ₽).</li><li>ЕС — декларация от €10&nbsp;000.</li><li>ЮАР — рэндов не больше R25&nbsp;000 на человека, онлайн-декларация SATMS.</li></ul><p class="mt">Япония — самая «наличная» страна; Италия и ЮАР — почти полностью на картах (Kirstenbosch и Stony Point наличные не берут).</p></div>
+      <div class="fact"><h4>Страховка</h4><p>Медицина — от 162–223 ₽ в день на взрослого; на семью на 15 дней ≈12–25 тыс. ₽, отмена поездки — ещё 20–40 тыс. ₽ (оценка). «Отмену» покупать не позже чем за 15 дней до вылета. Для Италии — покрытие от €30&nbsp;000 и, желательно, отказ или задержка визы; для Японии — без исключения землетрясений и травм на аттракционах; для ЮАР — медэвакуация.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Ограничения и источники</div>
+        <h2>Насколько этому можно верить</h2>
+      </div>
+    </div>
+    <div class="note warn"><b>Ограничения исследования.</b> Сетевая политика среды заблокировала прямое чтение большинства официальных сайтов (usj.co.jp, gardaland.it, sanparks.org, tablemountain.net, cbr.ru, сайты посольств, агрегаторы билетов), а лимит поиска был исчерпан. Почти все факты взяты из сводок поисковой выдачи. Ни одного авиатарифа на 2027 год, ни одной цены жилья на пятерых в Японии, нет котировок страховок. <b>Все цены на 2027 год перепроверить перед покупкой; сметы — ориентир ±20–30%.</b></div>
+    <div class="cta mt">
+      <a class="btn primary" href="https://github.com/sidkovd/family-trip-2027/blob/main/reports/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%20%D0%9A%D0%B5%D0%B9%D0%BF%D1%82%D0%B0%D1%83%D0%BD%20%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202027.md" target="_blank" rel="noopener">Полный отчёт со всеми ссылками →</a>
+      <a class="btn" href="https://github.com/sidkovd/family-trip-2027/tree/main/research_notes/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%20%D0%9A%D0%B5%D0%B9%D0%BF%D1%82%D0%B0%D1%83%D0%BD%20%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202027" target="_blank" rel="noopener">Исходные заметки исследования</a>
+    </div>
+    <h3 class="subh">Ключевые источники</h3>
+    <div class="src">
+      <h4>Япония</h4>
+      <ul>
+        <li><a href="https://www.usj.co.jp/web/en/us/news/2026/0630" target="_blank" rel="noopener">USJ — новая система цен Studio Pass</a></li>
+        <li><a href="https://www.usj.co.jp/web/en/us/areas/super-nintendo-world" target="_blank" rel="noopener">USJ — Super Nintendo World, вход через приложение</a></li>
+        <li><a href="https://www.usj.co.jp/web/en/us/service-guide/safe/donkey-kong-country-ride" target="_blank" rel="noopener">USJ — ограничения Mine-Cart Madness</a></li>
+        <li><a href="https://www.usj.co.jp/web/en/us/service-guide/theme-park-services/children" target="_blank" rel="noopener">USJ — услуги для детей и коляски</a></li>
+        <li><a href="https://www.nippon.com/en/japan-data/h02731/" target="_blank" rel="noopener">nippon.com — сакура 2026 и определения JMA</a></li>
+        <li><a href="https://www.timetojapan.com/cherry-blossom-forecast" target="_blank" rel="noopener">Нормы цветения сакуры</a></li>
+        <li><a href="https://mimaruhotels.com/en/hotel/namba-station/" target="_blank" rel="noopener">MIMARU Namba Station</a></li>
+        <li><a href="https://en.miyakohotels.ne.jp/hotel-kintetsu/stay/new_family/" target="_blank" rel="noopener">Hotel Kintetsu Universal City — семейные номера</a></li>
+        <li><a href="https://kyoto.travel/en/news/tax-change/" target="_blank" rel="noopener">Киото — налог на проживание с 01.03.2026</a></li>
+        <li><a href="https://www.customs.go.jp/english/c-answer_e/keitaibetsuso/7305_e.htm" target="_blank" rel="noopener">Japan Customs — декларация наличных</a></li>
+      </ul>
+      <h4>Италия</h4>
+      <ul>
+        <li><a href="https://support.gardaland.it/hc/en-us/articles/37376377541661-When-can-I-visit-Gardaland-Park" target="_blank" rel="noopener">Gardaland — когда открыт парк</a></li>
+        <li><a href="https://live.comune.venezia.it/it/2026/10/contributo-di-accesso-la-giunta-approva-il-calendario-2027-72-giornate-da-venerdi-santo" target="_blank" rel="noopener">Comune di Venezia — календарь сбора 2027</a></li>
+        <li><a href="https://www.navigazionelaghi.it/wp-content/uploads/2026/03/Orario-Web-Primavera-2026.pdf" target="_blank" rel="noopener">Navigazione Laghi — весеннее расписание 2026</a></li>
+        <li><a href="https://funiviedelbaldo.it/en/" target="_blank" rel="noopener">Funivie del Baldo</a></li>
+        <li><a href="https://www.aquardens.it/en/areakids/" target="_blank" rel="noopener">Aquardens — детская зона</a></li>
+        <li><a href="https://www.kalenderpedia.de/ferien/osterferien-2027.html" target="_blank" rel="noopener">Пасхальные каникулы Германии 2027</a></li>
+      </ul>
+      <h4>Кейптаун и ЮАР</h4>
+      <ul>
+        <li><a href="https://www.sanparks.org/wp-content/uploads/2026/02/daily_conservation_fees_2026_27.pdf" target="_blank" rel="noopener">SANParks — тарифы 2026/27</a></li>
+        <li><a href="https://www.tablemountain.net/our-blog/table-mountain-aerial-cableway-announces-2026-annual-maintenance-shutdown-dates" target="_blank" rel="noopener">Table Mountain Cableway — плановое закрытие 2026</a></li>
+        <li><a href="https://www.sanbi.org/gardens/kirstenboch/visitor-information/information/" target="_blank" rel="noopener">Kirstenbosch — правила посещения</a></li>
+        <li><a href="https://www.southernrightcharters.co.za/whale-watching/" target="_blank" rel="noopener">Southern Right Charters — сезон китов</a></li>
+        <li><a href="https://aquilasafari.com/aquila-children-policy/" target="_blank" rel="noopener">Aquila — правила для детей</a></li>
+        <li><a href="https://travel.state.gov/content/passports/en/country/south-africa.html" target="_blank" rel="noopener">US State Department — ЮАР</a></li>
+        <li><a href="https://www.ewn.co.za/2026/03/16/n2-near-cape-town-airport-hit-by-rock-throwing-attacks-gun-threats" target="_blank" rel="noopener">EWN — нападения на N2 у аэропорта</a></li>
+        <li><a href="https://www.gov.za/node/64" target="_blank" rel="noopener">gov.za — школьный календарь</a></li>
+      </ul>
+      <h4>Перелёты, визы, деньги</h4>
+      <ul>
+        <li><a href="https://www.interfax.ru/world/1070357" target="_blank" rel="noopener">Интерфакс — визовый центр Японии</a></li>
+        <li><a href="https://italy.globalvfs.ru/local-centers/krasnodar-it/" target="_blank" rel="noopener">Визовый центр Италии в Краснодаре</a></li>
+        <li><a href="https://lenta.ru/news/2026/08/21/long-bezviz/" target="_blank" rel="noopener">Lenta.ru — сроки шенгенских виз 2026</a></li>
+        <li><a href="https://expert.ru/news/kitay-prodlil-bezvizovyy-rezhim-dlya-rossiyan-do-kontsa-2027-goda" target="_blank" rel="noopener">Эксперт — безвиз Китая до 2027</a></li>
+        <li><a href="https://centreforaviation.com/news/eastern-and-nordic-carriers-suspend-middle-east-services-1350262" target="_blank" rel="noopener">CAPA — приостановка рейсов через Залив</a></li>
+        <li><a href="https://www.cbr.ru/currency_base/daily/" target="_blank" rel="noopener">ЦБ РФ — официальные курсы</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Планировочная версия, не бронирование. Исследование от 4 ноября 2026 года; суммы — оценки по ценам 2026 года с погрешностью ±20–30%, пересчитанные по плановому курсу. Возрастные, ростовые и сезонные условия перепроверить перед покупкой.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+  /* ---- theme ---- */
+  var root=document.documentElement,btn=document.getElementById("themeBtn");
+  var saved=store.get("ft27-theme");
+  if(saved==="light"||saved==="dark")root.setAttribute("data-theme",saved);
+  function isDark(){var t=root.getAttribute("data-theme");if(t)return t==="dark";return window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches}
+  btn.addEventListener("click",function(){var next=isDark()?"light":"dark";root.setAttribute("data-theme",next);store.set("ft27-theme",next)});
+
+  /* ---- countdown ---- */
+  var cd=document.getElementById("countdown");
+  var dep=new Date(2027,2,26),now=new Date();
+  var days=Math.ceil((dep-new Date(now.getFullYear(),now.getMonth(),now.getDate()))/864e5);
+  function plural(n,a,b,c){var m=n%10,h=n%100;if(m===1&&h!==11)return a;if(m>=2&&m<=4&&(h<12||h>14))return b;return c}
+  if(days>0){cd.textContent="До вылета "+days+" "+plural(days,"день","дня","дней");cd.hidden=false}
+
+  /* ---- checklist ---- */
+  var key="ft27-check",state={};
+  try{state=JSON.parse(store.get(key)||"{}")||{}}catch(e){state={}}
+  var boxes=document.querySelectorAll("#checklist input[type=checkbox]"),prog=document.getElementById("progress");
+  function upd(){var n=0;boxes.forEach(function(b){if(b.checked)n++});prog.textContent="Выполнено: "+n+" из "+boxes.length}
+  boxes.forEach(function(b){b.checked=!!state[b.dataset.id];b.addEventListener("change",function(){state[b.dataset.id]=b.checked;store.set(key,JSON.stringify(state));upd()})});
+  upd();
+
+  /* ---- tabs ---- */
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function openTab(id,focus){tabs.forEach(function(t){var on=t.id==="tab-"+id;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute("aria-controls")).hidden=!on;if(on&&focus)t.focus()})}
+  tabs.forEach(function(t,i){
+    t.addEventListener("click",function(){openTab(t.id.slice(4))});
+    t.addEventListener("keydown",function(e){var d=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(!d)return;e.preventDefault();var n=tabs[(i+d+tabs.length)%tabs.length];openTab(n.id.slice(4),true)});
+  });
+  document.querySelectorAll("[data-open-tab]").forEach(function(b){b.addEventListener("click",function(){openTab(b.dataset.openTab);document.getElementById("details").scrollIntoView({behavior:"smooth"})})});
+
+  /* ---- budget ---- */
+  var D={
+    jp:{name:"Япония",eco:[887,750,1150,177,63,"~95%","~99%"],com:[1437,1200,1800,287,103,"~55%","~95%"],prem:[2403,1900,3000,481,172,"<5%","~15%"]},
+    it:{name:"Италия",eco:[813,700,1000,163,58,"~99%","~99%"],com:[1319,1100,1600,264,94,"~75%","~98%"],prem:[1960,1650,2400,392,140,"~5%","~55%"]},
+    ct:{name:"Кейптаун",eco:[1007,850,1350,201,72,"~85%","~99%"],com:[1673,1350,2100,335,120,"~25%","~75%"],prem:[2885,2300,3600,577,206,"~0%","<5%"]}
+  };
+  var NAMES={eco:"Эконом",com:"Комфорт",prem:"Повышенный"};
+  var MAX=3600;
+  function mln(v){return (Math.round(v/10)/100).toFixed(2).replace(".",",").replace(/,?0+$/,"")+" млн"}
+  function th(v){return String(v).replace(/\B(?=(\d{3})+(?!\d))/g," ")}
+  function pct(v){return (v/MAX*100)+"%"}
+  var overlay=document.getElementById("overlay"),axis=document.getElementById("axis");
+  [500,1000,1500,2000,2500,3000,3500].forEach(function(v){if(v===1500||v===2000)return;var g=document.createElement("div");g.className="gl";g.style.left=pct(v);overlay.appendChild(g)});
+  [[1500,"1,5 млн","ref r1"],[2000,"2 млн","ref solid r2"]].forEach(function(r){var e=document.createElement("div");e.className=r[2];e.style.left=pct(r[0]);var s=document.createElement("span");s.textContent=r[1];e.appendChild(s);overlay.appendChild(e)});
+  [0,1000,2000,3000].forEach(function(v){var s=document.createElement("span");s.style.left=pct(v);s.textContent=v===0?"0":(v/1000)+" млн";axis.appendChild(s)});
+  var sec=document.getElementById("budget"),title=document.getElementById("chartTitle"),sumBody=document.getElementById("sumBody");
+  var rows=[].slice.call(document.querySelectorAll(".brow")),cur="com";
+  function render(s){
+    cur=s;sec.setAttribute("data-scn",s);
+    document.querySelectorAll(".seg button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.scn===s)});
+    title.textContent="Итог сценария «"+NAMES[s]+"», млн ₽ · полоса — оценка, усы — диапазон погрешности";
+    rows.forEach(function(r){var d=D[r.dataset.d][s];r.querySelector(".bfill").style.width=pct(d[0]);var rg=r.querySelector(".brange");rg.style.left=pct(d[1]);rg.style.width=pct(d[2]-d[1]);r.querySelector("[data-v]").textContent="≈"+mln(d[0])+" ₽";r.setAttribute("aria-label",D[r.dataset.d].name+": около "+mln(d[0])+" рублей, диапазон "+mln(d[1])+" – "+mln(d[2]))});
+    sumBody.innerHTML=["jp","it","ct"].map(function(k){var d=D[k][s];return '<tr class="'+k+'"><td><b>'+D[k].name+'</b></td><td class="num"><b>≈'+mln(d[0])+' ₽</b></td><td class="num">'+mln(d[1]).replace(" млн","")+'–'+mln(d[2])+'</td><td class="num">'+th(d[3])+' тыс. ₽</td><td class="num">'+th(d[4])+' тыс. ₽</td><td class="num">'+d[5]+'</td><td class="num">'+d[6]+'</td></tr>'}).join("");
+  }
+  document.querySelectorAll(".seg button").forEach(function(b){b.addEventListener("click",function(){render(b.dataset.scn);hideTip()})});
+  var tip=document.getElementById("tip"),chart=document.getElementById("chart");
+  function showTip(r){var k=r.dataset.d,d=D[k][cur];tip.style.setProperty("--c","var(--"+k+")");
+    tip.innerHTML="<h5>"+D[k].name+" · "+NAMES[cur]+"</h5><dl><dt>Итого</dt><dd>≈"+mln(d[0])+" ₽</dd><dt>Диапазон</dt><dd>"+mln(d[1])+" – "+mln(d[2])+"</dd><dt>На человека</dt><dd>"+th(d[3])+" тыс. ₽</dd><dt>День семьи</dt><dd>"+th(d[4])+" тыс. ₽</dd><dt>Шанс ≤ 1,5 млн</dt><dd>"+d[5]+"</dd><dt>Шанс ≤ 2 млн</dt><dd>"+d[6]+"</dd></dl>";
+    var cr=chart.getBoundingClientRect(),rr=r.getBoundingClientRect(),fill=r.querySelector(".bfill").getBoundingClientRect();
+    var x=Math.min(fill.right-cr.left+12,cr.width-tip.offsetWidth-4);x=Math.max(4,x);
+    var y=rr.bottom-cr.top+4;tip.style.left=x+"px";tip.style.top=y+"px";tip.classList.add("on")}
+  function hideTip(){tip.classList.remove("on")}
+  rows.forEach(function(r){r.addEventListener("mouseenter",function(){showTip(r)});r.addEventListener("mouseleave",hideTip);r.addEventListener("focus",function(){showTip(r)});r.addEventListener("blur",hideTip);r.addEventListener("click",function(){showTip(r)})});
+  render("com");
+})();
+</script>
+</body>
+</html>
