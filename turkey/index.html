@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Турция с собакой</title>
+<meta name="description" content="Неделя в Турции в апреле 2027 из Сочи с той-пуделем в салоне: отели, куда пускают собак, документы по датам, перелёт, план по дням и калькулятор бюджета.">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230e8f86'/%3E%3Ccircle cx='24' cy='26' r='5' fill='%23fff'/%3E%3Ccircle cx='40' cy='26' r='5' fill='%23fff'/%3E%3Cellipse cx='32' cy='40' rx='9' ry='7' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f4ef;--surface:#fffdf9;--surface-2:#f0ede6;--surface-3:#e9e5dc;
+  --ink:#1d1f1c;--ink-2:#4b5049;--muted:#73786f;--line:#e2ded4;--line-2:#d2cdc1;
+  --jp:#eb6834;--ct:#2a78d6;--it:#1baf7a;
+  --jp-soft:#fcece4;--ct-soft:#e7f0fb;--it-soft:#e3f5ee;
+  --jp-ink:#a8401a;--ct-ink:#1d5aa3;--it-ink:#11744f;
+  --good-bg:#e4f1e2;--good-ink:#2f6a2a;--warn-bg:#fbefd5;--warn-ink:#80570b;--bad-bg:#f9e2df;--bad-ink:#9a2f26;
+  --hl:#fff4c7;--focus:#2a78d6;
+  --shadow:0 1px 2px rgb(29 31 28 / .05),0 10px 30px rgb(29 31 28 / .06);
+  --r:18px;--r-sm:12px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#131412;--surface:#1b1c1a;--surface-2:#232421;--surface-3:#2c2d29;
+    --ink:#f0efec;--ink-2:#c3c2b7;--muted:#97968c;--line:#31322d;--line-2:#3f403a;
+    --jp:#d95926;--ct:#3987e5;--it:#199e70;
+    --jp-soft:#33221a;--ct-soft:#1a2636;--it-soft:#162b23;
+    --jp-ink:#f09a74;--ct-ink:#8fbaf0;--it-ink:#6fd1aa;
+    --good-bg:#1f2e1d;--good-ink:#9fd598;--warn-bg:#33290f;--warn-ink:#f0cf7d;--bad-bg:#3a1d1a;--bad-ink:#f2a49b;
+    --hl:#3a3315;--focus:#8fbaf0;
+    --shadow:0 1px 2px rgb(0 0 0 / .3),0 10px 30px rgb(0 0 0 / .25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#131412;--surface:#1b1c1a;--surface-2:#232421;--surface-3:#2c2d29;
+  --ink:#f0efec;--ink-2:#c3c2b7;--muted:#97968c;--line:#31322d;--line-2:#3f403a;
+  --jp:#d95926;--ct:#3987e5;--it:#199e70;
+  --jp-soft:#33221a;--ct-soft:#1a2636;--it-soft:#162b23;
+  --jp-ink:#f09a74;--ct-ink:#8fbaf0;--it-ink:#6fd1aa;
+  --good-bg:#1f2e1d;--good-ink:#9fd598;--warn-bg:#33290f;--warn-ink:#f0cf7d;--bad-bg:#3a1d1a;--bad-ink:#f2a49b;
+  --hl:#3a3315;--focus:#8fbaf0;
+  --shadow:0 1px 2px rgb(0 0 0 / .3),0 10px 30px rgb(0 0 0 / .25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--ct-ink);text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:6px}
+h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
+p{margin:0 0 .8em}
+p:last-child{margin-bottom:0}
+ul{margin:0;padding-left:1.15em}
+li{margin:.2em 0}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.nowrap{white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:10px;height:56px}
+.brand{font-weight:800;font-size:15px;letter-spacing:-.01em;white-space:nowrap;color:var(--ink);text-decoration:none}
+.brand span{color:var(--jp)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;font-size:13.5px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:7px 10px;border-radius:99px}
+.nav a:hover{background:var(--surface-2);color:var(--ink)}
+.theme-btn{flex:none;width:36px;height:36px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.theme-btn svg{width:18px;height:18px}
+
+/* ---------- hero ---------- */
+.hero{padding:34px 0 8px}
+.hero-card{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:36px;box-shadow:var(--shadow)}
+.hero-card::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--jp)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:800;letter-spacing:-.045em;margin:12px 0 10px}
+.hero h1 em{font-style:normal;color:var(--jp)}
+.lead{font-size:clamp(17px,2vw,20px);line-height:1.5;color:var(--ink-2);max-width:780px}
+.lead b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;padding:6px 12px;border-radius:99px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line)}
+.chip.count{background:var(--jp-soft);color:var(--jp-ink);border-color:transparent;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px}
+.stat{background:var(--surface-2);border-radius:var(--r-sm);padding:14px 16px}
+.stat b{display:block;font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.stat span{display:block;font-size:13px;color:var(--ink-2);margin-top:4px;line-height:1.35}
+
+/* ---------- sections ---------- */
+section.block{padding:44px 0 6px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;letter-spacing:-.035em}
+.sec-head p{color:var(--ink-2);margin:6px 0 0;max-width:720px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.note{border-radius:var(--r-sm);padding:14px 16px;font-size:14.5px;line-height:1.55}
+.note.warn{background:var(--warn-bg);color:var(--warn-ink)}
+.note.good{background:var(--good-bg);color:var(--good-ink)}
+.note.info{background:var(--surface-2);color:var(--ink-2)}
+.note.bad{background:var(--bad-bg);color:var(--bad-ink)}
+.note b{color:inherit}
+.mt{margin-top:14px}
+.mt-l{margin-top:22px}
+
+/* ---------- verdict cards ---------- */
+.verdicts{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:14px}
+.vcard{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.vcard::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:0 4px 4px 0;background:var(--c)}
+.vcard.jp{--c:var(--jp);--soft:var(--jp-soft);--cink:var(--jp-ink);border-color:color-mix(in srgb,var(--jp) 45%,var(--line))}
+.vcard.ct{--c:var(--ct);--soft:var(--ct-soft);--cink:var(--ct-ink)}
+.vcard.it{--c:var(--it);--soft:var(--it-soft);--cink:var(--it-ink)}
+.vtop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.vcard h3{font-size:26px;font-weight:800;letter-spacing:-.03em}
+.vcard .sub{font-size:13px;color:var(--muted);margin-top:2px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:5px 10px;border-radius:99px;background:var(--soft);color:var(--cink);white-space:nowrap}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.score{display:flex;align-items:baseline;gap:6px}
+.score b{font-size:34px;font-weight:800;letter-spacing:-.04em}
+.score span{font-size:13px;color:var(--muted)}
+.scorebar{height:6px;border-radius:6px;background:var(--surface-3);overflow:hidden}
+.scorebar i{display:block;height:100%;background:var(--c);border-radius:0 4px 4px 0}
+.vlist{display:grid;gap:8px;margin:0;padding:0;list-style:none;font-size:14px}
+.vlist li{display:grid;grid-template-columns:96px 1fr;gap:10px;padding-top:8px;border-top:1px solid var(--line);margin:0}
+.vlist dt,.vlist .k{color:var(--muted);font-size:12.5px;font-weight:600;padding-top:1px}
+.vcard .more{margin-top:auto;font-size:14px;font-weight:600;color:var(--cink);background:none;border:0;padding:6px 0 0;cursor:pointer;text-align:left;font-family:inherit}
+.vcard .more:hover{text-decoration:underline}
+
+/* ---------- checklist ---------- */
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.checklist li{margin:0}
+.check{display:grid;grid-template-columns:26px 150px 1fr auto;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;cursor:pointer}
+.check.urgent{border-color:color-mix(in srgb,var(--jp) 50%,var(--line));background:linear-gradient(90deg,var(--jp-soft),var(--surface) 55%)}
+.check input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ink);cursor:pointer}
+.check .when{font-size:13px;font-weight:700;color:var(--ink-2);line-height:1.35;padding-top:2px}
+.check .what{font-size:14.5px;line-height:1.5}
+.check .tags{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.tag{font-size:11.5px;font-weight:700;padding:3px 8px;border-radius:99px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.tag.jp{background:var(--jp-soft);color:var(--jp-ink)}
+.tag.ct{background:var(--ct-soft);color:var(--ct-ink)}
+.tag.it{background:var(--it-soft);color:var(--it-ink)}
+.check:has(input:checked){opacity:.55}
+.check:has(input:checked) .what{text-decoration:line-through;text-decoration-color:var(--muted)}
+.progress{font-size:13px;color:var(--muted)}
+
+/* ---------- itinerary ---------- */
+.bases{display:grid;grid-template-columns:9fr 3fr;gap:10px;margin-bottom:14px}
+.bases.b4{grid-template-columns:3fr 3fr 2fr 4fr}.bases.b3{grid-template-columns:3fr 4fr 5fr}
+.base{border-radius:var(--r-sm);padding:16px;background:var(--jp-soft);color:var(--ink)}
+.base.b2{background:var(--surface-2)}
+.base h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.base .nights{font-size:13px;font-weight:700;color:var(--jp-ink);text-transform:uppercase;letter-spacing:.08em}
+.base.b2 .nights{color:var(--ink-2)}
+.base p{font-size:14px;color:var(--ink-2);margin:4px 0 0}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 16px;display:grid;gap:8px}
+.day.big{border-color:color-mix(in srgb,var(--jp) 55%,var(--line));box-shadow:inset 4px 0 0 var(--jp)}
+.day-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.day-n{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.day-h h4{font-size:16.5px;font-weight:700;letter-spacing:-.01em}
+.day p{font-size:14px;color:var(--ink-2);margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.m{font-size:12px;font-weight:600;padding:3px 8px;border-radius:8px;background:var(--surface-2);color:var(--ink-2);line-height:1.4}
+.m.ok{background:var(--good-bg);color:var(--good-ink)}
+.m.part{background:var(--warn-bg);color:var(--warn-ink)}
+.m.hard{background:var(--bad-bg);color:var(--bad-ink)}
+.m.book{background:var(--ct-soft);color:var(--ct-ink)}
+.day .cut{font-size:13px;color:var(--muted)}
+.day.depart{background:var(--surface-2);border-style:dashed}
+
+/* ---------- budget chart ---------- */
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:99px;padding:3px;gap:2px}
+.seg button{font:inherit;font-size:14px;font-weight:600;border:0;background:transparent;color:var(--ink-2);padding:7px 14px;border-radius:99px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chart{--lw:132px;position:relative;margin-top:18px}
+.plot{position:relative;padding-top:28px}
+.overlay{position:absolute;left:var(--lw);right:8px;top:0;bottom:26px;pointer-events:none}
+.gl{position:absolute;top:24px;bottom:0;width:0;border-left:1px solid var(--line)}
+.ref{position:absolute;top:0;bottom:0;width:0;border-left:2px dashed var(--ink-2);opacity:.75}
+.ref.solid{border-left-style:solid}
+.ref span{position:absolute;top:0;right:6px;font-size:12px;font-weight:700;color:var(--ink-2);white-space:nowrap;background:var(--surface);padding:0 4px;border-radius:4px}
+.ref.r2 span{right:auto;left:6px}
+.brow{display:grid;grid-template-columns:var(--lw) 1fr;align-items:center;min-height:62px;cursor:default;border-radius:10px;position:relative}
+.brow:hover,.brow:focus-visible{background:var(--surface-2)}
+.blabel{padding:0 12px 0 8px;line-height:1.25}
+.blabel b{display:flex;align-items:center;gap:7px;font-size:15px}
+.blabel b::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c);flex:none}
+.blabel span{display:block;font-size:13px;color:var(--ink-2);margin-top:3px;font-variant-numeric:tabular-nums}
+.btrack{position:relative;height:22px;margin-right:8px}
+.bfill{position:absolute;left:0;top:0;bottom:0;background:var(--c);border-radius:0 4px 4px 0;transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.brange{position:absolute;top:50%;height:0;border-top:2px solid var(--ink);transition:left .45s cubic-bezier(.2,.7,.2,1),width .45s cubic-bezier(.2,.7,.2,1)}
+.brange::before,.brange::after{content:"";position:absolute;top:-7px;width:0;height:12px;border-left:2px solid var(--ink)}
+.brange::before{left:0}.brange::after{right:0}
+.brow.jp{--c:var(--jp)}.brow.ct{--c:var(--ct)}.brow.it{--c:var(--it)}
+.axis{display:grid;grid-template-columns:var(--lw) 1fr;height:26px}
+.axis .ax{position:relative;margin-right:8px}
+.ax span{position:absolute;top:6px;transform:translateX(-50%);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink-2);margin-top:10px}
+.legend i{display:inline-block;vertical-align:middle;margin-right:6px}
+.lg-bar{width:16px;height:10px;border-radius:0 3px 3px 0;background:var(--ink-2)}
+.lg-range{width:18px;height:10px;border-left:2px solid var(--ink);border-right:2px solid var(--ink);background:linear-gradient(var(--ink),var(--ink)) center/100% 2px no-repeat}
+.lg-ref{width:0;height:12px;border-left:2px dashed var(--ink-2)}
+.tip{position:absolute;z-index:5;pointer-events:none;background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;font-size:13px;box-shadow:var(--shadow);min-width:210px;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
+.tip.on{opacity:1;transform:none}
+.tip h5{margin:0 0 6px;font-size:14px;display:flex;align-items:center;gap:7px}
+.tip h5::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c)}
+.tip dl{display:grid;grid-template-columns:auto auto;gap:3px 14px;margin:0}
+.tip dt{color:var(--muted)}
+.tip dd{margin:0;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{font-weight:800;background:var(--surface-2)}
+tr.range td{color:var(--muted);font-size:13px}
+.est{min-width:720px}
+.est td:nth-child(2){font-weight:600}
+.est td:last-child{color:var(--ink-2);font-size:13px;min-width:260px}
+[data-scn="eco"] .est :is(td,th):nth-child(4),
+[data-scn="com"] .est :is(td,th):nth-child(5),
+[data-scn="prem"] .est :is(td,th):nth-child(6){background:var(--hl)}
+.ours :is(td,th):nth-child(4){background:var(--hl)}
+.sumtable{min-width:600px}
+.sumtable td:first-child b{display:inline-flex;align-items:center;gap:7px}
+.sumtable td:first-child b::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c)}
+.sumtable tr.jp{--c:var(--jp)}.sumtable tr.ct{--c:var(--ct)}.sumtable tr.it{--c:var(--it)}
+details.acc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);margin-top:10px}
+details.acc>summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700;display:flex;align-items:center;gap:10px}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::before{content:"";width:8px;height:8px;border-right:2px solid var(--ink-2);border-bottom:2px solid var(--ink-2);transform:rotate(-45deg);transition:transform .15s;flex:none;margin-right:2px}
+details.acc[open]>summary::before{transform:rotate(45deg)}
+details.acc>summary .dot{width:10px;height:10px;border-radius:3px;flex:none}
+details.acc>summary .sumr{margin-left:auto;font-weight:600;color:var(--ink-2);font-size:14px;font-variant-numeric:tabular-nums}
+details.acc .acc-body{padding:0 16px 16px}
+details.acc .tablewrap{border-radius:10px}
+.rel{font-size:13px;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px}
+.rel b{font-weight:800;color:var(--ink)}
+
+/* ---------- scores ---------- */
+.scores{min-width:760px}
+.scores td.sc{text-align:center;font-variant-numeric:tabular-nums;width:86px}
+.pill{display:inline-grid;place-items:center;min-width:34px;height:28px;padding:0 8px;border-radius:8px;font-weight:700;background:var(--surface-2)}
+.pill.top{background:var(--ink);color:var(--bg)}
+.scores th.sc{text-align:center}
+.scores th.sc i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px;vertical-align:middle}
+.scores td:last-child{color:var(--ink-2);font-size:13.5px}
+.scores tr.total td{font-size:16px}
+
+/* ---------- tabs ---------- */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button{font:inherit;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.tabs button i{width:10px;height:10px;border-radius:3px}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabpanel[hidden]{display:none}
+.tabpanel>.intro{font-size:17px;color:var(--ink-2);max-width:820px;margin-bottom:16px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fact{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:16px 18px}
+.fact h4{font-size:16.5px;font-weight:700;margin-bottom:8px}
+.fact p,.fact li{font-size:14.5px;color:var(--ink-2)}
+.fact b{color:var(--ink)}
+.fact.wide{grid-column:1/-1}
+.fact .tablewrap{margin-top:10px;border-radius:10px}
+.fact table{font-size:13.5px}
+.subh{font-size:20px;font-weight:800;letter-spacing:-.02em;margin:26px 0 12px}
+.itable{min-width:820px}
+.itable td:first-child{white-space:nowrap;font-weight:700}
+.itable td:nth-child(2){min-width:220px}
+
+/* ---------- risks ---------- */
+.risks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.risks li{margin:0;padding-top:10px;border-top:1px solid var(--line)}
+.risks li:first-child{border-top:0;padding-top:0}
+.risks .r{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.risks .r b{font-size:14.5px;line-height:1.4}
+.risks p{font-size:13.5px;color:var(--ink-2);margin:4px 0 0}
+.sev{flex:none;font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px;white-space:nowrap}
+.sev.crit{background:var(--bad-bg);color:var(--bad-ink)}
+.sev.high{background:var(--warn-bg);color:var(--warn-ink)}
+.sev.mid{background:var(--surface-2);color:var(--ink-2)}
+.sev.low{background:var(--good-bg);color:var(--good-ink)}
+.rcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;border-top:4px solid var(--c)}
+.rcard.jp{--c:var(--jp)}.rcard.ct{--c:var(--ct)}.rcard.it{--c:var(--it)}
+.rcard h3{font-size:19px;font-weight:800;margin-bottom:12px}
+
+/* ---------- sources ---------- */
+.src{columns:3 260px;column-gap:24px;font-size:13.5px}
+.src h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;break-after:avoid}
+.src ul{list-style:none;padding:0;margin:0 0 18px;break-inside:avoid-column}
+.src li{margin:0 0 6px;line-height:1.4}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14.5px;padding:11px 16px;border-radius:99px;text-decoration:none;border:1px solid var(--line-2);color:var(--ink);background:var(--surface)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+footer{padding:40px 0 56px;color:var(--muted);font-size:13px}
+footer .wrap{border-top:1px solid var(--line);padding-top:20px}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .verdicts{grid-template-columns:minmax(0,1fr)}
+  .grid-3{grid-template-columns:minmax(0,1fr)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .hero{padding-top:18px}
+  .hero-card{padding:24px 18px;border-radius:22px}
+  .grid-2,.days,.facts{grid-template-columns:minmax(0,1fr)}
+  .bases,.bases.b4,.bases.b3{grid-template-columns:minmax(0,1fr)}
+  .check{grid-template-columns:24px 1fr;gap:4px 10px}
+  .check .when{grid-column:2}
+  .check .what{grid-column:2}
+  .check .tags{grid-column:2;justify-content:flex-start}
+  .chart{--lw:104px}
+  .blabel{padding-left:4px;padding-right:8px}
+  .blabel b{font-size:14px}
+  .ref span{font-size:11px}
+  .brand{display:none}
+  .vlist li{grid-template-columns:84px 1fr}
+  .scores{min-width:0}
+  .scores,.scores thead,.scores tbody{display:block}
+  .scores tr{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,62px);align-items:center;border-bottom:1px solid var(--line)}
+  .scores tbody tr:last-child{border-bottom:0}
+  .scores th,.scores td{border-bottom:0}
+  .scores thead th:last-child{display:none}
+  .scores thead tr{background:var(--surface-2)}
+  .scores th.sc{font-size:10px;letter-spacing:.02em;padding:10px 2px;white-space:normal}
+  .scores th.sc i{display:block;margin:0 auto 4px}
+  .scores td.sc{width:auto;padding:10px 2px}
+  .scores td:first-child{font-weight:600}
+  .scores td:last-child{grid-column:1/-1;padding-top:0;font-size:13px}
+  .scores tr.total td:last-child{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{
+  .topbar,.theme-btn,.seg,.tabs{display:none}
+  .tabpanel[hidden]{display:block}
+  body{background:#fff}
+  .vcard,.panel,.fact,.day,.rcard,.hero-card{box-shadow:none}
+}
+
+/* ---------- calculator ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:18px;align-items:start}
+.calc-groups{display:grid;gap:12px}
+.cg{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px 8px;margin:0;min-width:0}
+.cg legend{font-weight:800;font-size:15.5px;padding:0 6px;letter-spacing:-.01em}
+.cg .cg-note{font-size:12.5px;color:var(--muted);margin:0 6px 6px}
+.opt{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:start;padding:9px 8px;border-top:1px solid var(--line);cursor:pointer;border-radius:8px}
+.cg .opt:first-of-type{border-top:0}
+.opt:hover{background:var(--surface-2)}
+.opt input{margin:2px 0 0;width:18px;height:18px;accent-color:var(--jp);cursor:pointer}
+.opt .t{font-size:14.5px;font-weight:600;line-height:1.35}
+.opt .n{display:block;font-size:12.5px;color:var(--muted);font-weight:400;margin-top:2px}
+.opt .tg{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:99px;background:var(--surface-2);color:var(--ink-2);margin-left:6px;vertical-align:1px}
+.opt .tg.rec{background:var(--good-bg);color:var(--good-ink)}
+.opt .p{font-size:14px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right}
+.opt .p small{display:block;font-size:11.5px;color:var(--muted);font-weight:500}
+.opt:has(input:checked){background:var(--jp-soft)}
+.cg.off{opacity:.45}
+.cg.off .opt{pointer-events:none}
+.rangebox{padding:6px 8px 4px}
+.rangebox input[type=range]{width:100%;accent-color:var(--jp)}
+.rangebox .rv{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.rangebox .rv b{font-size:18px;color:var(--ink)}
+.ratebox{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:6px 8px;font-size:14px}
+.ratebox input{width:84px;font:inherit;font-weight:700;padding:6px 8px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface);color:var(--ink)}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.presets button{font:inherit;font-size:14px;font-weight:700;padding:8px 14px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.presets button:hover{background:var(--surface-2);color:var(--ink)}
+.calc-sum{position:sticky;top:72px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+.calc-sum .lbl{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.calc-sum .big{font-size:34px;font-weight:800;letter-spacing:-.035em;line-height:1.1;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+.calc-sum .sub2{font-size:13.5px;color:var(--ink-2)}
+.sum-rows{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px;font-size:13.5px}
+.sum-rows li{display:grid;grid-template-columns:1fr auto;gap:3px 10px;margin:0}
+.sum-rows li span:last-of-type{font-weight:700;font-variant-numeric:tabular-nums}
+.sum-rows .bar{grid-column:1/-1;height:6px;background:var(--surface-3);border-radius:6px;overflow:hidden}
+.sum-rows .bar i{display:block;height:100%;background:var(--jp);border-radius:0 4px 4px 0;transition:width .3s}
+.sum-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.sum-meta div{background:var(--surface-2);border-radius:10px;padding:8px 10px;font-size:12.5px;color:var(--ink-2)}
+.sum-meta b{display:block;font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+.calc-sum .note{margin-top:12px;font-size:13px}
+.calc-sum .btn{margin-top:12px;width:100%;justify-content:center;cursor:pointer;font-family:inherit}
+.calc-bar{position:fixed;left:0;right:0;bottom:0;z-index:15;display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--ink);color:var(--bg);font-size:14px}
+.calc-bar b{font-size:18px}
+.calc-bar a{color:var(--bg);font-weight:700}
+@media (max-width:960px){.calc{grid-template-columns:minmax(0,1fr)}.calc-sum{position:static}}
+@media (max-width:760px){.calc-bar.on{display:flex}.opt{grid-template-columns:20px minmax(0,1fr)}.opt .p{grid-column:2;text-align:left}}
+.risks.two{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.risks.two li:nth-child(2){border-top:0;padding-top:0}
+@media (max-width:760px){.risks.two{grid-template-columns:minmax(0,1fr)}.risks.two li:nth-child(2){border-top:1px solid var(--line);padding-top:10px}}
+</style>
+<style>
+/* Turkey accent: turquoise instead of Japan orange */
+:root{--jp:#0e8f86;--jp-soft:#e1f3f1;--jp-ink:#0b6a63}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--jp:#1aa89c;--jp-soft:#14302d;--jp-ink:#6fd6cb}}
+:root[data-theme="dark"]{--jp:#1aa89c;--jp-soft:#14302d;--jp-ink:#6fd6cb}
+.verdicts{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:960px){.verdicts{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Турция&nbsp;<span>2027</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#urgent">Срочно</a>
+      <a href="#dog">Документы собаки</a>
+      <a href="#todo">Чек-лист</a>
+      <a href="#hotels">Отели</a>
+      <a href="#plan">По дням</a>
+      <a href="#flights">Перелёт</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#info">Погода и деньги</a>
+      <a href="#sources">Источники</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Переключить тему">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="wrap hero">
+  <div class="hero-card">
+    <div class="eyebrow">Семейный проект · апрель 2027 · исследование от 6 ноября 2026</div>
+    <h1>Турция <em>с собакой</em>.</h1>
+    <p class="lead"><b>Белек, 17–24 апреля 2027, 7 ночей.</b> Прямой рейс Сочи → Анталья ~2 часа, той-пудель в салоне, вилла или pet-friendly номер в топовом отеле, подогреваемые бассейны, Land of Legends, аквариум и старая Анталья — с собакой там, где можно.</p>
+    <div class="chips">
+      <span class="chip count" id="countdown" hidden></span>
+      <span class="chip">2 взрослых + дети 10, 8 и 2 года</span>
+      <span class="chip">Той-пудель до 7 кг в переноске</span>
+      <span class="chip">Вылет из Сочи</span>
+      <span class="chip">До майских праздников</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>до 23.12</b><span>сдать кровь собаки на титр антител — иначе к апрелю не успеть</span></div>
+      <div class="stat"><b>≤ 8 кг</b><span>собака вместе с переноской — лимит в салоне почти у всех авиакомпаний</span></div>
+      <div class="stat"><b>3 отеля</b><span>из топовых в Анталье реально пускают собак — нужен письменный «да»</span></div>
+      <div class="stat"><b>≈1,0–2,6 млн ₽</b><span>от отличного семейного отеля до виллы Kempinski — в калькуляторе</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- URGENT -->
+<section class="block" id="urgent">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Главное сразу</div><h2>Четыре вещи, которые нельзя отложить</h2></div></div>
+    <div class="grid-2">
+      <div class="note bad"><b>1. Титр антител к бешенству — до ~20–25 декабря 2026.</b> По турецкому регламенту (RG 28133) тест обязателен: кровь — не раньше чем через 30 дней после прививки, въезд — не раньше чем через 3 месяца после забора крови, результат ≥0,5 МЕ/мл в аккредитованной лаборатории. На практике россиян часто пускают и без него, но часть авиакомпаний и госветклиник требует. Тест стоит ~6–15 тыс. ₽ — это дешёвая страховка от разворота в аэропорту. Крайний срок — ~16 января, но в новогодние праздники лаборатории не работают.</div>
+      <div class="note warn"><b>2. Взвесить собаку вместе с переноской.</b> Почти у всех авиакомпаний лимит в салоне — 8 кг с переноской; «до 7 кг» плюс мягкая сумка — впритык. У Аэрофлота можно до 15 кг, если выкупить собаке отдельное место по взрослому тарифу.</div>
+      <div class="note warn"><b>3. Отель — только с письменным подтверждением собаки.</b> Большинство топовых all inclusive Белека, Лары и Кемера собак не пускают. У тех, кто пускает, — особые номера или виллы, их мало, и без согласования заранее не заселят.</div>
+      <div class="note info"><b>4. Без чартерного пакета.</b> Чартеры из Сочи стартуют только около 27–28 апреля, и правила провоза собак у чартерных перевозчиков жёстче. Надёжнее: прямой регулярный рейс (Azimut, IrAero; Аэрофлот — если нужен бизнес) с собакой, согласованной с авиакомпанией, и отель отдельно.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DOG -->
+<section class="block" id="dog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="kicker">Документы на собаку</div><h2>Что и когда сделать — по датам</h2><p>Пример под вылет в субботу 17.04.2027 и возвращение в субботу 24.04.2027. Галочки сохраняются в этом браузере.</p></div>
+      <div class="progress" id="progressDog" aria-live="polite"></div>
+    </div>
+    <ul class="checklist" id="checklistDog">
+      <li><label class="check urgent"><input type="checkbox" data-id="d1"><span class="when">Сейчас — до 18.11.2026</span><span class="what">Проверить ветпаспорт: номер чипа ISO вписан, чип поставлен <b>до</b> прививки от бешенства. Если прививке на 24.04.2027 будет больше 12 месяцев или она сделана до чипа — привить заново (бешенство + комплекс). Позвонить в госветклинику Сочи и на ветпост Россельхознадзора в аэропорту Сочи: что они требуют для Турции.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="d2"><span class="when">18–23.12.2026</span><span class="what"><b>Кровь на титр антител</b> (FAVN/RNATT) — минимум через 30 дней после прививки, в лаборатории, которую принимает ЕС. Результат вписать в паспорт. Крайний срок — ~16.01.2027.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="d3"><span class="when">До 17.03.2027</span><span class="what">Убедиться, что все прививки сделаны не меньше чем за 21–30 дней до вылета.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="d4"><span class="when">03–10.04.2027</span><span class="what">Ошейник от москитов и клещей (Seresto или Scalibor): побережье Турции — зона лейшманиоза, в конце апреля москиты уже бывают.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="d5"><span class="when">07–12.04.2027</span><span class="what">Обработка от глистов с отметкой в паспорте (анализ кала — если попросит ветклиника). Подать онлайн-заявку на сертификат (eCert Россельхознадзора).</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="d6"><span class="when">14–16.04.2027</span><span class="what">Госветклиника Сочи: осмотр и <b>ветсвидетельство формы № 1</b> (действует 5 дней, оформляется электронно в «Меркурии»).</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="d7"><span class="when">17.04.2027, аэропорт Сочи</span><span class="what">Приехать на 1–1,5 ч раньше. Ветпост Россельхознадзора бесплатно меняет форму № 1 на <b>сертификат 5а</b> и сертификат по турецкой форме (Турции нужен документ не старше 48 часов на момент въезда).</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="d8"><span class="when">Чт 22.04.2027, Белек</span><span class="what">Турецкий ветврач: осмотр, запись в паспорте, справка на английском (номер чипа, здорова). В идеале — ещё сертификат İl Tarım ve Orman Müdürlüğü (≤48 часов; туристов проверяют редко). <b>23.04 — турецкий праздник</b>, поэтому всё в четверг.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="d9"><span class="when">24.04.2027, возвращение</span><span class="what">В Россию (ЕАЭС) — без разрешения и карантина: ветпаспорт с прививками (бешенство и комплекс — в пределах 12 месяцев и ≥20 дней) и отметка об осмотре в стране вывоза за 14 дней — либо сертификат 5а, выданный при вылете (действует на возвращение в течение 90 дней). Титр для России не нужен.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+    </ul>
+    <p class="small muted mt">Стоимость (оценки): титр ~6–15 тыс. ₽, прививки ~1,5–4 тыс. ₽, форма № 1 — бесплатно (осмотр ~0,1–1 тыс. ₽), сертификаты в аэропорту — 0 ₽, турецкий ветврач ~500–2 000 TL, сертификат Tarım — несколько сотен лир. Не подтверждено: настаивает ли ветпост Сочи на титре — спросить заранее.</p>
+  </div>
+</section>
+
+<!-- TODO -->
+<section class="block" id="todo">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Семья</div><h2>Чек-лист поездки</h2></div><div class="progress" id="progressFam" aria-live="polite"></div></div>
+    <ul class="checklist" id="checklistFam">
+      <li><label class="check urgent"><input type="checkbox" data-id="f1"><span class="when">Ноябрь 2026</span><span class="what">Написать в отели (Kempinski The Dome, Barut Hemera, Selectum Family Resort): даты 17–24.04, 2 взрослых + 3 детей, той-пудель ~7 кг — нужно <b>письменное подтверждение</b> и условия (вес, плата, где можно гулять).</span><span class="tags"><span class="tag jp">отель</span></span></label></li>
+      <li><label class="check urgent"><input type="checkbox" data-id="f2"><span class="when">Ноябрь — декабрь 2026</span><span class="what">Билеты Сочи → Анталья 17.04 и обратно 24.04 прямым регулярным рейсом. <b>Собаку добавить по телефону</b> (IrAero — за 48 часов, лучше сразу при покупке), получить подтверждение. Проверить у авиакомпании лимит веса и размер переноски.</span><span class="tags"><span class="tag jp">перелёт</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="f3"><span class="when">Ноябрь 2026</span><span class="what">Загранпаспорта всех пятерых: срок действия — с запасом (минимум 120 дней после въезда, надёжнее 6 месяцев). У младшей — свой паспорт. Свидетельства о рождении — с собой.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="f4"><span class="when">Январь — март 2027</span><span class="what">Частный трансфер Анталья ↔ Белек: минивэн, детские кресла, собака в переноске (+€10–15) — подтвердить письменно.</span><span class="tags"><span class="tag jp">трансфер</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="f5"><span class="when">Март 2027</span><span class="what">Land of Legends: проверить даты работы на апрель (аквапарк в 2026 открылся только 1 мая). Аквариум Анталии — работает круглый год.</span><span class="tags"><span class="tag jp">развлечения</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="f6"><span class="when">До вылета</span><span class="what">Страховка семье с медэвакуацией; резерв на ветврача для собаки (российская страховка животных Турцию почти наверняка не покрывает).</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="f7"><span class="when">До вылета</span><span class="what">eSIM купить и установить дома: часть сайтов и приложений eSIM в Турции заблокирована с июля 2025. Наличные евро или доллары; оплата в рублях по QR через СБП работает в 800+ точках Анталии, но со сбоями.</span><span class="tags"><span class="tag">все</span></span></label></li>
+      <li><label class="check"><input type="checkbox" data-id="f8"><span class="when">В дорогу</span><span class="what">Запас корма, пелёнок и воды для собаки на сутки и больше: летом 2026 задержки в аэропорту Сочи доходили до 35 часов.</span><span class="tags"><span class="tag jp">собака</span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- HOTELS -->
+<section class="block" id="hotels">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Отели</div><h2>Топ, куда реально пускают собаку</h2><p>Большинство лучших all inclusive Анталии собак не принимают. Ниже — те, у кого есть официальная pet-политика. Цены — оценки: реальных цен на апрель 2027 собрать не удалось.</p></div></div>
+    <div class="verdicts">
+      <article class="vcard jp">
+        <div class="vtop"><div><h3>Kempinski The Dome</h3><div class="sub">Белек · вилла с 3 спальнями и своим бассейном</div></div><span class="badge">Самый топ</span></div>
+        <ul class="vlist">
+          <li><span class="k">Собака</span><span>только в виллах, до 10 кг, ~€20 за ночь, подписать pet-соглашение. Агрегаторы пишут «без животных» — нужно письменное «да»</span></li>
+          <li><span class="k">Дети</span><span>детский клуб 4–12 лет; для младшей — няня по запросу за 24 ч</span></li>
+          <li><span class="k">Плюсы</span><span>своя вилла и свой бассейн — собака и малыш в своём ритме; талассо и спа</span></li>
+          <li><span class="k">7 ночей</span><span><b>~€12–25 тыс.</b> (оценка)</span></li>
+        </ul>
+      </article>
+      <article class="vcard it">
+        <div class="vtop"><div><h3>Barut Hemera</h3><div class="sub">Сиде · ultra all inclusive</div></div><span class="badge">Отличный UAI</span></div>
+        <ul class="vlist">
+          <li><span class="k">Собака</span><span>официальная программа: номер Deluxe Garden View «Pet Friendly», 1 питомец, по сторонним данным до 8 кг и €25 в день; только после одобрения отеля</span></li>
+          <li><span class="k">Ограничения</span><span>не в лобби и закрытых зонах, гулять на поводке по отведённым дорожкам</span></li>
+          <li><span class="k">Семья</span><span>pet-номер на 4 человека — нужно 2 номера</span></li>
+          <li><span class="k">7 ночей</span><span><b>~€5–7 тыс.</b> за 2 номера (оценка)</span></li>
+        </ul>
+      </article>
+      <article class="vcard ct">
+        <div class="vtop"><div><h3>Selectum Family Resort</h3><div class="sub">Белек · UAI, только для семей</div></div><span class="badge">Семейный выбор</span></div>
+        <ul class="vlist">
+          <li><span class="k">Собака</span><span>официальная страница pet-friendly с «Nature Area» для гостей с собаками и кошками; вес и плата не опубликованы</span></li>
+          <li><span class="k">Дети</span><span>концепция только для семей с детьми</span></li>
+          <li><span class="k">Апрель</span><span>работу в апреле подтвердить</span></li>
+          <li><span class="k">7 ночей</span><span><b>~€3,5–5,5 тыс.</b> (оценка)</span></li>
+        </ul>
+      </article>
+    </div>
+    <div class="grid-2 mt">
+      <div class="note info"><b>Почему не Бодрум.</b> Там есть сильные pet-friendly отели (Six Senses Kaplankaya, Kempinski Barbaros Bay, Lujo — до 6 кг), но в апреле нет прямых рейсов из Сочи (Azimut — с ~7 июня), многие отели открываются только во второй половине апреля, а аэропорт Бодрума не подтверждён как пункт ввоза животных. Анталья в списке есть.</div>
+      <div class="note warn"><b>Собак не пускают</b> (по официальным FAQ или нескольким сайтам): Rixos Premium Belek, Rixos Sungate, Rixos Premium Tekirova, Gloria Serenity, Maxx Royal Kemer, Titanic, Calista, Susesi, Ela, Cornelia, Voyage, Delphin, Liberty Lara, NG Phaselis, Kaya Palazzo, Concorde. Maxx Royal Belek и Lara Barut — сведения противоречат друг другу, стоит написать напрямую.</div>
+    </div>
+    <p class="small muted mt">Запасные варианты уровнем ниже, но с собаками: Limak Arcadia (Белек, до 35 кг, €20/ночь), Limak Limra (Кемер), Nirvana Cosmopolitan и Dolce Vita (pet-номера ~€40–75/ночь).</p>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="block" id="plan">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">По дням</div><h2>7 ночей: курорт, парки и Анталья с собакой</h2><p>Днём +20–22 °C, море 17–18 °C — купаться детям холодно, поэтому решают подогреваемые бассейны. В парки, аквариум и музеи с собакой, скорее всего, нельзя — в эти дни она остаётся в вилле или номере со взрослым.</p></div></div>
+    <div class="days">
+      <div class="day"><div class="day-h"><span class="day-n">1 · сб 17.04</span><h4>Сочи → Анталья → Белек</h4></div><p>Утренний прямой рейс (~2 ч, часовой пояс тот же), частный минивэн с креслами (~40 мин), заселение, бассейн.</p><div class="meta"><span class="m ok">лёгкий</span><span class="m book">рейс с собакой, трансфер</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">2 · вс 18.04</span><h4>День в отеле</h4></div><p>Подогреваемые бассейны, детский клуб, спа, à la carte вечером. Собака — с вами по территории, где разрешено.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+      <div class="day big"><div class="day-h"><span class="day-n">3 · пн 19.04</span><h4>Land of Legends</h4></div><p>Тематический парк в Белеке (~15 мин). Аквапарк в апреле, скорее всего, ещё закрыт. Собака — в номере с одним из взрослых или с няней.</p><div class="meta"><span class="m hard">большой</span><span class="m book">проверить даты работы</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">4 · вт 20.04</span><h4>Отель и спа</h4></div><p>Отдых после парка, спа для взрослых по очереди, детский клуб.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+      <div class="day big"><div class="day-h"><span class="day-n">5 · ср 21.04</span><h4>Анталья с собакой</h4></div><p>Старый город Калеичи и гавань, частная лодка вдоль скал (собака с вами), водопад Дюден. Обед в городе.</p><div class="meta"><span class="m part">средний</span><span class="m book">лодка — заранее</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">6 · чт 22.04</span><h4>Ветврач + аквариум</h4></div><p>Утром — турецкий ветврач для документов на возвращение. Днём — аквариум Анталии и Snow World для детей; взрослым по желанию Аспендос.</p><div class="meta"><span class="m part">средний</span><span class="m book">ветврач — записаться</span></div></div>
+      <div class="day"><div class="day-h"><span class="day-n">7 · пт 23.04</span><h4>Праздник в Турции — день в отеле</h4></div><p>23 апреля — День детей в Турции, на выходных людно. Бассейны, спа, прощальный ужин.</p><div class="meta"><span class="m ok">лёгкий</span></div></div>
+      <div class="day depart"><div class="day-h"><span class="day-n">Сб 24.04</span><h4>Белек → Анталья → Сочи</h4></div><p>Трансфер, рейс домой. Документы собаки — паспорт с отметкой турецкого врача и сертификат 5а.</p></div>
+    </div>
+    <p class="small muted mt">По желанию вместо дня в отеле: канатная дорога на Тахталы (~1 425 TL взрослый, дети за полцены), джип-сафари (€35/€15), конные прогулки (€35–60), Перге (€12) — цены 2026 года.</p>
+  </div>
+</section>
+
+<!-- FLIGHTS -->
+<section class="block" id="flights">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Перелёт</div><h2>Сочи → Анталья, ~2 часа</h2><p>Turkish Airlines, Pegasus, AJet и SunExpress из Сочи не летают. Прямые рейсы в Анталью — 12–15 в неделю, вылеты с 06:00 до 19:30 (по снимкам агрегаторов 2026 года). Тарифов на апрель 2027 ещё не видно.</p></div></div>
+    <div class="tablewrap">
+      <table style="min-width:760px">
+        <thead><tr><th>Авиакомпания</th><th>Рейсы</th><th>Собака в салоне</th><th>Комментарий</th></tr></thead>
+        <tbody>
+          <tr><td><b>Azimut</b></td><td>круглый год, A4 5069 в 07:00</td><td>правила на официальном сайте не проверены</td><td>утренний вылет — к обеду в отеле</td></tr>
+          <tr><td><b>IrAero</b></td><td>круглый год; также Даламан 2–4 раза в неделю</td><td>до 8 кг с переноской, переноска до 30×50×50 см, согласовать за 48 ч, плата по весу</td><td>только эконом</td></tr>
+          <tr><td><b>Аэрофлот / «Россия»</b></td><td>есть в выдаче, на 2026 не подтверждено</td><td>мягкая переноска до 126 см по сумме сторон под креслом; до 15 кг — на отдельном месте по взрослому тарифу; можно в бизнесе</td><td>единственный реальный бизнес-класс</td></tr>
+          <tr><td>Уральские авиалинии</td><td>вероятно, вылет в 15:30 (август 2026)</td><td>не проверено</td><td></td></tr>
+          <tr><td>Чартеры (Southwind, AZUR air)</td><td>с ~27–28 апреля</td><td>Southwind — 8 кг (сторонний источник); AZUR — ~360 ₽ за кг, без онлайн-регистрации</td><td>в наши даты ещё не летают</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted mt">Цены (снимки 2026): Сочи → Анталья от ~9,6–10,4 тыс. ₽ в одну сторону. На семью туда-обратно — ~100–200 тыс. ₽ (оценка); бизнес Аэрофлота — ~300–600 тыс. ₽ (оценка, низкая уверенность). Младшей после 7 апреля уже 2 года — нужно своё место.</p>
+  </div>
+</section>
+
+<!-- CALC -->
+<section class="block" id="calc">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Калькулятор</div><h2>Сколько стоит неделя</h2><p>Отели — оценки: реальных цен на апрель 2027 собрать не удалось. Перелёт — оценка по снимкам 2026 года. Выбор сохраняется в этом браузере.</p></div></div>
+    <div class="presets" role="group" aria-label="Готовые варианты">
+      <button type="button" data-preset="top">Самый топ: вилла Kempinski</button>
+      <button type="button" data-preset="great">Отлично: Barut Hemera</button>
+      <button type="button" data-preset="smart">Разумно: Selectum Family</button>
+    </div>
+    <div class="calc">
+      <div class="calc-groups" id="calcGroups"></div>
+      <aside class="calc-sum" id="calcSum" aria-live="polite">
+        <div class="lbl">Итого с шопингом</div>
+        <div class="big" id="sumTotal">—</div>
+        <div class="sub2" id="sumNoShop"></div>
+        <ul class="sum-rows" id="sumRows"></ul>
+        <div class="sum-meta">
+          <div><b id="sumPerson">—</b>на человека</div>
+          <div><b id="sumDay">—</b>день семьи (8 дней)</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<div class="calc-bar" id="calcBar"><span>Итого: <b id="barTotal">—</b></span><a href="#calcSum">Детали ↓</a></div>
+
+<!-- INFO -->
+<section class="block" id="info">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Погода, праздники, деньги</div><h2>Что важно знать про апрель</h2></div></div>
+    <div class="tablewrap">
+      <table style="min-width:620px">
+        <thead><tr><th>Регион</th><th class="num">День</th><th class="num">Ночь</th><th class="num">Море</th><th class="num">Дождливых дней</th></tr></thead>
+        <tbody>
+          <tr><td><b>Анталья, Белек, Лара, Сиде</b></td><td class="num">20–22 °C</td><td class="num">10–12 °C</td><td class="num">17–18 °C</td><td class="num">4–7</td></tr>
+          <tr><td>Кемер</td><td class="num">19–21 °C</td><td class="num">12–13 °C</td><td class="num">~18 °C</td><td class="num">больше (горы)</td></tr>
+          <tr><td>Бодрум</td><td class="num">19–21 °C</td><td class="num">12–15 °C</td><td class="num">~17 °C</td><td class="num">5–7</td></tr>
+          <tr><td>Фетхие, Даламан</td><td class="num">20–21 °C</td><td class="num">8–10 °C</td><td class="num">~17 °C</td><td class="num">~8</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid-3 mt">
+      <div class="fact"><h4>Даты</h4><ul><li>Байрамы 2027 на апрель не попадают: Рамадан — 9–11 марта, Курбан — 16–19 мая.</li><li>23 апреля (пятница) — выходной в Турции, выходные 23–25 апреля людные.</li><li>Вернуться до ~27–28 апреля: дальше — цены майских праздников в России.</li></ul></div>
+      <div class="fact"><h4>Деньги</h4><ul><li>«Мир» почти не работает, российский UnionPay — через раз.</li><li>С апреля 2026 — оплата в рублях по QR через СБП в 800+ точках курортов Анталии (летом были сбои).</li><li>Основа — наличные EUR/USD и зарубежная карта. Сверх отеля закладывать ~€1 500–2 500 (оценка).</li></ul></div>
+      <div class="fact"><h4>Въезд и связь</h4><ul><li>Без визы до 60 дней. Паспорт — с запасом срока, у каждого ребёнка свой.</li><li>Медстраховка для въезда не обязательна, но нужна.</li><li>eSIM — купить и установить дома.</li><li>С собакой можно: пляжи (по агрегаторам), Калеичи, частные лодки и трансферы. В парки, аквариум, музеи — скорее всего, нет.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Ограничения и источники</div><h2>Насколько этому можно верить</h2></div></div>
+    <div class="note warn"><b>Ограничения.</b> Официальные сайты (Россельхознадзор, Минсельхоз Турции, авиакомпании, отели) во время исследования были недоступны — данные из сводок поисковой выдачи, лимит поиска исчерпан. Не проверены: цены отелей на апрель 2027, правила провоза у Azimut и Уральских, настаивает ли ветпост Сочи на титре, точные даты работы Land of Legends. Перед бронированием — письменные подтверждения от отеля и авиакомпании.</div>
+    <div class="src mt">
+      <h4>Собака</h4>
+      <ul>
+        <li><a href="https://fsvps.gov.ru/puteshestvujushhim-s-pitomcami-vvoz-vyvo/instrukcija-kak-puteshestvovat-s-zhivotnym-za-rubezh/" target="_blank" rel="noopener">Россельхознадзор — как путешествовать с животным</a></li>
+        <li><a href="https://fsvps.gov.ru/files/pri-vvoze-na-territoriju-turcii-domashnih-zhivotnyh-neobhodimo-oformit-veterinarnyj-sertifikat/" target="_blank" rel="noopener">Россельхознадзор — сертификат для ввоза в Турцию</a></li>
+        <li><a href="https://62.fsvps.gov.ru/news/c-sobakoj-ili-koshkoj-v-turciju-podrobnyj-gajd-s-aktualnoj-informaciej-po-dokumentam/" target="_blank" rel="noopener">Россельхознадзор — гайд «С собакой в Турцию»</a></li>
+        <li><a href="https://vskn.tarimorman.gov.tr/trabzon/Duyuru/14/Turkiye-%E2%80%98ye-Kedi-Kopek-Girisi-Icin-Gerekli-Sartlar" target="_blank" rel="noopener">Минсельхоз Турции — условия ввоза кошек и собак</a></li>
+        <li><a href="https://mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=15541&amp;mevzuatTertip=5&amp;mevzuatTur=KurumVeKurulusYonetmeligi" target="_blank" rel="noopener">Регламент Турции RG 28133</a></li>
+        <li><a href="https://sudact.ru/law/reshenie-komissii-tamozhennogo-soiuza-ot-18062010-n_17/edinye-veterinarnye-veterinarno-sanitarnye-trebovaniia-prediavliaemye/glava-15/" target="_blank" rel="noopener">ЕАЭС — требования, глава 15</a></li>
+      </ul>
+      <h4>Отели</h4>
+      <ul>
+        <li><a href="https://www.baruthemera.com/en/pet-friendly" target="_blank" rel="noopener">Barut Hemera — Pet Friendly</a></li>
+        <li><a href="https://kz.resort-holiday.com/about/Kempinski%20pet%20s%C3%B6zle%C5%9Fmesi-ENG.pdf" target="_blank" rel="noopener">Kempinski The Dome — pet-соглашение</a></li>
+        <li><a href="https://bgoperator.ru/pr_img/1000512/20240828/34030827/KempinskiVillas_2024.pdf" target="_blank" rel="noopener">Kempinski Villas — factsheet 2024</a></li>
+        <li><a href="https://familyresortbelek.selectumhotels.com/en/pet-friendly" target="_blank" rel="noopener">Selectum Family Resort — Pet Friendly</a></li>
+        <li><a href="https://www.rixos.com/rixos-premium-belek-faq" target="_blank" rel="noopener">Rixos Premium Belek — FAQ</a></li>
+      </ul>
+      <h4>Перелёт и апрель</h4>
+      <ul>
+        <li><a href="https://www.tourdom.ru/news/aeroflot-razreshil-passazhiram-brat-v-salon-dve-perenoski-odnovremenno.html" target="_blank" rel="noopener">Tourdom — Аэрофлот: животные в салоне</a></li>
+        <li><a href="https://www.turizmekonomi.com/pegas-spread-its-turkiye-program-to-20-russian-cities" target="_blank" rel="noopener">Turizm Ekonomi — программа PEGAS</a></li>
+        <li><a href="https://www.atorus.ru/article/v-turcii-teper-mozhno-platit-v-rublyakh-po-sbp-i-ne-zaviset-ot-kart-i-nalichnykh-67589" target="_blank" rel="noopener">АТОР — оплата в рублях по СБП в Турции</a></li>
+        <li><a href="https://www.weather2travel.com/april/turkey/antalya-coast?Units=1" target="_blank" rel="noopener">Weather2Travel — Анталья в апреле</a></li>
+        <li><a href="https://www.dunya.com/gundem/2027-bayram-tarihleri-ramazan-bayrami-ve-kurban-bayrami-ne-zaman-kutlanacak-haberi-840413" target="_blank" rel="noopener">Dünya — даты байрамов 2027</a></li>
+      </ul>
+    </div>
+    <div class="cta mt">
+      <a class="btn" href="../">← Японский проект</a>
+      <a class="btn" href="https://github.com/sidkovd/family-trip-2027/tree/main/research_notes/%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8C%202027%20%D1%81%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%BE%D0%B9" target="_blank" rel="noopener">Исходные заметки исследования</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Планировочная версия, не бронирование. Исследование от 6 ноября 2026 года; цены — оценки по данным 2026 года. Правила ввоза животных и pet-политику отелей подтверждать письменно перед покупкой.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+  var root=document.documentElement,btn=document.getElementById("themeBtn");
+  var saved=store.get("ft27-theme");if(saved==="light"||saved==="dark")root.setAttribute("data-theme",saved);
+  function isDark(){var t=root.getAttribute("data-theme");if(t)return t==="dark";return window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches}
+  btn.addEventListener("click",function(){var n=isDark()?"light":"dark";root.setAttribute("data-theme",n);store.set("ft27-theme",n)});
+  function plural(n,a,b,c){var m=n%10,h=n%100;if(m===1&&h!==11)return a;if(m>=2&&m<=4&&(h<12||h>14))return b;return c}
+  var cd=document.getElementById("countdown"),now=new Date();
+  var days=Math.ceil((new Date(2027,3,17)-new Date(now.getFullYear(),now.getMonth(),now.getDate()))/864e5);
+  if(cd&&days>0){cd.textContent="До вылета "+days+" "+plural(days,"день","дня","дней");cd.hidden=false}
+  function checklist(listId,progId,key){
+    var st={};try{st=JSON.parse(store.get(key)||"{}")||{}}catch(e){}
+    var bx=document.querySelectorAll("#"+listId+" input[type=checkbox]"),pr=document.getElementById(progId);
+    function u(){var n=0;bx.forEach(function(b){if(b.checked)n++});pr.textContent="Выполнено: "+n+" из "+bx.length}
+    bx.forEach(function(b){b.checked=!!st[b.dataset.id];b.addEventListener("change",function(){st[b.dataset.id]=b.checked;store.set(key,JSON.stringify(st));u()})});u();
+  }
+  checklist("checklistDog","progressDog","tr27-dog");
+  checklist("checklistFam","progressFam","tr27-fam");
+
+  /* calculator */
+  var host=document.getElementById("calcGroups");
+  var G=[
+    {id:"fl",title:"Перелёт Сочи ⇄ Анталья · на пятерых",note:"Тарифов на апрель 2027 ещё нет — оценка по снимкам 2026 года.",opts:[
+      {id:"e",t:"Эконом, прямой регулярный рейс",n:"Azimut или IrAero, ~2 ч",rub:150000,tg:"оценка",rec:1},
+      {id:"b",t:"Бизнес Аэрофлота",n:"если рейс будет в расписании",rub:450000,tg:"оценка"}]},
+    {id:"hotel",title:"Отель · 7 ночей",note:"Цены — оценки, реальных цен на апрель 2027 нет.",opts:[
+      {id:"sel",t:"Selectum Family Resort, Белек",n:"UAI, только для семей; зона для собак",eur:4500,dog:150,tg:"оценка"},
+      {id:"hem",t:"Barut Hemera, Сиде — 2 номера",n:"UAI; pet-номер Deluxe Garden View, до 8 кг, €25/день",eur:6000,dog:175,tg:"оценка"},
+      {id:"dome",t:"Kempinski The Dome — вилла с 3 спальнями",n:"свой бассейн; собака до 10 кг, €20/ночь",eur:18000,dog:140,tg:"оценка",rec:1}]},
+    {id:"tr",title:"Трансфер аэропорт ⇄ отель",opts:[
+      {id:"s",t:"Минивэн с креслами, туда-обратно",n:"+ собака в переноске",eur:120},
+      {id:"v",t:"VIP-минивэн, туда-обратно",eur:180,rec:1}]},
+    {id:"act",title:"Развлечения и удобства",multi:1,opts:[
+      {id:"lol",t:"Land of Legends — тематический парк",n:"аквапарк в апреле, скорее всего, закрыт",eur:150,on:1},
+      {id:"aq",t:"Аквариум Анталии + Snow World",eur:230,on:1},
+      {id:"kal",t:"Калеичи, водопад Дюден, частная лодка — с собакой",eur:250,tg:"оценка",on:1},
+      {id:"spa",t:"Спа для взрослых",eur:400,tg:"оценка",on:1},
+      {id:"nanny",t:"Няня для младшей",eur:150,tg:"оценка",on:1},
+      {id:"vet",t:"Турецкий ветврач + сертификат Tarım",n:"для возвращения собаки",eur:60,on:1},
+      {id:"asp",t:"Аспендос и Перге с водителем",eur:160,on:0},
+      {id:"tah",t:"Канатная дорога Тахталы с трансфером",eur:200,on:0},
+      {id:"jeep",t:"Джип-сафари",eur:100,on:0},
+      {id:"horse",t:"Конная прогулка",eur:100,on:0}]},
+    {id:"extra",title:"Траты на месте сверх пакета",note:"Чаевые, бары, à la carte, мелочи.",opts:[
+      {id:"s",t:"Скромно",eur:500},{id:"m",t:"Нормально",eur:1000,rec:1},{id:"l",t:"Ни в чём себе не отказывать",eur:1500}]},
+    {id:"dog",title:"Собака: документы и перелёт",multi:1,opts:[
+      {id:"docs",t:"Титр, прививки, ошейник, глистогонное, форма № 1",rub:19000,tg:"оценка",on:1},
+      {id:"fly",t:"Провоз в салоне туда-обратно",rub:20000,tg:"оценка",on:1},
+      {id:"res",t:"Резерв на ветврача в Турции",eur:200,on:1}]},
+    {id:"ins",title:"Страховка семьи",opts:[
+      {id:"s",t:"Базовая медицина",rub:10000},{id:"l",t:"Расширенная, с медэвакуацией и отменой поездки",rub:25000,rec:1}]},
+    {id:"res",title:"Резерв на подорожание и курс",opts:[{id:"0",t:"Без резерва",pct:0},{id:"5",t:"5%",pct:5,rec:1},{id:"10",t:"10%",pct:10}]}
+  ];
+  var BY={};G.forEach(function(g){BY[g.id]=g});
+  var DEF={fl:"e",hotel:"dome",tr:"v",act:["lol","aq","kal","spa","nanny","vet"],extra:"m",dog:["docs","fly","res"],ins:"l",res:"5",shop:100000,rate:105};
+  var PRE={top:DEF,
+    great:{fl:"e",hotel:"hem",tr:"v",act:["lol","aq","kal","spa","nanny","vet"],extra:"m",dog:["docs","fly","res"],ins:"l",res:"5",shop:100000,rate:105},
+    smart:{fl:"e",hotel:"sel",tr:"s",act:["lol","aq","kal","vet"],extra:"s",dog:["docs","fly","res"],ins:"l",res:"5",shop:50000,rate:105}};
+  function clone(o){return JSON.parse(JSON.stringify(o))}
+  var S=clone(DEF);try{var ls=JSON.parse(store.get("tr27-calc")||"null");if(ls)S=Object.assign(clone(DEF),ls)}catch(e){}
+  var RU=function(n){return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g," ")};
+  function money(r){if(Math.abs(r)>=1e6)return "≈"+(Math.round(r/1e4)/100).toFixed(2).replace(".",",")+" млн ₽";return "≈"+RU(Math.round(r/1000))+" тыс. ₽"}
+  function price(o){if(o.rub!=null)return {r:o.rub};if(o.eur!=null)return {r:(o.eur+(o.dog||0))*S.rate,sub:"€"+RU(o.eur)+(o.dog?" + собака €"+o.dog:"")};if(o.pct!=null)return {pct:o.pct};return {r:0}}
+  G.forEach(function(g){
+    var fs=document.createElement("fieldset");fs.className="cg";fs.id="cg-"+g.id;
+    var lg=document.createElement("legend");lg.textContent=g.title;fs.appendChild(lg);
+    if(g.note){var nt=document.createElement("p");nt.className="cg-note";nt.textContent=g.note;fs.appendChild(nt)}
+    g.opts.forEach(function(o){
+      var lab=document.createElement("label");lab.className="opt";
+      var inp=document.createElement("input");inp.type=g.multi?"checkbox":"radio";inp.name="t-"+g.id;inp.value=o.id;
+      inp.addEventListener("change",function(){if(g.multi){var a=[];fs.querySelectorAll("input").forEach(function(x){if(x.checked)a.push(x.value)});S[g.id]=a}else S[g.id]=o.id;update()});
+      var t=document.createElement("span");
+      t.innerHTML='<span class="t">'+o.t+(o.rec?'<span class="tg rec">наш выбор</span>':"")+(o.tg?'<span class="tg">'+o.tg+"</span>":"")+"</span>"+(o.n?'<span class="n">'+o.n+"</span>":"");
+      var p=document.createElement("span");p.className="p";p.dataset.o=o.id;
+      lab.appendChild(inp);lab.appendChild(t);lab.appendChild(p);fs.appendChild(lab);
+    });
+    host.appendChild(fs);
+  });
+  var fsS=document.createElement("fieldset");fsS.className="cg";
+  fsS.innerHTML='<legend>Шопинг</legend><div class="rangebox"><input type="range" id="shopR" min="0" max="400000" step="25000" aria-label="Бюджет на шопинг"><div class="rv"><span>0</span><b id="shopV"></b><span>400 тыс.</span></div></div>';
+  host.appendChild(fsS);
+  var fsR=document.createElement("fieldset");fsR.className="cg";
+  fsR.innerHTML='<legend>Курс евро</legend><div class="ratebox"><label for="rateI">₽ за €1</label><input id="rateI" type="number" min="60" max="200" step="1"><span class="muted small">ЦБ на 04.11.2026 — 91,60; 105 — с запасом и надбавкой за наличные или зарубежную карту</span></div>';
+  host.appendChild(fsR);
+  var shopR=document.getElementById("shopR"),rateI=document.getElementById("rateI");
+  shopR.addEventListener("input",function(){S.shop=+shopR.value;update()});
+  rateI.addEventListener("input",function(){var v=parseFloat(rateI.value);if(v>=50&&v<=250){S.rate=v;update()}});
+  function sync(){G.forEach(function(g){document.getElementById("cg-"+g.id).querySelectorAll("input").forEach(function(x){x.checked=g.multi?S[g.id].indexOf(x.value)>=0:S[g.id]===x.value})});shopR.value=S.shop;rateI.value=S.rate}
+  function update(){
+    var t={fl:0,hotel:0,tr:0,act:0,extra:0,dog:0,ins:0},pct=0;
+    G.forEach(function(g){var fs=document.getElementById("cg-"+g.id);
+      g.opts.forEach(function(o){var pr=price(o),el=fs.querySelector('.p[data-o="'+o.id+'"]');
+        el.innerHTML=pr.pct!=null?(pr.pct?"+"+pr.pct+"%":"—"):money(pr.r)+(pr.sub?"<small>"+pr.sub+"</small>":"");
+        var ch=g.multi?S[g.id].indexOf(o.id)>=0:S[g.id]===o.id;if(!ch)return;
+        if(pr.pct!=null)pct=pr.pct;else t[g.id]+=pr.r;});});
+    var sub=t.fl+t.hotel+t.tr+t.act+t.extra+t.dog+t.ins,res=sub*pct/100,no=sub+res,all=no+S.shop;
+    document.getElementById("sumTotal").textContent=money(all);document.getElementById("barTotal").textContent=money(all);
+    document.getElementById("sumNoShop").textContent="без шопинга "+money(no);
+    var rows=[["Перелёт",t.fl],["Отель (с собакой)",t.hotel],["Трансферы",t.tr],["Развлечения",t.act],["Траты на месте",t.extra],["Собака: документы и перелёт",t.dog],["Страховка",t.ins],["Резерв "+pct+"%",res],["Шопинг",S.shop]];
+    var mx=Math.max.apply(null,rows.map(function(r){return r[1]}))||1;
+    document.getElementById("sumRows").innerHTML=rows.map(function(r){return "<li><span>"+r[0]+"</span><span>"+money(r[1])+'</span><span class="bar"><i style="width:'+(r[1]/mx*100).toFixed(1)+'%"></i></span></li>'}).join("");
+    document.getElementById("sumPerson").textContent=money(all/5);document.getElementById("sumDay").textContent=money(all/8);
+    document.getElementById("shopV").textContent=S.shop?RU(S.shop/1000)+" тыс. ₽":"без шопинга";
+    store.set("tr27-calc",JSON.stringify(S));
+  }
+  document.querySelectorAll("[data-preset]").forEach(function(b){b.addEventListener("click",function(){S=clone(PRE[b.dataset.preset]);sync();update()})});
+  var bar=document.getElementById("calcBar"),sec=document.getElementById("calc");
+  if("IntersectionObserver" in window)new IntersectionObserver(function(es){es.forEach(function(e){bar.classList.toggle("on",e.isIntersecting)})},{threshold:0.05}).observe(sec);
+  sync();update();
+})();
+
+</script>
+</body>
+</html>
