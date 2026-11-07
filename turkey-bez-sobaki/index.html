@@ -572,11 +572,11 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
   <div class="wrap">
     <div class="sec-head"><div><div class="kicker">Калькулятор</div><h2>Сколько стоят 10 ночей без тура</h2><p>Концепция — Land of Legends: отель, перелёт, дни в парке, трансфер и страховка считаются отдельно, своя няня — по желанию. Все цены — грубые оценки на майские 2027 года: реальных цен пока нет. Выбор сохраняется в этом браузере.</p></div></div>
     <div class="presets" role="group" aria-label="Готовые варианты">
-      <button type="button" data-preset="rixos">Наш выбор: Rixos Premium + парк</button>
-      <button type="button" data-preset="rixnan">Rixos + своя няня</button>
-      <button type="button" data-preset="kng">Kingdom Hotel в парке</button>
-      <button type="button" data-preset="maxx">Maxx Royal + 2 дня в парке</button>
-      <button type="button" data-preset="value">Titanic + 2 дня — разумно</button>
+      <button type="button" data-preset="rixos">Наш выбор: Rixos Premium (парк включён)</button>
+      <button type="button" data-preset="rixnan">Rixos (парк включён) + своя няня</button>
+      <button type="button" data-preset="kng">Kingdom Hotel (парк включён)</button>
+      <button type="button" data-preset="maxx">Maxx Royal + билеты на 2 дня</button>
+      <button type="button" data-preset="value">Titanic + билеты на 2 дня</button>
     </div>
     <div class="calc">
       <div class="calc-groups" id="calcGroups"></div>
@@ -771,9 +771,9 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
     var sub=t.hotel+t.fly+t.tr+t.lol+t.act+t.extra+t.nan+t.ins,res=sub*pct/100,no=sub+res,all=no+S.shop;
     document.getElementById("sumTotal").textContent=money(all);document.getElementById("barTotal").textContent=money(all);
     document.getElementById("sumNoShop").textContent="без шопинга "+money(no);
-    var rows=[["Отель",t.hotel],["Перелёт",t.fly],["Трансфер",t.tr],["Land of Legends",t.lol],["Развлечения",t.act],["Траты на месте",t.extra],["Своя няня",t.nan],["Страховка",t.ins],["Резерв "+pct+"%",res],["Шопинг",S.shop]];
+    var rows=[["Отель",t.hotel],["Перелёт",t.fly],["Трансфер",t.tr],[FREE[S.hotel]?"Land of Legends — в цене отеля":"Land of Legends — билеты",t.lol,FREE[S.hotel]?"включено":null],["Развлечения",t.act],["Траты на месте",t.extra],["Своя няня",t.nan],["Страховка",t.ins],["Резерв "+pct+"%",res],["Шопинг",S.shop]];
     var mx=Math.max.apply(null,rows.map(function(r){return r[1]}))||1;
-    document.getElementById("sumRows").innerHTML=rows.map(function(r){return "<li><span>"+r[0]+"</span><span>"+money(r[1])+'</span><span class="bar"><i style="width:'+(r[1]/mx*100).toFixed(1)+'%"></i></span></li>'}).join("");
+    document.getElementById("sumRows").innerHTML=rows.map(function(r){return "<li><span>"+r[0]+"</span><span>"+(r[2]||money(r[1]))+'</span><span class="bar"><i style="width:'+(r[1]/mx*100).toFixed(1)+'%"></i></span></li>'}).join("");
     document.getElementById("sumPerson").textContent=money(all/5);document.getElementById("sumDay").textContent=money(all/11);
     document.getElementById("shopV").textContent=S.shop?RU(S.shop/1000)+" тыс. ₽":"без шопинга";
     store.set("tr27n-calc3",JSON.stringify(S));

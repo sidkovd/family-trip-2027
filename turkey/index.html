@@ -625,10 +625,10 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
   <div class="wrap">
     <div class="sec-head"><div><div class="kicker">Калькулятор</div><h2>Сколько стоят 10 ночей без тура</h2><p>Концепция — Land of Legends: отель, перелёт, дни в парке, трансфер и страховка считаются отдельно, своя няня — по желанию. Все цены — оценки на майские 2027 года: реальных цен пока нет. Выбор сохраняется в этом браузере.</p></div></div>
     <div class="presets" role="group" aria-label="Готовые варианты">
-      <button type="button" data-preset="great">Наш выбор: Selectum + 3 дня в парке</button>
-      <button type="button" data-preset="nanny">То же + своя няня</button>
-      <button type="button" data-preset="hem">Barut Hemera + 3 дня</button>
-      <button type="button" data-preset="kng">Kingdom Hotel, собака в зоогостинице</button>
+      <button type="button" data-preset="great">Наш выбор: Selectum + билеты на 3 дня</button>
+      <button type="button" data-preset="nanny">Selectum + билеты + своя няня</button>
+      <button type="button" data-preset="hem">Barut Hemera + билеты на 3 дня</button>
+      <button type="button" data-preset="kng">Kingdom Hotel (парк включён), собака в зоогостинице</button>
       <button type="button" data-preset="top">Вилла Kempinski</button>
     </div>
     <div class="calc">
@@ -845,9 +845,9 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px}
     var sub=t.hotel+t.fly+t.tr+t.lol+t.act+t.extra+t.dog+t.nan+t.ins,res=sub*pct/100,no=sub+res,all=no+S.shop;
     document.getElementById("sumTotal").textContent=money(all);document.getElementById("barTotal").textContent=money(all);
     document.getElementById("sumNoShop").textContent="без шопинга "+money(no);
-    var rows=[["Отель (с доплатой за собаку)",t.hotel],["Перелёт",t.fly],["Трансфер",t.tr],["Land of Legends",t.lol],["Развлечения",t.act],["Траты на месте",t.extra],["Собака: документы и перелёт",t.dog],["Своя няня",t.nan],["Страховка",t.ins],["Резерв "+pct+"%",res],["Шопинг",S.shop]];
+    var rows=[["Отель (с доплатой за собаку)",t.hotel],["Перелёт",t.fly],["Трансфер",t.tr],[FREE[S.hotel]?"Land of Legends — в цене отеля":"Land of Legends — билеты",t.lol,FREE[S.hotel]?"включено":null],["Развлечения",t.act],["Траты на месте",t.extra],["Собака: документы и перелёт",t.dog],["Своя няня",t.nan],["Страховка",t.ins],["Резерв "+pct+"%",res],["Шопинг",S.shop]];
     var mx=Math.max.apply(null,rows.map(function(r){return r[1]}))||1;
-    document.getElementById("sumRows").innerHTML=rows.map(function(r){return "<li><span>"+r[0]+"</span><span>"+money(r[1])+'</span><span class="bar"><i style="width:'+(r[1]/mx*100).toFixed(1)+'%"></i></span></li>'}).join("");
+    document.getElementById("sumRows").innerHTML=rows.map(function(r){return "<li><span>"+r[0]+"</span><span>"+(r[2]||money(r[1]))+'</span><span class="bar"><i style="width:'+(r[1]/mx*100).toFixed(1)+'%"></i></span></li>'}).join("");
     document.getElementById("sumPerson").textContent=money(all/5);document.getElementById("sumDay").textContent=money(all/11);
     document.getElementById("shopV").textContent=S.shop?RU(S.shop/1000)+" тыс. ₽":"без шопинга";
     store.set("tr27-calc5",JSON.stringify(S));
